@@ -1,0 +1,25 @@
+[project]
+name = "strict-syntax-health"
+version = "0.1.0"
+description = "Monitor nf-core pipelines for Nextflow strict syntax linting errors"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0",
+    "rich-click>=1.7",
+    "rich>=13.0",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+strict-syntax-health = "strict_syntax_health.cli:main"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.ruff.format]
+quote-style = "double"
