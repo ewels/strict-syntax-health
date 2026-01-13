@@ -24,9 +24,8 @@ strict-syntax-health --update-readme
 # Lint specific pipeline(s) only
 strict-syntax-health -p demo -p rnaseq
 
-# Lint with ruff
-ruff check src/
-ruff format src/
+# Run pre-commit hooks (uses prek instead of pre-commit)
+prek run --all-files
 ```
 
 ## Architecture
@@ -34,13 +33,18 @@ ruff format src/
 Single-module CLI (`src/strict_syntax_health/cli.py`) using rich-click:
 
 1. **Pipeline discovery**: Fetches `pipelines.json` from nf-co.re, filters out archived pipelines
-2. **Cloning**: Shallow clones pipelines to `pipelines/` directory (or pulls if already cloned)
+2. **Cloning**: Shallow clones pipelines to `pipelines/` directory (or pulls if already cloned), prefers `dev` branch
 3. **Linting**: Runs `nextflow lint . -o json` on each pipeline, parses JSON output
 4. **History tracking**: Stores daily aggregates in `history.json` (counts by error/warning severity buckets)
 5. **Chart generation**: Creates stacked area charts with Plotly showing trends over time
-6. **README generation**: Outputs markdown table with per-pipeline results
+6. **README generation**: Outputs markdown table with per-pipeline results and links to per-pipeline markdown reports
 
-Key files produced: `README.md`, `history.json`, `errors_chart.png`, `warnings_chart.png`
+Key files produced: `README.md`, `history.json`, `errors_chart.png`, `warnings_chart.png`, `lint_results/*.md`
+
+## External Dependencies
+
+- **Nextflow**: Must be installed and available on PATH. In CI, it's built from the master branch to get latest lint features.
+- **Git**: Required for cloning pipelines
 
 ## Code Style
 
