@@ -107,7 +107,7 @@ def get_nextflow_version() -> str:
 def lint_pipeline(repo_path: Path) -> dict:
     """Run nextflow lint on a pipeline (JSON output for parsing)."""
     result = subprocess.run(
-        ["nextflow", "lint", ".", "-o", "json"],
+        ["nextflow", "lint", "-exclude", ".git,.nf-test,nf-test.config", ".", "-o", "json"],
         cwd=repo_path,
         capture_output=True,
         text=True,
@@ -132,7 +132,7 @@ def lint_pipeline_text(repo_path: Path, pipeline_name: str) -> None:
     output_file = LINT_RESULTS_DIR / f"{pipeline_name}_lint.txt"
 
     result = subprocess.run(
-        ["nextflow", "lint", "."],
+        ["nextflow", "lint", "-exclude", ".git,.nf-test,nf-test.config", "."],
         cwd=repo_path,
         capture_output=True,
         text=True,
