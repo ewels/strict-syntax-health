@@ -64,7 +64,8 @@ jobs:
           make pack
 
           # Create nextflow alias (binary has versioned name like nextflow-X.Y.Z-dist)
-          ln -s build/releases/nextflow-*-dist build/releases/nextflow
+          cd build/releases/
+          ln -s nextflow-*-dist nextflow
 
       - name: Save Nextflow build cache
         if: steps.cache-nextflow.outputs.cache-hit != 'true' && steps.build-nextflow.outcome == 'success' && always()
@@ -75,8 +76,9 @@ jobs:
 
       - name: Add Nextflow to PATH
         run: |
-          ls -l echo "${{ github.workspace }}/nextflow-src/build/releases"
-          echo "${{ github.workspace }}/nextflow-src/build/releases" >> $GITHUB_PATH
+          cd "${{ github.workspace }}"
+          ls -l nextflow-src/build/releases"
+          echo nextflow-src/build/releases" >> $GITHUB_PATH
 
       - name: Install dependencies
         run: pip install .
