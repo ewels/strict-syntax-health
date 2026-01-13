@@ -79,6 +79,12 @@ jobs:
           cd ${{ github.workspace }}
           tree -L 3
           ls -la nextflow-src/build/releases/
+          # Fix symlink if broken (e.g., from old cache)
+          cd nextflow-src/build/releases
+          if [ -L nextflow ] && [ ! -e nextflow ]; then
+            rm nextflow
+            ln -s nextflow-*-dist nextflow
+          fi
           echo "${{ github.workspace }}/nextflow-src/build/releases" >> $GITHUB_PATH
 
       - name: Install dependencies
