@@ -64,11 +64,26 @@ def load_pipelines() -> list[dict]:
 
 
 def clone_pipeline(pipeline: dict) -> Path:
-    """Clone a pipeline repository."""
+    """Clone a pipeline repository, preferring the 'dev' branch."""
     repo_path = PIPELINES_DIR / pipeline["name"]
 
     if repo_path.exists():
         console.print(f"  Pipeline already cloned: {pipeline['name']}")
+        # Try to checkout dev branch, fall back to default if it doesn't exist
+        try:
+            subprocess.run(
+                ["git", "-C", str(repo_path), "fetch", "--quiet", "origin", "dev"],
+                check=True,
+                capture_output=True,
+            )
+            subprocess.run(
+                ["git", "-C", str(repo_path), "checkout", "--quiet", "dev"],
+                check=True,
+                capture_output=True,
+            )
+        except subprocess.CalledProcessError:
+            # dev branch doesn't exist, stay on current branch
+            pass
         # Pull latest changes
         subprocess.run(
             ["git", "-C", str(repo_path), "pull", "--quiet"],
@@ -78,11 +93,20 @@ def clone_pipeline(pipeline: dict) -> Path:
     else:
         console.print(f"  Cloning {pipeline['full_name']}...")
         PIPELINES_DIR.mkdir(parents=True, exist_ok=True)
-        subprocess.run(
-            ["git", "clone", "--quiet", "--depth", "1", pipeline["html_url"], str(repo_path)],
-            check=True,
-            capture_output=True,
-        )
+        # Try to clone dev branch first
+        try:
+            subprocess.run(
+                ["git", "clone", "--quiet", "--depth", "1", "--branch", "dev", pipeline["html_url"], str(repo_path)],
+                check=True,
+                capture_output=True,
+            )
+        except subprocess.CalledProcessError:
+            # dev branch doesn't exist, clone default branch
+            subprocess.run(
+                ["git", "clone", "--quiet", "--depth", "1", pipeline["html_url"], str(repo_path)],
+                check=True,
+                capture_output=True,
+            )
 
     return repo_path
 
