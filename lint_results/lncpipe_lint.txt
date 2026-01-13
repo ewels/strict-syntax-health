@@ -44,7 +44,6 @@ Linting: subworkflows/nf-core/fastq_align_hisat2/tests/nextflow.config
 Linting: subworkflows/nf-core/fastq_fastqc_umitools_fastp/nextflow.config
 Linting: subworkflows/nf-core/fastq_fastqc_umitools_fastp/main.nf
 Linting: subworkflows/nf-core/fastq_fastqc_umitools_fastp/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: modules/local/gtf_filter/main.nf
@@ -998,15 +997,6 @@ Warn  nextflow.config:381:129: Implicit closure parameter is deprecated, declare
 ╰     |                               ^^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 | 
-│   3 |     testsDir "tests"
-│   4 |     workDir ".nf-test"
-╰   5 |     configFile "tests/nextflow.config"
-
-
 Error subworkflows/local/prepare_genome/nextflow.config:103:1: If statements cannot be mixed with config statements
 │ 101 | }
 │ 102 | 
@@ -1081,5 +1071,5 @@ Error subworkflows/nf-core/fastq_fastqc_umitools_trimgalore/nextflow.config:65:1
 
 
 Nextflow linting complete!
- ❌ 10 files had 41 errors
+ ❌ 9 files had 40 errors
  ✅ 105 files had no errors

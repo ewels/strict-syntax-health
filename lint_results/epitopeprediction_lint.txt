@@ -24,7 +24,6 @@ Linting: subworkflows/nf-core/utils_nextflow_pipeline/main.nf
 Linting: subworkflows/nf-core/utils_nextflow_pipeline/tests/nextflow.config
 Linting: subworkflows/nf-core/utils_nfschema_plugin/main.nf
 Linting: subworkflows/nf-core/utils_nfschema_plugin/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: modules/local/summarize_results/main.nf
@@ -295,15 +294,6 @@ Error nextflow.config:368:72: `co2_timestamp` is not defined
 ╰     |                                                   ^^^^^^^^^^^^^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 |     // location for all nf-test tests
-│   3 |     testsDir "."
-│   4 | 
-╰   5 |     // nf-test directory including temporary files for each test
-
-
 Nextflow linting complete!
- ❌ 6 files had 21 errors
+ ❌ 5 files had 20 errors
  ✅ 43 files had no errors

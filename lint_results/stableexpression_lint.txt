@@ -19,7 +19,6 @@ Linting: subworkflows/nf-core/utils_nextflow_pipeline/main.nf
 Linting: subworkflows/nf-core/utils_nextflow_pipeline/tests/nextflow.config
 Linting: subworkflows/nf-core/utils_nfschema_plugin/main.nf
 Linting: subworkflows/nf-core/utils_nfschema_plugin/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: tests/workflows/nextflow.config
@@ -315,11 +314,6 @@ Warn  nextflow.config:298:129: Implicit closure parameter is deprecated, declare
 ╰     |                               ^^
 
 
-Error nf-test.config:8:18: Unexpected input: ':'
-│   8 |         "nf-test": "0.9.2"
-╰     |                  ^
-
-
 Nextflow linting complete!
- ❌ 8 files had 29 errors
+ ❌ 7 files had 28 errors
  ✅ 27 files had no errors

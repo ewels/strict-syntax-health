@@ -26,7 +26,6 @@ Linting: subworkflows/nf-core/fastq_align_star/main.nf
 Linting: subworkflows/nf-core/vcf_annotate_ensemblvep/main.nf
 Linting: subworkflows/nf-core/bam_sort_stats_samtools/main.nf
 Linting: subworkflows/nf-core/bam_markduplicates_picard/main.nf
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: modules/local/remove_unknown_regions/main.nf
@@ -191,15 +190,5 @@ Warn  subworkflows/nf-core/vcf_annotate_snpeff/main.nf:15:19: The use of `Channe
 ╰     |                   ^^^^^^^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 |     // location for all nf-test tests
-│   3 |     testsDir "."
-│   4 | 
-╰   5 |     // nf-test directory including temporary files for each test
-
-
 Nextflow linting complete!
- ❌ 1 file had 1 error
  ✅ 72 files had no errors

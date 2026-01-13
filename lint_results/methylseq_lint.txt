@@ -80,7 +80,6 @@ Linting: subworkflows/nf-core/utils_nfschema_plugin/tests/nextflow.config
 Linting: subworkflows/nf-core/fastq_align_dedup_bismark/main.nf
 Linting: subworkflows/nf-core/fastq_align_dedup_bismark/tests/nextflow.config
 Linting: subworkflows/nf-core/bam_taps_conversion/main.nf
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: modules/nf-core/bismark/deduplicate/main.nf
@@ -466,15 +465,6 @@ Error nextflow.config:251:23: Invalid include source: '/home/runner/work/strict-
 ╰     |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 |     // location for all nf-test tests
-│   3 |     testsDir "."
-│   4 | 
-╰   5 |     // nf-test directory including temporary files for each test
-
-
 Nextflow linting complete!
- ❌ 3 files had 4 errors
+ ❌ 2 files had 3 errors
  ✅ 136 files had no errors

@@ -25,7 +25,6 @@ Linting: subworkflows/nf-core/utils_nextflow_pipeline/main.nf
 Linting: subworkflows/nf-core/utils_nextflow_pipeline/tests/nextflow.config
 Linting: subworkflows/nf-core/utils_nfschema_plugin/main.nf
 Linting: subworkflows/nf-core/utils_nfschema_plugin/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: modules/local/awk/extract/main.nf
 Linting: modules/local/stimulus/encode/main.nf

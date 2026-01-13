@@ -34,7 +34,6 @@ Linting: subworkflows/nf-core/utils_nfschema_plugin/main.nf
 Linting: subworkflows/nf-core/utils_nfschema_plugin/tests/nextflow.config
 Linting: subworkflows/nf-core/fastq_contam_seqtk_kraken/main.nf
 Linting: subworkflows/nf-core/fastq_contam_seqtk_kraken/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: modules/local/csv2tsv/main.nf

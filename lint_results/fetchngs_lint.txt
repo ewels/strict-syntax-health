@@ -13,7 +13,6 @@ Linting: subworkflows/nf-core/fastq_download_prefetch_fasterqdump_sratools/nextf
 Linting: subworkflows/nf-core/fastq_download_prefetch_fasterqdump_sratools/main.nf
 Linting: subworkflows/nf-core/utils_nextflow_pipeline/main.nf
 Linting: subworkflows/nf-core/utils_nextflow_pipeline/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: modules/local/aspera_cli/nextflow.config
@@ -333,15 +332,6 @@ Error nextflow.config:65:5: Unexpected input: 'includeConfig'
 ╰     |     ^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 |     // Location of nf-tests
-│   3 |     testsDir "."
-│   4 | 
-╰   5 |     // nf-test directory used to create temporary files for each test
-
-
 Nextflow linting complete!
- ❌ 6 files had 47 errors
+ ❌ 5 files had 46 errors
  ✅ 31 files had no errors

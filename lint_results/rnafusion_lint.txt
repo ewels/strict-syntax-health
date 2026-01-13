@@ -30,7 +30,6 @@ Linting: subworkflows/nf-core/utils_nfschema_plugin/main.nf
 Linting: subworkflows/nf-core/utils_nfschema_plugin/tests/nextflow.config
 Linting: subworkflows/nf-core/fastq_fastqc_umitools_fastp/main.nf
 Linting: subworkflows/nf-core/fastq_fastqc_umitools_fastp/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: modules/local/gencode_download/main.nf
@@ -656,15 +655,6 @@ Warn  nextflow.config:386:129: Implicit closure parameter is deprecated, declare
 ╰     |                               ^^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 |     // location for all nf-test tests
-│   3 |     testsDir "."
-│   4 | 
-╰   5 |     // nf-test directory including temporary files for each test
-
-
 Error tests/nextflow.config:27:38: `pipelines_testdata_base_path` is not defined
 │  27 |     dfam_hmm                    = "${pipelines_testdata_base_path}/tes
 ╰     |                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -691,5 +681,5 @@ Error tests/nextflow.config:32:38: `pipelines_testdata_base_path` is not defined
 
 
 Nextflow linting complete!
- ❌ 4 files had 14 errors
+ ❌ 3 files had 13 errors
  ✅ 105 files had no errors

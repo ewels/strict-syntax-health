@@ -15,7 +15,6 @@ Linting: subworkflows/nf-core/utils_nfcore_pipeline/tests/nextflow.config
 Linting: subworkflows/nf-core/utils_nfvalidation_plugin/main.nf
 Linting: subworkflows/nf-core/utils_nextflow_pipeline/main.nf
 Linting: subworkflows/nf-core/utils_nextflow_pipeline/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: main_only_dm_rm_calc.nf
@@ -556,15 +555,6 @@ Error nextflow.config:111:5: Unexpected input: 'includeConfig'
 ╰     |     ^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 |     testsDir "tests"
-│   3 |     workDir ".nf-test"
-│   4 |     configFile "tests/nextflow.config"
-╰   5 |     profile ""
-
-
 Error tests/nextflow.config:9:20: `PSRDB_URL` is not defined
 │   9 |     psrdb_url   = "$PSRDB_URL"
 ╰     |                    ^^^^^^^^^^
@@ -575,5 +565,5 @@ Error tests/nextflow.config:10:20: `PSRDB_TOKEN` is not defined
 
 
 Nextflow linting complete!
- ❌ 9 files had 45 errors
+ ❌ 8 files had 44 errors
  ✅ 22 files had no errors

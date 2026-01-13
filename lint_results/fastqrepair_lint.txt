@@ -13,7 +13,6 @@ Linting: subworkflows/nf-core/utils_nextflow_pipeline/main.nf
 Linting: subworkflows/nf-core/utils_nextflow_pipeline/tests/nextflow.config
 Linting: subworkflows/nf-core/utils_nfschema_plugin/main.nf
 Linting: subworkflows/nf-core/utils_nfschema_plugin/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: modules/nf-core/wipertools/fastqscatter/main.nf
@@ -256,15 +255,6 @@ Warn  nextflow.config:278:135: Implicit closure parameter is deprecated, declare
 ╰     |                               ^^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 |     // Location of nf-tests
-│   3 |     testsDir "./tests"
-│   4 | 
-╰   5 |     // nf-test directory used to create temporary files for each test
-
-
 Nextflow linting complete!
- ❌ 5 files had 26 errors
+ ❌ 4 files had 25 errors
  ✅ 25 files had no errors

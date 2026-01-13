@@ -7,7 +7,6 @@ Linting: conf/igenomes.config
 Linting: nextflow.config
 Linting: workflows/viralintegration.nf
 Linting: subworkflows/local/input_check.nf
-Linting: nf-test.config
 Linting: main.nf
 Linting: modules/local/polyA_stripper.nf
 Linting: modules/local/remove_duplicates.nf
@@ -498,15 +497,6 @@ Error nextflow.config:79:5: Unexpected input: 'includeConfig'
 ╰     |     ^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 | 
-│   3 |     testsDir "tests"
-│   4 |     workDir ".nf-test"
-╰   5 |     configFile "conf/test.config"
-
-
 Nextflow linting complete!
- ❌ 15 files had 80 errors
+ ❌ 14 files had 79 errors
  ✅ 14 files had no errors

@@ -55,7 +55,6 @@ Linting: subworkflows/nf-core/bam_markduplicates_picard/main.nf
 Linting: subworkflows/nf-core/fastq_fastqc_umitools_fastp/nextflow.config
 Linting: subworkflows/nf-core/fastq_fastqc_umitools_fastp/main.nf
 Linting: subworkflows/nf-core/fastq_fastqc_umitools_fastp/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: modules/local/multiqc_custom_biotype/nextflow.config
@@ -1730,15 +1729,6 @@ Error modules/nf-core/subread/featurecounts/nextflow.config:1:1: If statements c
 ╰   5 |                 ext.args   = { [
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 |     // location for all nf-test tests
-│   3 |     testsDir "."
-│   4 | 
-╰   5 |     // nf-test directory including temporary files for each test
-
-
 Error subworkflows/local/align_star/nextflow.config:1:26: Unexpected input: '('
 │   1 | def generateStarAlignArgs(save_unaligned, contaminant_screening, extra
 ╰     |                          ^
@@ -1993,5 +1983,5 @@ Warn  workflows/rnaseq/nextflow.config:205:83: Implicit closure parameter is dep
 
 
 Nextflow linting complete!
- ❌ 36 files had 85 errors
+ ❌ 35 files had 84 errors
  ✅ 153 files had no errors

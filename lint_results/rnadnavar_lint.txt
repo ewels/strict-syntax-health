@@ -83,7 +83,6 @@ Linting: subworkflows/nf-core/utils_nfschema_plugin/main.nf
 Linting: subworkflows/nf-core/utils_nfschema_plugin/tests/nextflow.config
 Linting: subworkflows/nf-core/fastq_align_hisat2/main.nf
 Linting: subworkflows/nf-core/fastq_align_hisat2/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: tests/config/nextflow.config
@@ -1955,20 +1954,11 @@ Error conf/modules/variant_calling/variant_calling.config:19:17: Unexpected inpu
 ╰     |                 ^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 |     // location for all nf-test tests
-│   3 |     testsDir "."
-│   4 | 
-╰   5 |     // nf-test directory including temporary files for each test
-
-
 Error tests/config/test_data.config:5:5: Unexpected input: 'includeConfig'
 │   5 |     includeConfig "https://raw.githubusercontent.com/nf-core/modules/m
 ╰     |     ^
 
 
 Nextflow linting complete!
- ❌ 8 files had 32 errors
+ ❌ 7 files had 31 errors
  ✅ 215 files had no errors

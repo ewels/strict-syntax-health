@@ -7,7 +7,6 @@ Linting: conf/test.config
 Linting: conf/igenomes.config
 Linting: nextflow.config
 Linting: workflows/asenext.nf
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: modules/local/phaser/main.nf
@@ -354,11 +353,6 @@ Error nextflow.config:76:5: Unexpected input: 'includeConfig'
 ╰     |     ^
 
 
-Error nf-test.config:21:13: Unexpected input: '='
-│  21 |     profile = "test"
-╰     |             ^
-
-
 Nextflow linting complete!
- ❌ 6 files had 32 errors
+ ❌ 5 files had 31 errors
  ✅ 48 files had no errors

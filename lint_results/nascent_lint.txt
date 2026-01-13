@@ -43,7 +43,6 @@ Linting: subworkflows/nf-core/utils_nfschema_plugin/main.nf
 Linting: subworkflows/nf-core/utils_nfschema_plugin/tests/nextflow.config
 Linting: subworkflows/nf-core/fastq_align_hisat2/main.nf
 Linting: subworkflows/nf-core/fastq_align_hisat2/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: tests/config/test_data.config
@@ -985,20 +984,11 @@ Warn  nextflow.config:321:129: Implicit closure parameter is deprecated, declare
 ╰     |                               ^^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 | 
-│   3 |     testsDir "."
-│   4 |     workDir System.getenv("NFT_WORKDIR") ?: ".nf-test"
-╰   5 |     configFile "tests/nextflow.config"
-
-
 Error tests/config/test_data.config:6:5: Unexpected input: 'includeConfig'
 │   6 |     includeConfig "https://raw.githubusercontent.com/nf-core/modules/m
 ╰     |     ^
 
 
 Nextflow linting complete!
- ❌ 11 files had 33 errors
+ ❌ 10 files had 32 errors
  ✅ 127 files had no errors

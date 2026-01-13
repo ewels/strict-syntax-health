@@ -50,7 +50,6 @@ Linting: subworkflows/nf-core/utils_nfschema_plugin/main.nf
 Linting: subworkflows/nf-core/utils_nfschema_plugin/tests/nextflow.config
 Linting: subworkflows/nf-core/fastq_fastqc_umitools_fastp/main.nf
 Linting: subworkflows/nf-core/fastq_fastqc_umitools_fastp/tests/nextflow.config
-Linting: nf-test.config
 Linting: main.nf
 Linting: tests/nextflow.config
 Linting: modules/local/extract_precluster/main.nf
@@ -1415,15 +1414,6 @@ Error nextflow.config:111:39: `variant_caller` is not defined
 ╰     |                                       ^^^^^^^^^^^^^^
 
 
-Error nf-test.config:1:1: Config settings must be assigned with an equals sign (`=`)
-│   1 | config {
-│     | ^^^^^^^^
-│   2 |     // location for all nf-test tests
-│   3 |     testsDir "."
-│   4 | 
-╰   5 |     // nf-test directory including temporary files for each test
-
-
 Nextflow linting complete!
- ❌ 7 files had 30 errors
+ ❌ 6 files had 29 errors
  ✅ 189 files had no errors
