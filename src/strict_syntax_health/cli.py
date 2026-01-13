@@ -150,13 +150,13 @@ def lint_pipeline(repo_path: Path) -> dict:
         return {"summary": {"errors": 0}, "errors": [], "warnings": [], "parse_error": True}
 
 
-def lint_pipeline_text(repo_path: Path, pipeline_name: str) -> None:
-    """Run nextflow lint on a pipeline and save text output to file."""
+def lint_pipeline_markdown(repo_path: Path, pipeline_name: str) -> None:
+    """Run nextflow lint on a pipeline and save markdown output to file."""
     LINT_RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-    output_file = LINT_RESULTS_DIR / f"{pipeline_name}_lint.txt"
+    output_file = LINT_RESULTS_DIR / f"{pipeline_name}_lint.md"
 
     result = subprocess.run(
-        ["nextflow", "lint", "."],
+        ["nextflow", "lint", ".", "-o", "markdown"],
         cwd=repo_path,
         capture_output=True,
         text=True,
@@ -181,7 +181,7 @@ def run_lint(pipelines: list[dict]) -> list[dict]:
         try:
             repo_path = clone_pipeline(pipeline)
             lint_result = lint_pipeline(repo_path)
-            lint_pipeline_text(repo_path, pipeline["name"])
+            lint_pipeline_markdown(repo_path, pipeline["name"])
 
             results.append(
                 {
@@ -444,7 +444,7 @@ def generate_readme(results: list[dict], include_chart: bool = False, nextflow_v
             status_emoji = ":white_check_mark:" if errors == 0 else ":x:"
 
         name_link = f"{status_emoji} [{result['name']}]({result['html_url']})"
-        lint_file_link = f"[View]({LINT_RESULTS_DIR}/{result['name']}_lint.txt)"
+        lint_file_link = f"[View]({LINT_RESULTS_DIR}/{result['name']}_lint.md)"
         lines.append(f"| {name_link} | {parse_error_str} | {error_str} | {warning_str} | {lint_file_link} |")
 
     lines.extend(
