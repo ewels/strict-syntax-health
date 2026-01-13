@@ -35,21 +35,35 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Clone Nextflow
-        run: git clone --depth 1 https://github.com/nextflow-io/nextflow.git nextflow-src
+      - name: Get Nextflow latest commit
+        id: nf-commit
+        run: |
+          COMMIT=$(git ls-remote https://github.com/nextflow-io/nextflow.git HEAD | cut -f1)
+          echo "sha=$COMMIT" >> $GITHUB_OUTPUT
+
+      - name: Cache Nextflow build
+        id: cache-nextflow
+        uses: actions/cache@v4
+        with:
+          path: nextflow-src/build/releases
+          key: nextflow-build-${{ steps.nf-commit.outputs.sha }}
 
       - name: Set up Java
+        if: steps.cache-nextflow.outputs.cache-hit != 'true'
         uses: actions/setup-java@v4
         with:
           distribution: "temurin"
           java-version: "21"
 
-      - name: Build Nextflow
+      - name: Clone and build Nextflow
+        if: steps.cache-nextflow.outputs.cache-hit != 'true'
         run: |
+          git clone --depth 1 https://github.com/nextflow-io/nextflow.git nextflow-src
           cd nextflow-src
           make pack
+
           # Create nextflow alias (binary has versioned name like nextflow-X.Y.Z-dist)
-          ln -s nextflow-*-dist build/releases/nextflow
+          ln -s build/releases/nextflow-*-dist build/releases/nextflow
 
       - name: Add Nextflow to PATH
         run: echo "${{ github.workspace }}/nextflow-src/build/releases" >> $GITHUB_PATH
