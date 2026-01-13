@@ -25,8 +25,8 @@ console = Console()
 
 
 def _sort_results(results: list[dict]) -> list[dict]:
-    """Sort results by parse_error last, then errors (ascending), then warnings (ascending)."""
-    return sorted(results, key=lambda x: (x.get("parse_error", False), x["errors"], x["warnings"]))
+    """Sort results by parse_error first, then errors (descending), then warnings (descending)."""
+    return sorted(results, key=lambda x: (not x.get("parse_error", False), -x["errors"], -x["warnings"]))
 
 
 def update_pipelines_json() -> None:
@@ -350,11 +350,23 @@ def generate_readme(results: list[dict], include_chart: bool = False, nextflow_v
     parse_error_count = sum(1 for r in results if r.get("parse_error", False))
     total_errors = sum(r["errors"] for r in valid_results)
     total_warnings = sum(r["warnings"] for r in valid_results)
+    zero_error_count = sum(1 for r in valid_results if r["errors"] == 0)
+    zero_error_percentage = (zero_error_count / len(results) * 100) if results else 0
 
     lines = [
         "# nf-core Strict Syntax Health Report",
         "",
-        "This repository tracks the health of nf-core pipelines with respect to Nextflow's strict syntax linting.",
+        "This repository tracks the health of nf-core pipelines with respect to Nextflow's "
+        "[strict syntax](https://www.nextflow.io/docs/latest/strict-syntax.html) linting. "
+        "The documentation describes the differences from standard Nextflow syntax "
+        "and includes many examples to help with migration and fixing errors.",
+        "",
+        "Strict syntax is backwards compatible with existing Nextflow code, "
+        "but enforces stricter rules to catch common errors and improve code quality. "
+        "The goal is for all nf-core pipelines to run without errors using strict syntax. "
+        "See the [nf-core blog post](https://nf-co.re/blog/2025/nextflow_syntax_nf-core_roadmap) "
+        "for details on the migration timeline - fixing all errors from `nextflow lint` "
+        "will be a requirement by early spring 2026.",
         "",
         f"**Last updated:** {now}",
         "",
@@ -362,6 +374,8 @@ def generate_readme(results: list[dict], include_chart: bool = False, nextflow_v
         "",
         f"**Total:** {parse_error_count} parse errors, {total_errors} errors, "
         f"{total_warnings} warnings across {len(results)} pipelines",
+        "",
+        f"**Zero errors:** {zero_error_count} pipelines ({zero_error_percentage:.1f}%)",
         "",
     ]
 
@@ -399,12 +413,14 @@ def generate_readme(results: list[dict], include_chart: bool = False, nextflow_v
             parse_error_str = "Yes"
             error_str = "-"
             warning_str = "-"
+            status_emoji = ":x:"
         else:
             parse_error_str = "No"
             error_str = str(errors)
             warning_str = str(warnings)
+            status_emoji = ":white_check_mark:" if errors == 0 else ":x:"
 
-        name_link = f"[{result['name']}]({result['html_url']})"
+        name_link = f"{status_emoji} [{result['name']}]({result['html_url']})"
         lint_file_link = f"[View]({LINT_RESULTS_DIR}/{result['name']}_lint.txt)"
         lines.append(f"| {name_link} | {parse_error_str} | {error_str} | {warning_str} | {lint_file_link} |")
 
@@ -419,7 +435,24 @@ def generate_readme(results: list[dict], include_chart: bool = False, nextflow_v
             "- **Parse errors** indicate pipelines where `nextflow lint` could not run at all, "
             "typically due to syntax errors that prevent Nextflow from parsing the pipeline code",
             "- **Errors** indicate syntax issues that will cause problems in future Nextflow versions",
-            "- **Warnings** indicate deprecated patterns that should be updated",
+            "- **Warnings** indicate deprecated patterns that should be updated, "
+            "but having warnings is fine (though it's nice to fix those as well if possible)",
+            "",
+            "## Running Locally",
+            "",
+            "You can run `nextflow lint` on your own pipeline to check for strict syntax issues:",
+            "",
+            "```bash",
+            "nextflow lint .",
+            "```",
+            "",
+            "See the [strict syntax documentation](https://www.nextflow.io/docs/latest/strict-syntax.html) "
+            "for more information about the rules being checked.",
+            "",
+            "## Getting Help",
+            "",
+            "If you need help fixing strict syntax errors in your pipeline, "
+            "the [Nextflow community forum](https://community.seqera.io/) is a great place to ask questions.",
             "",
         ]
     )
