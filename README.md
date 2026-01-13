@@ -1,8 +1,8 @@
 # nf-core Strict Syntax Health Report
 
-This repository tracks the health of nf-core pipelines with respect to Nextflow's [strict syntax](https://www.nextflow.io/docs/latest/strict-syntax.html) linting.
+This repository tracks the health of nf-core pipelines with respect to Nextflow's [strict syntax](https://www.nextflow.io/docs/latest/strict-syntax.html) linting. The documentation describes the differences from standard Nextflow syntax and includes many examples to help with migration and fixing errors.
 
-Strict syntax is backwards compatible with existing Nextflow code, but enforces stricter rules to catch common errors and improve code quality. The goal is for all nf-core pipelines to run without errors using strict syntax.
+Strict syntax is backwards compatible with existing Nextflow code, but enforces stricter rules to catch common errors and improve code quality. The goal is for all nf-core pipelines to run without errors using strict syntax. See the [nf-core blog post](https://nf-co.re/blog/2025/nextflow_syntax_nf-core_roadmap) for details on the migration timeline - fixing all errors from `nextflow lint` will be a requirement by early spring 2026.
 
 **Last updated:** 2026-01-13 05:26:50 UTC
 
@@ -163,7 +163,7 @@ The linting checks for strict syntax compliance in Nextflow DSL2 code.
 
 - **Parse errors** indicate pipelines where `nextflow lint` could not run at all, typically due to syntax errors that prevent Nextflow from parsing the pipeline code
 - **Errors** indicate syntax issues that will cause problems in future Nextflow versions
-- **Warnings** indicate deprecated patterns that should be updated
+- **Warnings** indicate deprecated patterns that should be updated, but having warnings is fine (though it's nice to fix those as well if possible)
 
 ## Running Locally
 
@@ -171,12 +171,6 @@ You can run `nextflow lint` on your own pipeline to check for strict syntax issu
 
 ```bash
 nextflow lint .
-```
-
-For JSON output that can be parsed programmatically:
-
-```bash
-nextflow lint . -o json
 ```
 
 See the [strict syntax documentation](https://www.nextflow.io/docs/latest/strict-syntax.html) for more information about the rules being checked.
