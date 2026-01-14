@@ -31,5 +31,16 @@
     "warnings_zero": 6,
     "warnings_low": 22,
     "warnings_high": 97
+  },
+  {
+    "date": "2026-01-14",
+    "total_pipelines": 129,
+    "parse_errors": 4,
+    "errors_zero": 14,
+    "errors_low": 12,
+    "errors_high": 99,
+    "warnings_zero": 6,
+    "warnings_low": 22,
+    "warnings_high": 97
   }
 ]
