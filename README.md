@@ -177,7 +177,8 @@ You can run `nextflow lint` on your own pipeline to check for strict syntax issu
 nextflow lint .
 ```
 
-> **Note:** Until [this fix](https://github.com/nextflow-io/nextflow/pull/6716) is included in a Nextflow edge release, you may need to exclude nf-test files manually:
+> [!NOTE]
+> Until [this fix](https://github.com/nextflow-io/nextflow/pull/6716) is included in a Nextflow edge release, you may need to exclude nf-test files manually:
 >
 > ```bash
 > nextflow lint . -exclude ".git,.nf-test,nf-test.config"
