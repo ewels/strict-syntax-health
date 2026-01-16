@@ -1252,8 +1252,18 @@ def _generate_results_section(
     type_singular: str,
     lint_results_dir: Path,
     include_charts: bool,
+    show_only_errors: bool = False,
 ) -> list[str]:
-    """Generate a results section for a specific type (pipelines, modules, subworkflows)."""
+    """Generate a results section for a specific type (pipelines, modules, subworkflows).
+
+    Args:
+        results: List of lint results
+        type_name: Type name (pipelines, modules, subworkflows)
+        type_singular: Singular form (pipeline, module, subworkflow)
+        lint_results_dir: Path to lint results directory
+        include_charts: Whether to include chart images
+        show_only_errors: If True, only show items with errors in the table (for modules/subworkflows)
+    """
     if not results:
         return []
 
@@ -1287,18 +1297,28 @@ def _generate_results_section(
             ]
         )
 
+    # Filter results for table display if show_only_errors is True
+    if show_only_errors:
+        table_results = [r for r in sorted_results if r.get("parse_error", False) or r["errors"] > 0]
+        table_count = len(table_results)
+        summary_text = f"{type_singular.title()} Results ({table_count} {type_name} with errors)"
+    else:
+        table_results = sorted_results
+        table_count = len(results)
+        summary_text = f"{type_singular.title()} Results ({table_count} {type_name})"
+
     # Results table in a collapsible details section
     lines.extend(
         [
             "<details>",
-            f"<summary>{type_singular.title()} Results ({len(results)} {type_name})</summary>",
+            f"<summary>{summary_text}</summary>",
             "",
             f"| {type_singular.title()} | Parse Error | Errors | Warnings | Lint Output |",
             "|----------|:-----------:|-------:|---------:|:-----------:|",
         ]
     )
 
-    for result in sorted_results:
+    for result in table_results:
         errors = result["errors"]
         warnings = result["warnings"]
         parse_error = result.get("parse_error", False)
@@ -1317,6 +1337,17 @@ def _generate_results_section(
         name_link = f"{status_emoji} [{result['name']}]({result['html_url']})"
         lint_file_link = f"[View]({lint_results_dir}/{result['name']}_lint.md)"
         lines.append(f"| {name_link} | {parse_error_str} | {error_str} | {warning_str} | {lint_file_link} |")
+
+    # Add note about hidden zero-error items if filtering
+    if show_only_errors and zero_error_count > 0:
+        lines.extend(
+            [
+                "",
+                f"_{type_name.title()} with zero errors are not shown above ({zero_error_count} {type_name}). "
+                f"They may still have warnings. See the [{type_name} results directory]({lint_results_dir}/) "
+                "for all lint outputs._",
+            ]
+        )
 
     lines.extend(
         [
@@ -1363,6 +1394,7 @@ def generate_readme(
     ]
 
     # Add sections for each type
+    # Pipelines show all results; modules/subworkflows only show items with errors to reduce README size
     if pipeline_results:
         lines.extend(
             _generate_results_section(
@@ -1372,13 +1404,20 @@ def generate_readme(
 
     if module_results:
         lines.extend(
-            _generate_results_section(module_results, "modules", "module", MODULES_LINT_RESULTS_DIR, include_charts)
+            _generate_results_section(
+                module_results, "modules", "module", MODULES_LINT_RESULTS_DIR, include_charts, show_only_errors=True
+            )
         )
 
     if subworkflow_results:
         lines.extend(
             _generate_results_section(
-                subworkflow_results, "subworkflows", "subworkflow", SUBWORKFLOWS_LINT_RESULTS_DIR, include_charts
+                subworkflow_results,
+                "subworkflows",
+                "subworkflow",
+                SUBWORKFLOWS_LINT_RESULTS_DIR,
+                include_charts,
+                show_only_errors=True,
             )
         )
 
