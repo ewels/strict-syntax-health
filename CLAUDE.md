@@ -24,9 +24,19 @@ strict-syntax-health --update-readme
 # Lint specific pipeline(s) only
 strict-syntax-health -p demo -p rnaseq
 
+# Lint specific module(s) or subworkflow(s)
+strict-syntax-health -m bwa_mem -m samtools_sort
+strict-syntax-health -s bam_sort_stats_samtools
+
 # Skip specific types
 strict-syntax-health --skip-modules --skip-subworkflows  # Only lint pipelines
 strict-syntax-health --skip-pipelines                     # Only lint modules/subworkflows
+
+# Regenerate charts/README from existing results (no linting)
+strict-syntax-health --generate-charts-only --update-readme
+
+# Ignore cache and re-lint everything
+strict-syntax-health --no-cache
 
 # Run pre-commit hooks (uses prek instead of pre-commit)
 prek run --all-files
@@ -73,6 +83,13 @@ lint_results/
 
 - **Nextflow**: Must be installed and available on PATH. In CI, it's built from the master branch to get latest lint features.
 - **Git**: Required for cloning pipelines and nf-core/modules
+
+## Caching
+
+The tool uses commit-based caching to skip unchanged repositories:
+- Pipeline results are cached by git commit hash; unchanged pipelines are skipped
+- Module/subworkflow results share a single cache keyed to the nf-core/modules repo commit
+- Use `--no-cache` to force re-linting everything
 
 ## Code Style
 
