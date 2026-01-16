@@ -32,6 +32,7 @@ README_PATH = Path("README.md")
 PIPELINES_LINT_RESULTS_DIR = LINT_RESULTS_DIR / "pipeline-results"
 MODULES_LINT_RESULTS_DIR = LINT_RESULTS_DIR / "module-results"
 SUBWORKFLOWS_LINT_RESULTS_DIR = LINT_RESULTS_DIR / "subworkflow-results"
+PRINTS_HELP_RESULTS_DIR = LINT_RESULTS_DIR / "prints-help-results"
 
 console = Console()
 
@@ -579,30 +580,46 @@ def lint_pipeline(repo_path: Path) -> dict:
     return lint_component(repo_path)
 
 
-def test_prints_help(repo_path: Path) -> bool:
+def test_prints_help(repo_path: Path, name: str) -> bool:
     """Test if a pipeline can print help using the v2 syntax parser.
 
     Runs: NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
     Args:
         repo_path: Path to the cloned pipeline repository.
+        name: Pipeline name (used for saving output file).
 
     Returns:
         True if the command succeeds (exit code 0), False otherwise.
     """
+    PRINTS_HELP_RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+    output_file = PRINTS_HELP_RESULTS_DIR / f"{name}_help.txt"
+
     try:
         env = {**os.environ, "NXF_SYNTAX_PARSER": "v2"}
+        # Use stderr=STDOUT to interleave stdout and stderr as they would appear in a terminal
         result = subprocess.run(
             ["nextflow", "run", ".", "--help"],
             cwd=repo_path,
-            capture_output=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
             text=True,
             timeout=120,
             env=env,
         )
+
+        # Save combined output to file
+        output_content = f"$ NXF_SYNTAX_PARSER=v2 nextflow run . --help\n\n{result.stdout}"
+        output_file.write_text(output_content)
+
         return result.returncode == 0
-    except (subprocess.TimeoutExpired, Exception) as e:
+    except subprocess.TimeoutExpired:
+        console.print("[dim]  --help test timed out[/dim]")
+        output_file.write_text("$ NXF_SYNTAX_PARSER=v2 nextflow run . --help\n\nError: Timeout after 120s\n")
+        return False
+    except Exception as e:
         console.print(f"[dim]  --help test failed: {e}[/dim]")
+        output_file.write_text(f"$ NXF_SYNTAX_PARSER=v2 nextflow run . --help\n\nError: {e}\n")
         return False
 
 
@@ -704,7 +721,7 @@ def run_pipeline_lint(pipelines: list[dict], no_cache: bool = False) -> list[dic
             prints_help = None
             if not parse_error and error_count == 0:
                 console.print("  Testing --help with v2 parser...")
-                prints_help = test_prints_help(repo_path)
+                prints_help = test_prints_help(repo_path, name)
                 if prints_help:
                     console.print("  [green]--help test passed[/green]")
                 else:
