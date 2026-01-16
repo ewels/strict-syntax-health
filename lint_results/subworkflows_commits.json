@@ -1,0 +1,513 @@
+{
+  "_repo_commit": "a46713779030a5f508117080cbf4b693dd4c6e33",
+  "abundance_differential_filter": {
+    "errors": 0,
+    "warnings": 16,
+    "parse_error": false
+  },
+  "archive_extract": {
+    "errors": 0,
+    "warnings": 2,
+    "parse_error": false
+  },
+  "bam_cnv_wisecondorx": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_create_som_pon_gatk": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "bam_dedup_stats_samtools_umicollapse": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_dedup_stats_samtools_umitools": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_dedup_umi": {
+    "errors": 0,
+    "warnings": 2,
+    "parse_error": false
+  },
+  "bam_docounts_contamination_angsd": {
+    "errors": 0,
+    "warnings": 2,
+    "parse_error": false
+  },
+  "bam_impute_quilt": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "bam_impute_stitch": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "bam_markduplicates_picard": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_markduplicates_samtools": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_methyldackel": {
+    "errors": 0,
+    "warnings": 8,
+    "parse_error": false
+  },
+  "bam_ngscheckmate": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "bam_qc_picard": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "bam_rseqc": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "bam_sort_stats_samtools": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_split_by_region": {
+    "errors": 1,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "bam_stats_mirna_mirtop": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_stats_samtools": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_stringtie_merge": {
+    "errors": 0,
+    "warnings": 3,
+    "parse_error": false
+  },
+  "bam_subsampledepth_samtools": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_taps_conversion": {
+    "errors": 0,
+    "warnings": 5,
+    "parse_error": false
+  },
+  "bam_tumor_normal_somatic_variant_calling_gatk": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_tumor_normal_somatic_variant_calling_strelka": {
+    "errors": 0,
+    "warnings": 6,
+    "parse_error": false
+  },
+  "bam_tumor_only_somatic_variant_calling_gatk": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_variant_calling_sort_freebayes_bcftools": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bam_variant_demix_boot_freyja": {
+    "errors": 0,
+    "warnings": 4,
+    "parse_error": false
+  },
+  "bam_vcf_impute_glimpse2": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "bcl_demultiplex": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "bed_scatter_bedtools": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "bedgraph_bedclip_bedgraphtobigwig": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "deepvariant": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "dia_proteomics_analysis": {
+    "errors": 1,
+    "warnings": 7,
+    "parse_error": false
+  },
+  "differential_functional_enrichment": {
+    "errors": 0,
+    "warnings": 26,
+    "parse_error": false
+  },
+  "faa_seqfu_seqkit": {
+    "errors": 0,
+    "warnings": 2,
+    "parse_error": false
+  },
+  "fasta_binning_concoct": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fasta_build_add_kraken2": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "fasta_build_add_kraken2_bracken": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "fasta_clean_fcs": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fasta_explore_search_plot_tidk": {
+    "errors": 0,
+    "warnings": 9,
+    "parse_error": false
+  },
+  "fasta_gxf_busco_plot": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "fasta_hmmsearch_rank_fastas": {
+    "errors": 0,
+    "warnings": 15,
+    "parse_error": false
+  },
+  "fasta_index_bismark_bwameth": {
+    "errors": 0,
+    "warnings": 3,
+    "parse_error": false
+  },
+  "fasta_index_dna": {
+    "errors": 1,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "fasta_index_methylseq": {
+    "errors": 0,
+    "warnings": 4,
+    "parse_error": false
+  },
+  "fasta_newick_epang_gappa": {
+    "errors": 0,
+    "warnings": 6,
+    "parse_error": false
+  },
+  "fasta_vclust_prefilter_align_cluster": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_align_bamcmp_bwa": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_align_bowtie2": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_align_bwa": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_align_bwaaln": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_align_chromap": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_align_dedup_bismark": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "fastq_align_dedup_bwamem": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "fastq_align_dedup_bwameth": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "fastq_align_dna": {
+    "errors": 0,
+    "warnings": 4,
+    "parse_error": false
+  },
+  "fastq_align_hisat2": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_align_mapad": {
+    "errors": 0,
+    "warnings": 2,
+    "parse_error": false
+  },
+  "fastq_align_star": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_contam_seqtk_kraken": {
+    "errors": 0,
+    "warnings": 2,
+    "parse_error": false
+  },
+  "fastq_create_umi_consensus_fgbio": {
+    "errors": 0,
+    "warnings": 3,
+    "parse_error": false
+  },
+  "fastq_decontaminate_deacon_hostile": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "fastq_download_prefetch_fasterqdump_sratools": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_extract_kraken_krakentools": {
+    "errors": 0,
+    "warnings": 2,
+    "parse_error": false
+  },
+  "fastq_fastqc_umitools_fastp": {
+    "errors": 0,
+    "warnings": 16,
+    "parse_error": false
+  },
+  "fastq_fastqc_umitools_trimgalore": {
+    "errors": 1,
+    "warnings": 9,
+    "parse_error": false
+  },
+  "fastq_fetch_clean_hostile": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_find_mirna_mirdeep2": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_index_filter_deacon": {
+    "errors": 0,
+    "warnings": 3,
+    "parse_error": false
+  },
+  "fastq_ngscheckmate": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "fastq_preprocess_seqkit": {
+    "errors": 0,
+    "warnings": 2,
+    "parse_error": false
+  },
+  "fastq_qc_stats": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "fastq_qc_trim_filter_setstrandedness": {
+    "errors": 0,
+    "warnings": 15,
+    "parse_error": false
+  },
+  "fastq_remove_rrna": {
+    "errors": 0,
+    "warnings": 7,
+    "parse_error": false
+  },
+  "fastq_removeadapters_merge": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "fastq_sanitise_seqkit": {
+    "errors": 0,
+    "warnings": 2,
+    "parse_error": false
+  },
+  "fastq_subsample_fq_salmon": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "fastq_taxonomic_profile_metaphlan": {
+    "errors": 4,
+    "warnings": 3,
+    "parse_error": false
+  },
+  "fastq_trim_fastp_fastqc": {
+    "errors": 0,
+    "warnings": 11,
+    "parse_error": false
+  },
+  "h5ad_removebackground_barcodes_cellbender_anndata": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "homer_groseq": {
+    "errors": 0,
+    "warnings": 3,
+    "parse_error": false
+  },
+  "mafft_align": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "mmseqs_contig_taxonomy": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "mmseqs_fasta_cluster": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "quantify_pseudo_alignment": {
+    "errors": 0,
+    "warnings": 10,
+    "parse_error": false
+  },
+  "tiff_segmentation_vpt": {
+    "errors": 0,
+    "warnings": 3,
+    "parse_error": false
+  },
+  "utils_nextflow_pipeline": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "utils_nfcore_pipeline": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "utils_nfschema_plugin": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "utils_nfvalidation_plugin": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "utils_references": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "vcf_annotate_ensemblvep": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "vcf_annotate_ensemblvep_snpeff": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "vcf_annotate_snpeff": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "vcf_extract_relate_somalier": {
+    "errors": 0,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "vcf_filter_bcftools_ensemblvep": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "vcf_gather_bcftools": {
+    "errors": 1,
+    "warnings": 1,
+    "parse_error": false
+  },
+  "vcf_impute_beagle5": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "vcf_impute_glimpse": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "vcf_impute_minimac4": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "vcf_phase_shapeit5": {
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  }
+}

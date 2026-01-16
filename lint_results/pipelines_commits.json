@@ -4,5 +4,773 @@
     "errors": 6,
     "warnings": 17,
     "parse_error": false
+  },
+  "abotyper": {
+    "commit": "548da4bbb68badec7f538208410925acb2122c7e",
+    "errors": 26,
+    "warnings": 64,
+    "parse_error": false
+  },
+  "airrflow": {
+    "commit": "5edeb68336e6f05c117bd432c4f6e97b4ba3dad1",
+    "errors": 151,
+    "warnings": 141,
+    "parse_error": false
+  },
+  "alleleexpression": {
+    "commit": "862bd3453274865736c12ccbb78bf7247827174e",
+    "errors": 0,
+    "warnings": 20,
+    "parse_error": false
+  },
+  "ampliseq": {
+    "commit": "d07c2e0822fb282ba42d0465e4c9404c2b8b903d",
+    "errors": 4,
+    "warnings": 148,
+    "parse_error": false
+  },
+  "atacseq": {
+    "commit": "c7b9e7b8f4d47ae52590925be79fe8df897885a9",
+    "errors": 56,
+    "warnings": 205,
+    "parse_error": false
+  },
+  "bacass": {
+    "commit": "d46987db728104ca9d2b7f985319671ba7943fc7",
+    "errors": 27,
+    "warnings": 131,
+    "parse_error": false
+  },
+  "bactmap": {
+    "commit": "c3051a061f8787d44659f8c85fb0446bdfe86d20",
+    "errors": 27,
+    "warnings": 64,
+    "parse_error": false
+  },
+  "bamtofastq": {
+    "commit": "f16b1c2d4a248f3a6dff742eb0efc8cf7513def2",
+    "errors": 0,
+    "warnings": 21,
+    "parse_error": false
+  },
+  "cageseq": {
+    "commit": "0e9e11e574331a3752f48bfe5d1eee68551b7815",
+    "errors": 62,
+    "warnings": 69,
+    "parse_error": false
+  },
+  "callingcards": {
+    "commit": "649f56c01b44fe26c174fd901a9c79be15e4be00",
+    "errors": 41,
+    "warnings": 168,
+    "parse_error": false
+  },
+  "cellpainting": {
+    "commit": "52532241e8fdcc61db63ffc642d5b246c29f359f",
+    "errors": 6,
+    "warnings": 35,
+    "parse_error": false
+  },
+  "chipseq": {
+    "commit": "3d925959b9b74162343682d91a0422262e852170",
+    "errors": 47,
+    "warnings": 181,
+    "parse_error": false
+  },
+  "circdna": {
+    "commit": "20e8d761f6f2015e7b2f7ddf98c4a3495d1eab51",
+    "errors": 38,
+    "warnings": 30,
+    "parse_error": false
+  },
+  "circrna": {
+    "commit": "06b806093a9bb74dd7b60ace329678e544eb114e",
+    "errors": 14,
+    "warnings": 157,
+    "parse_error": false
+  },
+  "clipseq": {
+    "commit": "ed1f64863be8cf400b65ffc767ce1e90275c0cea",
+    "errors": 15,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "coproid": {
+    "commit": "9cb20573e8240db597dbd7f5d8a0dd31f1ec5dc6",
+    "errors": 38,
+    "warnings": 58,
+    "parse_error": false
+  },
+  "createpanelrefs": {
+    "commit": "ab14ab0ba9138ca8cc43fde611b5b02c48364c2c",
+    "errors": 0,
+    "warnings": 15,
+    "parse_error": false
+  },
+  "createtaxdb": {
+    "commit": "ccf67a2b3cf8cf64630281df4cdb34f410bd9cc0",
+    "errors": 0,
+    "warnings": 33,
+    "parse_error": false
+  },
+  "crisprseq": {
+    "commit": "7d8ed7651afa8045b695fbdcad7b02bc9de77d72",
+    "errors": 13,
+    "warnings": 45,
+    "parse_error": false
+  },
+  "cutandrun": {
+    "commit": "dcaf19ac1bbd26daf321289a7ea6e1be24c19ddc",
+    "errors": 17,
+    "warnings": 152,
+    "parse_error": false
+  },
+  "datasync": {
+    "commit": "daa8765856886120b6fb98612a8afe3d2d48d239",
+    "errors": 19,
+    "warnings": 20,
+    "parse_error": false
+  },
+  "deepmodeloptim": {
+    "commit": "151accd47c04e24cde6fdefc7aa0e371b9ab157a",
+    "errors": 10,
+    "warnings": 49,
+    "parse_error": false
+  },
+  "deepmutscan": {
+    "commit": "e7a21ec8fd0a30e9d8d9839f948eaf8f482c28b7",
+    "errors": 121,
+    "warnings": 118,
+    "parse_error": false
+  },
+  "demultiplex": {
+    "commit": "f64a19bcd9ddc093cf34d063a6281ecbd0913c72",
+    "errors": 54,
+    "warnings": 67,
+    "parse_error": false
+  },
+  "denovotranscript": {
+    "commit": "c5f4e32a1c444762e45bc8a2d69d21af4d91dd54",
+    "errors": 31,
+    "warnings": 51,
+    "parse_error": false
+  },
+  "detaxizer": {
+    "commit": "e352a73bf1d8b3d0fb884aa2baf15dc29f43775e",
+    "errors": 13,
+    "warnings": 61,
+    "parse_error": false
+  },
+  "diaproteomics": {
+    "commit": "92314aba5cc590906a4e4616be55781a1dd4d530",
+    "errors": 16,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "differentialabundance": {
+    "commit": "2bbd2c171061147101d279303be317033c639dff",
+    "errors": 14,
+    "warnings": 50,
+    "parse_error": false
+  },
+  "diseasemodulediscovery": {
+    "commit": "776ac36b571cda533fd84161ce8c4b32d18ec870",
+    "errors": 69,
+    "warnings": 80,
+    "parse_error": false
+  },
+  "drop": {
+    "commit": "efe9ba2887c33e07c5b65e82e9ca40e1505c4193",
+    "errors": 12,
+    "warnings": 77,
+    "parse_error": false
+  },
+  "drugresponseeval": {
+    "commit": "e016cb919402fb1c47a9c1d19338d2126fb789e0",
+    "errors": 7,
+    "warnings": 29,
+    "parse_error": false
+  },
+  "dualrnaseq": {
+    "commit": "df992a7516a2018b7bffefd069c21b2ff956d404",
+    "errors": 2,
+    "warnings": 48,
+    "parse_error": false
+  },
+  "eager": {
+    "commit": "52da7b420a47b3703cc1bf12941409ad9ab61455",
+    "errors": 121,
+    "warnings": 380,
+    "parse_error": false
+  },
+  "epitopeprediction": {
+    "commit": "ba00f34e52645ca888b2a9507f2f8901058a1fbc",
+    "errors": 20,
+    "warnings": 22,
+    "parse_error": false
+  },
+  "evexplorer": {
+    "commit": "f446969e762a9f7398842d38952207e71991aaad",
+    "errors": 75,
+    "warnings": 53,
+    "parse_error": false
+  },
+  "fastqrepair": {
+    "commit": "7282b520275d81f6400b798059e6dea7621c1f1a",
+    "errors": 9,
+    "warnings": 32,
+    "parse_error": false
+  },
+  "fastquorum": {
+    "commit": "3860dc7510a0113b7941f66eb2d31ba073f72a4c",
+    "errors": 6,
+    "warnings": 28,
+    "parse_error": false
+  },
+  "fetchngs": {
+    "commit": "e8fa821ac1fcdd5176f1b9f874134f6d4043f818",
+    "errors": 6,
+    "warnings": 25,
+    "parse_error": false
+  },
+  "funcscan": {
+    "commit": "b0c0f23b88ac58ef9baae240c9ee91f9719cc15e",
+    "errors": 6,
+    "warnings": 115,
+    "parse_error": false
+  },
+  "genomeannotator": {
+    "commit": "cbd878f7997d367ccbe952648e114ad25962963f",
+    "errors": 85,
+    "warnings": 148,
+    "parse_error": false
+  },
+  "genomeassembler": {
+    "commit": "b017207723b90730c53a0c2b17a4a62170a2cfff",
+    "errors": 16,
+    "warnings": 92,
+    "parse_error": false
+  },
+  "genomeqc": {
+    "commit": "9ded6b4d4879ce66936442f05a425f1b7ceadfb3",
+    "errors": 34,
+    "warnings": 114,
+    "parse_error": false
+  },
+  "genomeskim": {
+    "commit": "0c969583df4a65daf62c2bfb6e2dcd9ead4e850a",
+    "errors": 40,
+    "warnings": 13,
+    "parse_error": false
+  },
+  "gwas": {
+    "commit": "177696a04444acc35056746916b38f3198989519",
+    "errors": 6,
+    "warnings": 16,
+    "parse_error": false
+  },
+  "hgtseq": {
+    "commit": "b2b144902c2ec92cfb2c898777b293093f0d4be5",
+    "errors": 10,
+    "warnings": 69,
+    "parse_error": false
+  },
+  "hic": {
+    "commit": "e2775312c11a5c6ac3c3c8ea5e7434be4c4f725d",
+    "errors": 27,
+    "warnings": 73,
+    "parse_error": false
+  },
+  "hicar": {
+    "commit": "d2d17a924e42d6f88640b79d48d8b332f33a953f",
+    "errors": 89,
+    "warnings": 122,
+    "parse_error": false
+  },
+  "hlatyping": {
+    "commit": "2d7d92f0e231a4091f76864d016f132766dd721f",
+    "errors": 17,
+    "warnings": 16,
+    "parse_error": false
+  },
+  "imcyto": {
+    "commit": "fac968e589a298cd5087cde684c46a1c1c292d0d",
+    "errors": 52,
+    "warnings": 14,
+    "parse_error": false
+  },
+  "isoseq": {
+    "commit": "d498566fe0d0f7c7112bc345b577dc4f5f2b8cd2",
+    "errors": 0,
+    "warnings": 31,
+    "parse_error": false
+  },
+  "kmermaid": {
+    "commit": "bc622c3e53831555fe5aaf83199a859fa445c510",
+    "errors": 6,
+    "warnings": 16,
+    "parse_error": false
+  },
+  "lncpipe": {
+    "commit": "39e1e236c8a6624912f8e74bbf3e817bd94b987c",
+    "errors": 40,
+    "warnings": 176,
+    "parse_error": false
+  },
+  "longraredisease": {
+    "commit": "421831f147842fa0cae00d4afde545b48a33689a",
+    "errors": 6,
+    "warnings": 121,
+    "parse_error": false
+  },
+  "lsmquant": {
+    "commit": "fbe561ad4f37535ae100a73cbd25cf4f2e1adb2b",
+    "errors": 6,
+    "warnings": 54,
+    "parse_error": false
+  },
+  "mag": {
+    "commit": "0a8102e5d3018d4e28524fc0aad46908a9d8d287",
+    "errors": 0,
+    "warnings": 35,
+    "parse_error": false
+  },
+  "magmap": {
+    "commit": "e045d60b44d72077604d3d74dd284eb4a81010cd",
+    "errors": 26,
+    "warnings": 70,
+    "parse_error": false
+  },
+  "marsseq": {
+    "commit": "c9a702eb7f4b8d25a6fe7a115078dd3ac211f346",
+    "errors": 37,
+    "warnings": 64,
+    "parse_error": false
+  },
+  "mcmicro": {
+    "commit": "995a0839543d9cdd4f64b15813484b8922a0d498",
+    "errors": 21,
+    "warnings": 48,
+    "parse_error": false
+  },
+  "meerpipe": {
+    "commit": "e0a9036a0398ff58b6dd646cc6310e818812d50f",
+    "errors": 44,
+    "warnings": 84,
+    "parse_error": false
+  },
+  "metaboigniter": {
+    "commit": "6239953247efcf1d7c69ed6986227584470bd8db",
+    "errors": 52,
+    "warnings": 123,
+    "parse_error": false
+  },
+  "metapep": {
+    "commit": "53b2765262589fa1545588c190b7ba8de90fda0a",
+    "errors": 11,
+    "warnings": 34,
+    "parse_error": false
+  },
+  "metatdenovo": {
+    "commit": "ed472fb6abf7987fcbc6314c1c8a9f49295ecd66",
+    "errors": 64,
+    "warnings": 157,
+    "parse_error": false
+  },
+  "methylarray": {
+    "commit": "a394b2dbb15d512ca317d53d7a7b1eef559884f1",
+    "errors": 3,
+    "warnings": 19,
+    "parse_error": false
+  },
+  "methylong": {
+    "commit": "7e9b9eea37fad003528372831920d667763b66e3",
+    "errors": 0,
+    "warnings": 81,
+    "parse_error": false
+  },
+  "methylseq": {
+    "commit": "c6babf7268a438bce8a5deabd5235e97547abc2b",
+    "errors": 3,
+    "warnings": 65,
+    "parse_error": false
+  },
+  "mhcquant": {
+    "commit": "af99b43ade98e46b0b34d7bf888f50cc03f8b91e",
+    "errors": 9,
+    "warnings": 60,
+    "parse_error": false
+  },
+  "mitodetect": {
+    "commit": "15a56a5f137e4c9094a9ab5a667199cd545a68ea",
+    "errors": 6,
+    "warnings": 16,
+    "parse_error": false
+  },
+  "mnaseseq": {
+    "commit": "b7c0d8a13111bebc995186f3217bd7d1b768594f",
+    "errors": 15,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "molkart": {
+    "commit": "101df3c477f0c801afd788808c1fdcf2ec4534a4",
+    "errors": 0,
+    "warnings": 63,
+    "parse_error": false
+  },
+  "multiplesequencealign": {
+    "commit": "67d7057a5b161cb647f257b20edc4d385be1cc12",
+    "errors": 31,
+    "warnings": 158,
+    "parse_error": false
+  },
+  "nanoseq": {
+    "commit": "b175040bc1bb03d675c982e15668ee073f241933",
+    "errors": 36,
+    "warnings": 43,
+    "parse_error": false
+  },
+  "nanostring": {
+    "commit": "361a1c7e4b64b45ebb806547d48b26ab912e718a",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "nascent": {
+    "commit": "8d094841b348aca2e857c9d40b4e0c8f5f8320ec",
+    "errors": 34,
+    "warnings": 162,
+    "parse_error": false
+  },
+  "omicsgenetraitassociation": {
+    "commit": "f64a3c7867ffe159a0f347d3b07d11c99ade49fb",
+    "errors": 44,
+    "warnings": 30,
+    "parse_error": false
+  },
+  "oncoanalyser": {
+    "commit": "d214385c35a72fad26c184254bafd1d2094368b7",
+    "errors": 305,
+    "warnings": 102,
+    "parse_error": false
+  },
+  "pacvar": {
+    "commit": "52947a41469d61929dc81622ac8480bed82a0468",
+    "errors": 12,
+    "warnings": 54,
+    "parse_error": false
+  },
+  "pairgenomealign": {
+    "commit": "bcc3f49a88db6672acd4ed4b83d1ab1f5aab1b79",
+    "errors": 2,
+    "warnings": 36,
+    "parse_error": false
+  },
+  "pangenome": {
+    "commit": "96b54b9e95932d38b8250a2aa2830d874866d76b",
+    "errors": 14,
+    "warnings": 63,
+    "parse_error": false
+  },
+  "panoramaseq": {
+    "commit": "1fd115aa36007efa1daf4c0e902d67089f3259a4",
+    "errors": 6,
+    "warnings": 16,
+    "parse_error": false
+  },
+  "pathogensurveillance": {
+    "commit": "d6f11d94e27b234076c1626a479dbf5b04cf97a8",
+    "errors": 40,
+    "warnings": 486,
+    "parse_error": false
+  },
+  "phageannotator": {
+    "commit": "129a138b32e88c3e9e43a46d8146f70d2061f67f",
+    "errors": 59,
+    "warnings": 98,
+    "parse_error": false
+  },
+  "phaseimpute": {
+    "commit": "28bef6a49739f68b3079abfc689e32bffe5fbc1b",
+    "errors": 1,
+    "warnings": 128,
+    "parse_error": false
+  },
+  "phyloplace": {
+    "commit": "374dcf211e508f749a56bf70639283b2fc2b0de2",
+    "errors": 17,
+    "warnings": 106,
+    "parse_error": false
+  },
+  "pixelator": {
+    "commit": "78f3fef38a1d87465e6c7d4b5797ce676d238b86",
+    "errors": 10,
+    "warnings": 65,
+    "parse_error": false
+  },
+  "proteinannotator": {
+    "commit": "cd6f6176f2a922c95f6b4987736a917a99dea2a3",
+    "errors": 0,
+    "warnings": 8,
+    "parse_error": false
+  },
+  "proteinfamilies": {
+    "commit": "6cd1787cade86e70dcf797d48dc5375389895200",
+    "errors": 10,
+    "warnings": 19,
+    "parse_error": false
+  },
+  "proteinfold": {
+    "commit": "47a503f23af3cde1917672f717f8713a1037f98c",
+    "errors": 0,
+    "warnings": 25,
+    "parse_error": false
+  },
+  "proteogenomicsdb": {
+    "commit": "e700d967253c5c80985fdcdc48e482dace2bb2d0",
+    "errors": 15,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "proteomicslfq": {
+    "commit": "69a0b9fc99bdc82faaae36f5e830dbfef52927b5",
+    "errors": 36,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "radseq": {
+    "commit": "26ff6763ac5d6e5d9306ed262efc8e002c08bb7f",
+    "errors": 45,
+    "warnings": 42,
+    "parse_error": false
+  },
+  "rangeland": {
+    "commit": "4965400fdee4fff78959ad1e5635f2747458efa9",
+    "errors": 21,
+    "warnings": 43,
+    "parse_error": false
+  },
+  "raredisease": {
+    "commit": "b9922bb345c1d8ab21ffd07b514131ed91a4a173",
+    "errors": 30,
+    "warnings": 55,
+    "parse_error": false
+  },
+  "rarevariantburden": {
+    "commit": "c9a26d02c3bf20207c17cd200c590b6092dfa20f",
+    "errors": 33,
+    "warnings": 22,
+    "parse_error": false
+  },
+  "readsimulator": {
+    "commit": "0594160e22d147aed283553c4fc06839914fa036",
+    "errors": 53,
+    "warnings": 49,
+    "parse_error": false
+  },
+  "references": {
+    "commit": "462662b7aa587db7af952eab36f9b016bd429539",
+    "errors": 0,
+    "warnings": 31,
+    "parse_error": false
+  },
+  "reportho": {
+    "commit": "de4ba462df58d43eb438ea529074519edbb9058f",
+    "errors": 2,
+    "warnings": 90,
+    "parse_error": false
+  },
+  "ribomsqc": {
+    "commit": "e2e62ccc1a7edbfc2ae3bc5674da362caaadd7aa",
+    "errors": 0,
+    "warnings": 27,
+    "parse_error": false
+  },
+  "riboseq": {
+    "commit": "9e21ee67cafa1225b672fd0312df141e3f68d54e",
+    "errors": 42,
+    "warnings": 195,
+    "parse_error": false
+  },
+  "rnadnavar": {
+    "commit": "26df4e3c87388298a607231049cf8f59433c97c9",
+    "errors": 31,
+    "warnings": 371,
+    "parse_error": false
+  },
+  "rnafusion": {
+    "commit": "92396571a0cf6006e1c470af9b2c6a70f45cca70",
+    "errors": 13,
+    "warnings": 116,
+    "parse_error": false
+  },
+  "rnaseq": {
+    "commit": "20fde25e67040b05c5b4691092c1b82526b0bf0b",
+    "errors": 89,
+    "warnings": 284,
+    "parse_error": false
+  },
+  "rnasplice": {
+    "commit": "6e7d805a412854d42985d4356f4e08c85a367387",
+    "errors": 49,
+    "warnings": 190,
+    "parse_error": false
+  },
+  "rnavar": {
+    "commit": "92a9008fada8f74309a201cff94720f042dd0088",
+    "errors": 0,
+    "warnings": 14,
+    "parse_error": false
+  },
+  "sammyseq": {
+    "commit": "ff3da4b7c7e312e117427761cc388b694eca3ef5",
+    "errors": 21,
+    "warnings": 148,
+    "parse_error": false
+  },
+  "sarek": {
+    "commit": "d628470dda0ccffe6652edc7dfc10be7a79e1445",
+    "errors": 152,
+    "warnings": 608,
+    "parse_error": false
+  },
+  "scdownstream": {
+    "commit": "566308ff6b643586c759f3a40142f46dbc85fd40",
+    "errors": 2,
+    "warnings": 30,
+    "parse_error": false
+  },
+  "scnanoseq": {
+    "commit": "fc8db61b7dc199816031909fe7f45c830e10caa8",
+    "errors": 74,
+    "warnings": 140,
+    "parse_error": false
+  },
+  "scrnaseq": {
+    "commit": "c756ae34fef782adcaa6b78321e62b19e7cafe43",
+    "errors": 22,
+    "warnings": 111,
+    "parse_error": false
+  },
+  "seqinspector": {
+    "commit": "a4ba47c71a2f15f92b340b37b2dd2358df54d0cc",
+    "errors": 1,
+    "warnings": 14,
+    "parse_error": false
+  },
+  "seqsubmit": {
+    "commit": "c87eec57fbde48a1e3f2515cfc93d13d58b8ca25",
+    "errors": 1,
+    "warnings": 32,
+    "parse_error": false
+  },
+  "slamseq": {
+    "commit": "c21d0faee30707ffe134f77e0b37887a1610503f",
+    "errors": 17,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "smrnaseq": {
+    "commit": "fecd58589285ff03ef8def981bcf32b11e312a55",
+    "errors": 11,
+    "warnings": 74,
+    "parse_error": false
+  },
+  "sopa": {
+    "commit": "84af361974a041638364e717bd3c263b0eb94d04",
+    "errors": 13,
+    "warnings": 17,
+    "parse_error": false
+  },
+  "spatialvi": {
+    "commit": "014d962031307eeb47739fe2b1f4d0079bec20db",
+    "errors": 14,
+    "warnings": 20,
+    "parse_error": false
+  },
+  "spatialxe": {
+    "commit": "b5d673fbed67cfc55247dcbc3ecf212162702352",
+    "errors": 0,
+    "warnings": 98,
+    "parse_error": false
+  },
+  "spinningjenny": {
+    "commit": "9bb174383c4abda8f432548a34d69cb7f587bb4c",
+    "errors": 50,
+    "warnings": 9,
+    "parse_error": false
+  },
+  "stableexpression": {
+    "commit": "964739725536e3555ca1782c93a2eee3f525bc9f",
+    "errors": 28,
+    "warnings": 36,
+    "parse_error": false
+  },
+  "taxprofiler": {
+    "commit": "e36fa8aaa8405d27aa3881315b8eac91f05e8670",
+    "errors": 0,
+    "warnings": 113,
+    "parse_error": false
+  },
+  "tbanalyzer": {
+    "commit": "47670645b33e632772efefb02423537212b4e016",
+    "errors": 14,
+    "warnings": 47,
+    "parse_error": false
+  },
+  "tfactivity": {
+    "commit": "32a583b1a784892934cf667395babfafc2674b38",
+    "errors": 6,
+    "warnings": 57,
+    "parse_error": false
+  },
+  "troughgraph": {
+    "commit": "01dcf009af22e83b4581ade40941480fc6abcb4d",
+    "errors": 6,
+    "warnings": 16,
+    "parse_error": false
+  },
+  "tumourevo": {
+    "commit": "05e44f3b4ee51278b2a5c11098f5edc7ded00485",
+    "errors": 9,
+    "warnings": 56,
+    "parse_error": false
+  },
+  "variantbenchmarking": {
+    "commit": "ce2fe242700cf96795b3d772498b4235c5a81bf1",
+    "errors": 12,
+    "warnings": 144,
+    "parse_error": false
+  },
+  "variantcatalogue": {
+    "commit": "46154522d37b22694edce7b2e75af11e1c28ca26",
+    "errors": 55,
+    "warnings": 48,
+    "parse_error": false
+  },
+  "variantprioritization": {
+    "commit": "e50ceed599c0949f8d9e2d05daa90a1c84aebe54",
+    "errors": 6,
+    "warnings": 14,
+    "parse_error": false
+  },
+  "viralintegration": {
+    "commit": "46ee6bf894a622d09d3799aa388bc590afda69fb",
+    "errors": 66,
+    "warnings": 13,
+    "parse_error": false
+  },
+  "viralmetagenome": {
+    "commit": "16ad15e5016eb7843fa239a1ed5bcb03a13e61c9",
+    "errors": 18,
+    "warnings": 207,
+    "parse_error": false
+  },
+  "viralrecon": {
+    "commit": "8afe522ee0f5ee778ea9e2f64e2a9f1ceea4a96f",
+    "errors": 43,
+    "warnings": 98,
+    "parse_error": false
   }
 }
