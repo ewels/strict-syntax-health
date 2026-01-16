@@ -1176,12 +1176,17 @@ def load_history() -> dict:
     }
 
 
-def _create_history_entry(results: list[dict]) -> dict:
-    """Create a history entry from results."""
+def _create_history_entry(results: list[dict], include_prints_help: bool = False) -> dict:
+    """Create a history entry from results.
+
+    Args:
+        results: List of lint results
+        include_prints_help: If True, include prints_help statistics (for pipelines only)
+    """
     valid_results = [r for r in results if not r.get("parse_error", False)]
     parse_error_results = [r for r in results if r.get("parse_error", False)]
 
-    return {
+    entry = {
         "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "total": len(results),
         "parse_errors": len(parse_error_results),
@@ -1192,6 +1197,14 @@ def _create_history_entry(results: list[dict]) -> dict:
         "warnings_low": sum(1 for r in valid_results if 0 < r["warnings"] <= 20),
         "warnings_high": sum(1 for r in valid_results if r["warnings"] > 20),
     }
+
+    if include_prints_help:
+        # Count prints_help results (only for pipelines with zero errors)
+        # prints_help is True/False/None - None means test wasn't run (has errors)
+        entry["prints_help_pass"] = sum(1 for r in valid_results if r.get("prints_help") is True)
+        entry["prints_help_fail"] = sum(1 for r in valid_results if r.get("prints_help") is False)
+
+    return entry
 
 
 def _update_history_for_type(history_list: list[dict], entry: dict) -> list[dict]:
@@ -1218,7 +1231,7 @@ def update_history(
 
     if pipeline_results is not None:
         pipelines_history = load_history_for_type("pipelines")
-        entry = _create_history_entry(pipeline_results)
+        entry = _create_history_entry(pipeline_results, include_prints_help=True)
         pipelines_history = _update_history_for_type(pipelines_history, entry)
         save_history_for_type("pipelines", pipelines_history)
         history["pipelines"] = pipelines_history
@@ -1289,14 +1302,37 @@ def generate_charts_for_type(history: list[dict], output_dir: Path, type_name: s
     dates = [h["date"] for h in history]
     y_label = f"Number of {type_name.title()}"
 
-    _create_stacked_chart(
-        dates,
-        [
+    # Build error chart series - pipelines include prints_help breakdown for zero-error items
+    if type_name == "pipelines":
+        # For pipelines, break down "No errors" into prints_help pass/fail
+        error_series = [
+            (
+                [h.get("prints_help_pass", 0) for h in history],
+                "No errors, prints help",
+                "#2ecc71",
+                "rgba(46, 204, 113, 0.7)",
+            ),
+            (
+                [h.get("prints_help_fail", 0) for h in history],
+                "No errors, help fails",
+                "#e67e22",
+                "rgba(230, 126, 34, 0.7)",
+            ),
+            ([h["errors_low"] for h in history], "1-5 errors", "#f39c12", "rgba(243, 156, 18, 0.7)"),
+            ([h["errors_high"] for h in history], ">5 errors", "#e74c3c", "rgba(231, 76, 60, 0.7)"),
+            ([h.get("parse_errors", 0) for h in history], "Parse errors", "#8e44ad", "rgba(142, 68, 173, 0.7)"),
+        ]
+    else:
+        error_series = [
             ([h["errors_zero"] for h in history], "No errors", "#2ecc71", "rgba(46, 204, 113, 0.7)"),
             ([h["errors_low"] for h in history], "1-5 errors", "#f39c12", "rgba(243, 156, 18, 0.7)"),
             ([h["errors_high"] for h in history], ">5 errors", "#e74c3c", "rgba(231, 76, 60, 0.7)"),
             ([h.get("parse_errors", 0) for h in history], "Parse errors", "#8e44ad", "rgba(142, 68, 173, 0.7)"),
-        ],
+        ]
+
+    _create_stacked_chart(
+        dates,
+        error_series,
         f"{type_name.title()} Errors Over Time",
         LINT_RESULTS_DIR / f"{type_name}_errors.png",
         y_label,

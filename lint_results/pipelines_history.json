@@ -8,7 +8,9 @@
     "errors_high": 103,
     "warnings_zero": 7,
     "warnings_low": 22,
-    "warnings_high": 100
+    "warnings_high": 100,
+    "prints_help_pass": 0,
+    "prints_help_fail": 16
   },
   {
     "date": "2026-01-16",
@@ -19,6 +21,8 @@
     "errors_high": 104,
     "warnings_zero": 7,
     "warnings_low": 22,
-    "warnings_high": 101
+    "warnings_high": 101,
+    "prints_help_pass": 0,
+    "prints_help_fail": 16
   }
 ]
