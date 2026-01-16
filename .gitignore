@@ -1,5 +1,6 @@
-# Cloned pipelines
+# Cloned repositories and downloaded data
 pipelines/
+modules/
 
 # Python
 __pycache__/

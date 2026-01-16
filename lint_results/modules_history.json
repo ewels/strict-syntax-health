@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-01-15",
+    "total": 1358,
+    "parse_errors": 0,
+    "errors_zero": 1288,
+    "errors_low": 66,
+    "errors_high": 4,
+    "warnings_zero": 901,
+    "warnings_low": 456,
+    "warnings_high": 1
+  },
+  {
+    "date": "2026-01-16",
+    "total": 1358,
+    "parse_errors": 0,
+    "errors_zero": 1288,
+    "errors_low": 66,
+    "errors_high": 4,
+    "warnings_zero": 901,
+    "warnings_low": 456,
+    "warnings_high": 1
+  }
+]
