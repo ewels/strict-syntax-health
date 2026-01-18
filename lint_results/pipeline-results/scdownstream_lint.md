@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-01-17T00:18:20.402207395Z
+- Generated: 2026-01-18T00:18:11.195467955Z
 - Nextflow version: 25.12.0-edge
-- Summary: 1 error, 30 warnings
+- Summary: 1 error, 24 warnings
 
 ## :x: Errors
 
@@ -14,13 +14,6 @@
   ```
 
 ## :warning: Warnings
-
-- Warning: `modules/local/adata/extend/main.nf:22:5`: Variable was declared but not used
-
-  ```nextflow
-      prefix = task.ext.prefix ?: "${meta.id}"
-      ^^^^^^
-  ```
 
 - Warning: `modules/local/adata/merge/main.nf:27:5`: Variable was declared but not used
 
@@ -43,20 +36,6 @@
       ^^^^^^^^^^
   ```
 
-- Warning: `modules/local/adata/prepcellxgene/main.nf:21:5`: Variable was declared but not used
-
-  ```nextflow
-      prefix = task.ext.prefix ?: "${meta.id}"
-      ^^^^^^
-  ```
-
-- Warning: `modules/local/adata/splitembeddings/main.nf:22:5`: Variable was declared but not used
-
-  ```nextflow
-      prefix = task.ext.prefix ?: "${meta.id}"
-      ^^^^^^
-  ```
-
 - Warning: `modules/local/adata/tords/main.nf:21:5`: Variable was declared but not used
 
   ```nextflow
@@ -69,13 +48,6 @@
   ```nextflow
       obs_key = meta.obs_key ?: "leiden"
       ^^^^^^^
-  ```
-
-- Warning: `modules/local/liana/rankaggregate/main.nf:23:5`: Variable was declared but not used
-
-  ```nextflow
-      prefix = task.ext.prefix ?: "${meta.id}"
-      ^^^^^^
   ```
 
 - Warning: `modules/local/scanpy/hvgs/main.nf:25:5`: Variable was declared but not used
@@ -92,25 +64,11 @@
       ^^^^^^^
   ```
 
-- Warning: `modules/local/scanpy/paga/main.nf:26:5`: Variable was declared but not used
-
-  ```nextflow
-      prefix = task.ext.prefix ?: "${meta.id}"
-      ^^^^^^
-  ```
-
 - Warning: `modules/local/scanpy/rankgenesgroups/main.nf:24:5`: Variable was declared but not used
 
   ```nextflow
       obs_key = meta.obs_key ?: "leiden"
       ^^^^^^^
-  ```
-
-- Warning: `modules/local/scanpy/rankgenesgroups/main.nf:25:5`: Variable was declared but not used
-
-  ```nextflow
-      prefix = task.ext.prefix ?: "${meta.id}"
-      ^^^^^^
   ```
 
 - Warning: `modules/local/scvitools/scanvi/main.nf:33:5`: Variable was declared but not used

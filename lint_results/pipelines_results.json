@@ -956,7 +956,7 @@
   "sarek": {
     "full_name": "nf-core/sarek",
     "html_url": "https://github.com/nf-core/sarek",
-    "commit": "d628470dda0ccffe6652edc7dfc10be7a79e1445",
+    "commit": "46f291028cc73914a6aa052a46092d75674454bc",
     "errors": 152,
     "warnings": 608,
     "parse_error": false,
@@ -965,9 +965,9 @@
   "scdownstream": {
     "full_name": "nf-core/scdownstream",
     "html_url": "https://github.com/nf-core/scdownstream",
-    "commit": "220de91ed1ce4f10a65c38521baaf90f3539aafc",
+    "commit": "40b00dfcca8e9822df88895389ebad965ee1b38b",
     "errors": 1,
-    "warnings": 30,
+    "warnings": 24,
     "parse_error": false,
     "prints_help": null
   },
