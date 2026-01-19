@@ -11,12 +11,12 @@ The goal is for all nf-core pipelines to run without errors using strict syntax.
 > See the [nf-core blog post](https://nf-co.re/blog/2025/nextflow_syntax_nf-core_roadmap) for details on the migration timeline.
 > **Fixing all errors from `nextflow lint` will be a requirement by early spring 2026.**
 
-- **Last updated:** 2026-01-18 00:19:18 UTC
+- **Last updated:** 2026-01-19 00:18:22 UTC
 - **Nextflow version:** 25.12.0-edge
 
 ## Pipelines
 
-- **Total:** 0 parse errors, 3650 errors, 10438 warnings across 130 pipelines
+- **Total:** 0 parse errors, 3650 errors, 10444 warnings across 130 pipelines
 - **Zero errors:** 16 pipelines (12.3%)
 
 |                    Errors                    |                     Warnings                     |
@@ -29,7 +29,7 @@ The goal is for all nf-core pipelines to run without errors using strict syntax.
 | Pipeline                                                                              | Parse Error | Errors | Warnings | Prints Help |                               Lint Output                               |                            Help Output                             |
 | ------------------------------------------------------------------------------------- | :---------: | -----: | -------: | :---------: | :---------------------------------------------------------------------: | :----------------------------------------------------------------: |
 | :x: [oncoanalyser](https://github.com/nf-core/oncoanalyser)                           |     No      |    305 |      102 |      -      |       [View](lint_results/pipeline-results/oncoanalyser_lint.md)        |                                 -                                  |
-| :x: [sarek](https://github.com/nf-core/sarek)                                         |     No      |    152 |      608 |      -      |           [View](lint_results/pipeline-results/sarek_lint.md)           |                                 -                                  |
+| :x: [sarek](https://github.com/nf-core/sarek)                                         |     No      |    152 |      614 |      -      |           [View](lint_results/pipeline-results/sarek_lint.md)           |                                 -                                  |
 | :x: [airrflow](https://github.com/nf-core/airrflow)                                   |     No      |    150 |      141 |      -      |         [View](lint_results/pipeline-results/airrflow_lint.md)          |                                 -                                  |
 | :x: [eager](https://github.com/nf-core/eager)                                         |     No      |    121 |      380 |      -      |           [View](lint_results/pipeline-results/eager_lint.md)           |                                 -                                  |
 | :x: [deepmutscan](https://github.com/nf-core/deepmutscan)                             |     No      |    121 |      118 |      -      |        [View](lint_results/pipeline-results/deepmutscan_lint.md)        |                                 -                                  |

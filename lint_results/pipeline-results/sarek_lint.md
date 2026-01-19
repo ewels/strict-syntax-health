@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-01-18T00:18:02.607593084Z
+- Generated: 2026-01-19T00:17:14.431378667Z
 - Nextflow version: 25.12.0-edge
-- Summary: 152 errors, 608 warnings
+- Summary: 152 errors, 614 warnings
 
 ## :x: Errors
 
@@ -433,56 +433,56 @@
                                   ^^^^^^^^^
   ```
 
-- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:96:29`: `cram` is already declared
+- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:98:29`: `cram` is already declared
 
   ```nextflow
               cram.map{ meta, cram, crai -> [ meta, [], cram ] },
                               ^^^^
   ```
 
-- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:125:29`: `cram` is already declared
+- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:127:29`: `cram` is already declared
 
   ```nextflow
               cram.map{ meta, cram, crai -> [ meta, cram, crai, [], [] ] },
                               ^^^^
   ```
 
-- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:179:38`: `fasta` is already declared
+- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:181:38`: `fasta` is already declared
 
   ```nextflow
                       fasta.map{ meta, fasta -> [ fasta ] },
                                        ^^^^^
   ```
 
-- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:180:42`: `fasta_fai` is already declared
+- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:182:42`: `fasta_fai` is already declared
 
   ```nextflow
                       fasta_fai.map{ meta, fasta_fai -> [ fasta_fai ] },
                                            ^^^^^^^^^
   ```
 
-- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:181:37`: `dict` is already declared
+- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:183:37`: `dict` is already declared
 
   ```nextflow
                       dict.map{ meta, dict -> [ dict ] },
                                       ^^^^
   ```
 
-- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:332:37`: `dict` is already declared
+- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:334:37`: `dict` is already declared
 
   ```nextflow
                       dict.map{ meta, dict -> [ dict ] },
                                       ^^^^
   ```
 
-- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:352:30`: `fasta` is already declared
+- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:354:30`: `fasta` is already declared
 
   ```nextflow
               fasta.map{ meta, fasta -> [ fasta ] },
                                ^^^^^
   ```
 
-- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:353:34`: `fasta_fai` is already declared
+- Error: `subworkflows/local/bam_variant_calling_germline_all/main.nf:355:34`: `fasta_fai` is already declared
 
   ```nextflow
               fasta_fai.map{ meta, fasta_fai -> [ fasta_fai ] },
@@ -2720,116 +2720,123 @@
 - Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:75:32`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
-      tbi_sentieon_dnascope    = Channel.empty()
+      tbi_mpileup              = Channel.empty()
                                  ^^^^^^^
   ```
 
 - Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:76:32`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
-      tbi_sentieon_haplotyper  = Channel.empty()
+      tbi_sentieon_dnascope    = Channel.empty()
                                  ^^^^^^^
   ```
 
 - Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:77:32`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
-      tbi_strelka              = Channel.empty()
+      tbi_sentieon_haplotyper  = Channel.empty()
                                  ^^^^^^^
   ```
 
 - Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:78:32`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
+      tbi_strelka              = Channel.empty()
+                                 ^^^^^^^
+  ```
+
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:79:32`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+
+  ```nextflow
       tbi_tiddit               = Channel.empty()
                                  ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:96:35`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:98:35`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               cram.map{ meta, cram, crai -> [ meta, [], cram ] },
                                     ^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:179:32`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:181:32`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
                       fasta.map{ meta, fasta -> [ fasta ] },
                                  ^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:180:36`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:182:36`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
                       fasta_fai.map{ meta, fasta_fai -> [ fasta_fai ] },
                                      ^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:181:31`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:183:31`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
                       dict.map{ meta, dict -> [ dict ] },
                                 ^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:241:9`: Variable was declared but not used
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:243:9`: Variable was declared but not used
 
   ```nextflow
           gvcf_tbi_sentieon_dnascope = BAM_VARIANT_CALLING_SENTIEON_DNASCOPE.out.gvcf_tbi
           ^^^^^^^^^^^^^^^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:301:9`: Variable was declared but not used
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:303:9`: Variable was declared but not used
 
   ```nextflow
           gvcf_tbi_sentieon_haplotyper = BAM_VARIANT_CALLING_SENTIEON_HAPLOTYPER.out.gvcf_tbi
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:330:32`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:332:32`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
                       fasta.map{ meta, it -> [ it ] },
                                  ^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:331:36`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:333:36`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
                       fasta_fai.map{ meta, it -> [ it ] },
                                      ^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:332:31`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:334:31`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
                       dict.map{ meta, dict -> [ dict ] },
                                 ^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:352:24`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:354:24`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               fasta.map{ meta, fasta -> [ fasta ] },
                          ^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:353:28`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:355:28`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               fasta_fai.map{ meta, fasta_fai -> [ fasta_fai ] },
                              ^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:376:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:378:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       vcf_all = Channel.empty().mix(
                 ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:388:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/bam_variant_calling_germline_all/main.nf:390:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       tbi_all = Channel.empty().mix(
@@ -3508,14 +3515,14 @@
                          ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_somatic_all/main.nf:288:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/bam_variant_calling_somatic_all/main.nf:289:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       vcf_all = Channel.empty()
                 ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_somatic_all/main.nf:299:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/bam_variant_calling_somatic_all/main.nf:300:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       tbi_all = Channel.empty()
@@ -3744,6 +3751,20 @@
   ```nextflow
       calculatecontamination_out_cont = Channel.empty()
                                         ^^^^^^^
+  ```
+
+- Warning: `subworkflows/local/bam_variant_calling_somatic_mutect2/main.nf:223:19`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+
+  ```nextflow
+          .unique { it[0] }
+                    ^^
+  ```
+
+- Warning: `subworkflows/local/bam_variant_calling_somatic_mutect2/main.nf:228:19`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+
+  ```nextflow
+          .unique { it[0] }
+                    ^^
   ```
 
 - Warning: `subworkflows/local/bam_variant_calling_somatic_strelka/main.nf:20:16`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
@@ -3998,14 +4019,14 @@
                        ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_tumor_only_all/main.nf:220:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/bam_variant_calling_tumor_only_all/main.nf:221:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       vcf_all = Channel.empty()
                 ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/bam_variant_calling_tumor_only_all/main.nf:231:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/bam_variant_calling_tumor_only_all/main.nf:232:15`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       tbi_all = Channel.empty()
@@ -4227,6 +4248,20 @@
   ```nextflow
       calculatecontamination_out_cont = Channel.empty()
                                         ^^^^^^^
+  ```
+
+- Warning: `subworkflows/local/bam_variant_calling_tumor_only_mutect2/main.nf:160:19`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+
+  ```nextflow
+          .unique { it[0] }
+                    ^^
+  ```
+
+- Warning: `subworkflows/local/bam_variant_calling_tumor_only_mutect2/main.nf:165:19`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+
+  ```nextflow
+          .unique { it[0] }
+                    ^^
   ```
 
 - Warning: `subworkflows/local/bam_variant_calling_tumor_only_tnscope/main.nf:22:16`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
@@ -4565,32 +4600,39 @@
              ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/post_variantcalling/main.nf:70:20`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/post_variantcalling/main.nf:84:20`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
           all_vcfs = Channel.empty().mix(germline_vcfs, tumor_only_vcfs, somatic_vcfs)
                      ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/post_variantcalling/main.nf:71:48`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/post_variantcalling/main.nf:85:48`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
                                   .branch{ meta, vcf ->
                                                  ^^^
   ```
 
-- Warning: `subworkflows/local/post_variantcalling/main.nf:76:20`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/post_variantcalling/main.nf:90:20`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
           all_tbis = Channel.empty().mix(germline_tbis, tumor_only_tbis, somatic_tbis)
                      ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/post_variantcalling/main.nf:77:48`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/post_variantcalling/main.nf:91:48`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
                                   .branch{ meta, tbi ->
                                                  ^^^
+  ```
+
+- Warning: `subworkflows/local/post_variantcalling/main.nf:97:42`: Parameter was not used -- prefix with `_` to suppress warning
+
+  ```nextflow
+          all_vcfs.other.subscribe { meta, vcf ->
+                                           ^^^
   ```
 
 - Warning: `subworkflows/local/prepare_genome/main.nf:57:16`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
@@ -5146,14 +5188,14 @@
                               ^^^
   ```
 
-- Warning: `subworkflows/local/vcf_consensus/main.nf:48:36`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/vcf_consensus/main.nf:65:36`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
               def vcf = files.find { it.name == '0000.vcf.gz' }
                                      ^^
   ```
 
-- Warning: `subworkflows/local/vcf_consensus/main.nf:49:36`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/vcf_consensus/main.nf:66:36`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
               def tbi = files.find { it.name == '0000.vcf.gz.tbi' }
