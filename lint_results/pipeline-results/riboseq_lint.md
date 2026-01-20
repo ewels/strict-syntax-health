@@ -1,6 +1,6 @@
 # Nextflow lint results
 
-- Generated: 2026-01-16T10:27:41.635039625Z
+- Generated: 2026-01-20T00:18:47.161090309Z
 - Nextflow version: 25.12.0-edge
 - Summary: 42 errors, 195 warnings
 
@@ -62,63 +62,63 @@
   ^
   ```
 
-- Error: `conf/modules.config:530:1`: If statements cannot be mixed with config statements
+- Error: `conf/modules.config:532:1`: If statements cannot be mixed with config statements
 
   ```nextflow
   if (!params.skip_alignment) {
   ^
   ```
 
-- Error: `conf/modules.config:616:1`: If statements cannot be mixed with config statements
+- Error: `conf/modules.config:618:1`: If statements cannot be mixed with config statements
 
   ```nextflow
   if (!params.skip_alignment && params.aligner == 'star') {
   ^
   ```
 
-- Error: `conf/modules.config:895:1`: If statements cannot be mixed with config statements
+- Error: `conf/modules.config:897:1`: If statements cannot be mixed with config statements
 
   ```nextflow
   if (!params.skip_multiqc) {
   ^
   ```
 
-- Error: `conf/modules.config:912:1`: If statements cannot be mixed with config statements
+- Error: `conf/modules.config:914:1`: If statements cannot be mixed with config statements
 
   ```nextflow
   if (!params.skip_ribotish) {
   ^
   ```
 
-- Error: `conf/modules.config:941:1`: If statements cannot be mixed with config statements
+- Error: `conf/modules.config:943:1`: If statements cannot be mixed with config statements
 
   ```nextflow
   if (!params.skip_ribotricer) {
   ^
   ```
 
-- Error: `conf/modules.config:972:1`: If statements cannot be mixed with config statements
+- Error: `conf/modules.config:974:1`: If statements cannot be mixed with config statements
 
   ```nextflow
   if (!params.skip_ribocode) {
   ^
   ```
 
-- Error: `conf/modules.config:1009:1`: If statements cannot be mixed with config statements
+- Error: `conf/modules.config:1011:1`: If statements cannot be mixed with config statements
 
   ```nextflow
   if (!params.skip_ribowaltz) {
   ^
   ```
 
-- Error: `conf/modules.config:1022:1`: If statements cannot be mixed with config statements
+- Error: `conf/modules.config:1024:1`: If statements cannot be mixed with config statements
 
   ```nextflow
   if (!params.skip_plastid) {
   ^
   ```
 
-- Error: `conf/modules.config:1064:1`: If statements cannot be mixed with config statements
+- Error: `conf/modules.config:1066:1`: If statements cannot be mixed with config statements
 
   ```nextflow
   if (params.contrasts) {

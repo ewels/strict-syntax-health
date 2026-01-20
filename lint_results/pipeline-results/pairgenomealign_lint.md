@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-01-16T10:25:13.563207521Z
+- Generated: 2026-01-20T00:18:22.623390680Z
 - Nextflow version: 25.12.0-edge
-- Summary: 2 errors, 36 warnings
+- Summary: 2 errors, 24 warnings
 
 ## :x: Errors
 
@@ -162,48 +162,6 @@
       ^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_pairgenomealign_pipeline/main.nf:42:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/utils_nfcore_pairgenomealign_pipeline/main.nf:67:144`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-      after_text = """${workflow.manifest.doi ? "\n* The pipeline\n" : ""}${workflow.manifest.doi.tokenize(",").collect { "    https://doi.org/${it.trim().replace('https://doi.org/','')}"}.join("\n")}${workflow.manifest.doi ? "\n" : ""}
-                                                                                                                                                 ^^
-  ```
-
-- Warning: `subworkflows/local/utils_nfcore_pairgenomealign_pipeline/main.nf:104:5`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      Channel
-      ^^^^^^^
-  ```
-
-- Warning: `subworkflows/nf-core/utils_nfcore_pipeline/main.nf:101:98`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      return ch_versions.unique().map { version -> processVersionsFromYAML(version) }.unique().mix(Channel.of(workflowVersionToYAML()))
-                                                                                                   ^^^^^^^
-  ```
-
-- Warning: `workflows/pairgenomealign.nf:34:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `workflows/pairgenomealign.nf:35:24`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_files = Channel.empty()
-                         ^^^^^^^
-  ```
-
 - Warning: `workflows/pairgenomealign.nf:41:31`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
@@ -225,51 +183,9 @@
                                         ^^^^^^^
   ```
 
-- Warning: `workflows/pairgenomealign.nf:136:32`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `workflows/pairgenomealign.nf:123:26`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
-      ch_multiqc_config        = Channel.fromPath(
-                                 ^^^^^^^
-  ```
-
-- Warning: `workflows/pairgenomealign.nf:139:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          Channel.fromPath(params.multiqc_config, checkIfExists: true) :
-          ^^^^^^^
-  ```
-
-- Warning: `workflows/pairgenomealign.nf:140:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          Channel.empty()
-          ^^^^^^^
-  ```
-
-- Warning: `workflows/pairgenomealign.nf:142:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          Channel.fromPath(params.multiqc_logo, checkIfExists: true) :
-          ^^^^^^^
-  ```
-
-- Warning: `workflows/pairgenomealign.nf:143:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          Channel.empty()
-          ^^^^^^^
-  ```
-
-- Warning: `workflows/pairgenomealign.nf:147:27`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_workflow_summary = Channel.value(paramsSummaryMultiqc(summary_params))
-                            ^^^^^^^
-  ```
-
-- Warning: `workflows/pairgenomealign.nf:153:45`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_methods_description                = Channel.value(
-                                              ^^^^^^^
+      def topic_versions = Channel.topic("versions")
+                           ^^^^^^^
   ```

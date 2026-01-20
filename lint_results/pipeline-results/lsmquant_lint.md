@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-01-16T17:11:51.180170784Z
+- Generated: 2026-01-20T00:18:08.764293719Z
 - Nextflow version: 25.12.0-edge
-- Summary: 6 errors, 54 warnings
+- Summary: 6 errors, 55 warnings
 
 ## :x: Errors
 
@@ -323,105 +323,112 @@
                          ^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:42:41`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `workflows/lsmquant.nf:49:27`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
-              .map { meta, img_directory, parameter_file ->
-                                          ^^^^^^^^^^^^^^
+          .map { meta, zip, parameter_file ->
+                            ^^^^^^^^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:54:36`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `workflows/lsmquant.nf:60:32`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
-              .map { meta, unzipped, raw_img_directory, parameter_file ->
-                                     ^^^^^^^^^^^^^^^^^
+          .map { meta, unzipped, zip, parameter_file ->
+                                 ^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:61:41`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `workflows/lsmquant.nf:67:37`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
-              .map { meta, img_directory, parameter_file ->
-                                          ^^^^^^^^^^^^^^
+          .map { meta, img_directory, parameter_file ->
+                                      ^^^^^^^^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:73:34`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `workflows/lsmquant.nf:78:30`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
-              .map { meta, staged, raw_img_directory, parameter_file ->
-                                   ^^^^^^^^^^^^^^^^^
+          .map { meta, staged, raw_img_directory, parameter_file ->
+                               ^^^^^^^^^^^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:85:13`: Variable was declared but not used
+- Warning: `workflows/lsmquant.nf:84:22`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+
+  ```nextflow
+      ch_samplesheet = Channel.empty()
+                       ^^^^^^^
+  ```
+
+- Warning: `workflows/lsmquant.nf:93:13`: Variable was declared but not used
 
   ```nextflow
           def NM_variables = NUMORPH_PREPROCESSING.out.NM_variables
               ^^^^^^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:90:36`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `workflows/lsmquant.nf:98:36`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               .map { meta, stitched, raw_img_directory, parameter_file ->
                                      ^^^^^^^^^^^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:100:22`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `workflows/lsmquant.nf:108:22`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
           model_file = Channel.fromPath(params.model_file, checkIfExists: !params.model_file.startsWith('http'))
                        ^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:116:36`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `workflows/lsmquant.nf:124:36`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               .map { meta, stitched, raw_img_directory, parameter_file ->
                                      ^^^^^^^^^^^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:142:32`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `workflows/lsmquant.nf:150:32`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       ch_multiqc_config        = Channel.fromPath(
                                  ^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:145:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `workflows/lsmquant.nf:153:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
           Channel.fromPath(params.multiqc_config, checkIfExists: true) :
           ^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:146:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `workflows/lsmquant.nf:154:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
           Channel.empty()
           ^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:148:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `workflows/lsmquant.nf:156:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
           Channel.fromPath(params.multiqc_logo, checkIfExists: true) :
           ^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:149:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `workflows/lsmquant.nf:157:9`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
           Channel.empty()
           ^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:153:27`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `workflows/lsmquant.nf:161:27`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       ch_workflow_summary = Channel.value(paramsSummaryMultiqc(summary_params))
                             ^^^^^^^
   ```
 
-- Warning: `workflows/lsmquant.nf:159:45`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `workflows/lsmquant.nf:167:45`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       ch_methods_description                = Channel.value(

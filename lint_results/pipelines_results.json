@@ -65,9 +65,9 @@
   "bamtofastq": {
     "full_name": "nf-core/bamtofastq",
     "html_url": "https://github.com/nf-core/bamtofastq",
-    "commit": "f16b1c2d4a248f3a6dff742eb0efc8cf7513def2",
+    "commit": "5c6afe6b7d149e8ace843f5dd95499b2e8581ef1",
     "errors": 0,
-    "warnings": 21,
+    "warnings": 2,
     "parse_error": false,
     "prints_help": false
   },
@@ -254,7 +254,7 @@
   "differentialabundance": {
     "full_name": "nf-core/differentialabundance",
     "html_url": "https://github.com/nf-core/differentialabundance",
-    "commit": "2bbd2c171061147101d279303be317033c639dff",
+    "commit": "02050a6687dbb53c1a4d26433fc9dc84ba6b5e14",
     "errors": 14,
     "warnings": 50,
     "parse_error": false,
@@ -488,9 +488,9 @@
   "lsmquant": {
     "full_name": "nf-core/lsmquant",
     "html_url": "https://github.com/nf-core/lsmquant",
-    "commit": "1cb9c365fe3111bb0339190b20da7126df47169b",
+    "commit": "09be465155f76ab01d7d2b6ed4d1f7b965e1c0e7",
     "errors": 6,
-    "warnings": 54,
+    "warnings": 55,
     "parse_error": false,
     "prints_help": null
   },
@@ -704,9 +704,9 @@
   "pairgenomealign": {
     "full_name": "nf-core/pairgenomealign",
     "html_url": "https://github.com/nf-core/pairgenomealign",
-    "commit": "bcc3f49a88db6672acd4ed4b83d1ab1f5aab1b79",
+    "commit": "190fc3e33f96f7a2941de805faaf12402ddbead0",
     "errors": 2,
-    "warnings": 36,
+    "warnings": 24,
     "parse_error": false,
     "prints_help": null
   },
@@ -767,7 +767,7 @@
   "pixelator": {
     "full_name": "nf-core/pixelator",
     "html_url": "https://github.com/nf-core/pixelator",
-    "commit": "78f3fef38a1d87465e6c7d4b5797ce676d238b86",
+    "commit": "0b6ec1b2b166b7d1452b95cfe2c4216d3f908ff4",
     "errors": 10,
     "warnings": 65,
     "parse_error": false,
@@ -893,7 +893,7 @@
   "riboseq": {
     "full_name": "nf-core/riboseq",
     "html_url": "https://github.com/nf-core/riboseq",
-    "commit": "9e21ee67cafa1225b672fd0312df141e3f68d54e",
+    "commit": "66de3ad0d05485f9869d7d332a6313cb6847c39f",
     "errors": 42,
     "warnings": 195,
     "parse_error": false,
@@ -938,7 +938,7 @@
   "rnavar": {
     "full_name": "nf-core/rnavar",
     "html_url": "https://github.com/nf-core/rnavar",
-    "commit": "9715506fc7868640b757a31baa4ba038c1c360dd",
+    "commit": "152334cbba97a9ac7eaa2b022d4bdf97284683e3",
     "errors": 0,
     "warnings": 14,
     "parse_error": false,
@@ -956,7 +956,7 @@
   "sarek": {
     "full_name": "nf-core/sarek",
     "html_url": "https://github.com/nf-core/sarek",
-    "commit": "3eaf310abc8dcb0cc26241d726ab7f1b1e456702",
+    "commit": "2daa71b6b980aa5c32874bc25561bea4ab3f5dd8",
     "errors": 152,
     "warnings": 614,
     "parse_error": false,
@@ -1136,11 +1136,11 @@
   "variantprioritization": {
     "full_name": "nf-core/variantprioritization",
     "html_url": "https://github.com/nf-core/variantprioritization",
-    "commit": "e50ceed599c0949f8d9e2d05daa90a1c84aebe54",
-    "errors": 6,
-    "warnings": 14,
+    "commit": "ab8fbbb99ffb5efcbab589f40e52c2d2658cbded",
+    "errors": 0,
+    "warnings": 1,
     "parse_error": false,
-    "prints_help": null
+    "prints_help": false
   },
   "viralintegration": {
     "full_name": "nf-core/viralintegration",
