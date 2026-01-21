@@ -4,7 +4,8 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
  N E X T F L O W   ~  version 25.12.0-edge
 
 Downloading plugin nf-core-utils@0.4.0
-Launching `./main.nf` [mighty_morse] DSL2 - revision: 5856071a2c
+Downloading plugin nf-schema@2.6.1
+Launching `./main.nf` [special_booth] DSL2 - revision: 26c5a790cf
 
 
 ------------------------------------------------------

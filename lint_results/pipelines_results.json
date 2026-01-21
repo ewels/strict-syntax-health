@@ -281,7 +281,7 @@
   "drugresponseeval": {
     "full_name": "nf-core/drugresponseeval",
     "html_url": "https://github.com/nf-core/drugresponseeval",
-    "commit": "24033343037ed625c88205a01d723eafbd4a4b44",
+    "commit": "0afcb481c9179db8e862d171ab4479e6f19969e1",
     "errors": 7,
     "warnings": 29,
     "parse_error": false,
@@ -497,7 +497,7 @@
   "mag": {
     "full_name": "nf-core/mag",
     "html_url": "https://github.com/nf-core/mag",
-    "commit": "e2d3a892bdafa6a917d40f50d154539747ccedc8",
+    "commit": "4c7bfadb0ceead21f6a375779fddc3a411960195",
     "errors": 0,
     "warnings": 35,
     "parse_error": false,
@@ -551,7 +551,7 @@
   "metapep": {
     "full_name": "nf-core/metapep",
     "html_url": "https://github.com/nf-core/metapep",
-    "commit": "53b2765262589fa1545588c190b7ba8de90fda0a",
+    "commit": "482afacde4f2bbf149d38375f19027a97bd5a510",
     "errors": 11,
     "warnings": 34,
     "parse_error": false,
@@ -785,11 +785,11 @@
   "proteinfamilies": {
     "full_name": "nf-core/proteinfamilies",
     "html_url": "https://github.com/nf-core/proteinfamilies",
-    "commit": "6cd1787cade86e70dcf797d48dc5375389895200",
-    "errors": 10,
-    "warnings": 19,
+    "commit": "266c4d6a1605ae305c10b2e1049ad9386085952b",
+    "errors": 0,
+    "warnings": 0,
     "parse_error": false,
-    "prints_help": null
+    "prints_help": false
   },
   "proteinfold": {
     "full_name": "nf-core/proteinfold",
@@ -938,7 +938,7 @@
   "rnavar": {
     "full_name": "nf-core/rnavar",
     "html_url": "https://github.com/nf-core/rnavar",
-    "commit": "152334cbba97a9ac7eaa2b022d4bdf97284683e3",
+    "commit": "e8b1e58cb08d32bd6ac0f23dd897b94b55ba3ef6",
     "errors": 0,
     "warnings": 14,
     "parse_error": false,
@@ -956,7 +956,7 @@
   "sarek": {
     "full_name": "nf-core/sarek",
     "html_url": "https://github.com/nf-core/sarek",
-    "commit": "2daa71b6b980aa5c32874bc25561bea4ab3f5dd8",
+    "commit": "65b19d45f37a009eaaf07cc29a2dd1618c04cae0",
     "errors": 152,
     "warnings": 614,
     "parse_error": false,
@@ -983,7 +983,7 @@
   "scrnaseq": {
     "full_name": "nf-core/scrnaseq",
     "html_url": "https://github.com/nf-core/scrnaseq",
-    "commit": "c756ae34fef782adcaa6b78321e62b19e7cafe43",
+    "commit": "f8906394e49523abed4e251b26182f25e33e22f1",
     "errors": 22,
     "warnings": 111,
     "parse_error": false,
@@ -1154,7 +1154,7 @@
   "viralmetagenome": {
     "full_name": "nf-core/viralmetagenome",
     "html_url": "https://github.com/nf-core/viralmetagenome",
-    "commit": "16ad15e5016eb7843fa239a1ed5bcb03a13e61c9",
+    "commit": "806e59f429ab9672825dcf9e155a1cba1908374e",
     "errors": 18,
     "warnings": 207,
     "parse_error": false,

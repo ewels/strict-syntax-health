@@ -1,6 +1,6 @@
 # Nextflow lint results
 
-- Generated: 2026-01-16T10:31:40.065927663Z
+- Generated: 2026-01-21T00:20:27.049246593Z
 - Nextflow version: 25.12.0-edge
 - Summary: 18 errors, 207 warnings
 
@@ -155,7 +155,7 @@
           ^^^^
   ```
 
-- Warning: `modules/local/extract_cluster/main.nf:45:9`: Variable was declared but not used
+- Warning: `modules/local/extract_cluster/main.nf:46:9`: Variable was declared but not used
 
   ```nextflow
       def args = task.ext.args ?: ''

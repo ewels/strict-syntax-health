@@ -11,13 +11,13 @@ The goal is for all nf-core pipelines to run without errors using strict syntax.
 > See the [nf-core blog post](https://nf-co.re/blog/2025/nextflow_syntax_nf-core_roadmap) for details on the migration timeline.
 > **Fixing all errors from `nextflow lint` will be a requirement by early spring 2026.**
 
-- **Last updated:** 2026-01-20 00:20:55 UTC
+- **Last updated:** 2026-01-21 00:21:22 UTC
 - **Nextflow version:** 25.12.0-edge
 
 ## Pipelines
 
-- **Total:** 0 parse errors, 3644 errors, 10401 warnings across 130 pipelines
-- **Zero errors:** 17 pipelines (13.1%)
+- **Total:** 0 parse errors, 3634 errors, 10382 warnings across 130 pipelines
+- **Zero errors:** 18 pipelines (13.8%)
 
 |                    Errors                    |                     Warnings                     |
 | :------------------------------------------: | :----------------------------------------------: |
@@ -112,7 +112,6 @@ The goal is for all nf-core pipelines to run without errors using strict syntax.
 | :x: [hgtseq](https://github.com/nf-core/hgtseq)                                       |     No      |     10 |       69 |      -      |          [View](lint_results/pipeline-results/hgtseq_lint.md)           |                                    -                                    |
 | :x: [pixelator](https://github.com/nf-core/pixelator)                                 |     No      |     10 |       65 |      -      |         [View](lint_results/pipeline-results/pixelator_lint.md)         |                                    -                                    |
 | :x: [deepmodeloptim](https://github.com/nf-core/deepmodeloptim)                       |     No      |     10 |       49 |      -      |      [View](lint_results/pipeline-results/deepmodeloptim_lint.md)       |                                    -                                    |
-| :x: [proteinfamilies](https://github.com/nf-core/proteinfamilies)                     |     No      |     10 |       19 |      -      |      [View](lint_results/pipeline-results/proteinfamilies_lint.md)      |                                    -                                    |
 | :x: [mhcquant](https://github.com/nf-core/mhcquant)                                   |     No      |      9 |       60 |      -      |         [View](lint_results/pipeline-results/mhcquant_lint.md)          |                                    -                                    |
 | :x: [tumourevo](https://github.com/nf-core/tumourevo)                                 |     No      |      9 |       56 |      -      |         [View](lint_results/pipeline-results/tumourevo_lint.md)         |                                    -                                    |
 | :x: [fastqrepair](https://github.com/nf-core/fastqrepair)                             |     No      |      9 |       32 |      -      |        [View](lint_results/pipeline-results/fastqrepair_lint.md)        |                                    -                                    |
@@ -158,6 +157,7 @@ The goal is for all nf-core pipelines to run without errors using strict syntax.
 | :x: [bamtofastq](https://github.com/nf-core/bamtofastq)                               |     No      |      0 |        2 |     No      |        [View](lint_results/pipeline-results/bamtofastq_lint.md)         |      [View](lint_results/prints-help-results/bamtofastq_help.txt)       |
 | :x: [variantprioritization](https://github.com/nf-core/variantprioritization)         |     No      |      0 |        1 |     No      |   [View](lint_results/pipeline-results/variantprioritization_lint.md)   | [View](lint_results/prints-help-results/variantprioritization_help.txt) |
 | :x: [nanostring](https://github.com/nf-core/nanostring)                               |     No      |      0 |        0 |     No      |        [View](lint_results/pipeline-results/nanostring_lint.md)         |      [View](lint_results/prints-help-results/nanostring_help.txt)       |
+| :x: [proteinfamilies](https://github.com/nf-core/proteinfamilies)                     |     No      |      0 |        0 |     No      |      [View](lint_results/pipeline-results/proteinfamilies_lint.md)      |    [View](lint_results/prints-help-results/proteinfamilies_help.txt)    |
 
 </details>
 
