@@ -1,6 +1,6 @@
 # Nextflow lint results
 
-- Generated: 2026-01-14T14:42:08.260042+00:00
+- Generated: 2026-01-21T13:35:35.514476+00:00
 - Nextflow version: 25.12.0-edge
 - Summary: 4 warnings
 
@@ -8,8 +8,28 @@
 
 - Warning: `subworkflows/nf-core/fastq_align_dna/main.nf:27:27`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
+  ```nextflow
+          ch_bam_index    = Channel.empty()
+                            ^^^^^^^^^^
+  ```
+
 - Warning: `subworkflows/nf-core/fastq_align_dna/main.nf:28:27`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+
+  ```nextflow
+          ch_bam          = Channel.empty()
+                            ^^^^^^^^^^
+  ```
 
 - Warning: `subworkflows/nf-core/fastq_align_dna/main.nf:29:27`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
+  ```nextflow
+          ch_reports      = Channel.empty()
+                            ^^^^^^^^^^
+  ```
+
 - Warning: `subworkflows/nf-core/fastq_align_dna/main.nf:30:27`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+
+  ```nextflow
+          ch_versions     = Channel.empty()
+                            ^^^^^^^^^^
+  ```

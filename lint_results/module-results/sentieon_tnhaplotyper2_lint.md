@@ -1,24 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-01-16T02:02:17.643686+00:00
+- Generated: 2026-01-21T13:35:22.850380+00:00
 - Nextflow version: 25.12.0-edge
-- Summary: 2 errors, 1 warning
-
-## :x: Errors
-
-- Error: `modules/nf-core/sentieon/tnhaplotyper2/tests/nextflow.config:24:25`: `SENTIEON_LICSRVR_IP` is not defined (hint: use `env('...')` to access environment variable)
-
-  ```nextflow
-      SENTIEON_LICENSE = "$SENTIEON_LICSRVR_IP"
-                          ^^^^^^^^^^
-  ```
-
-- Error: `modules/nf-core/sentieon/tnhaplotyper2/tests/nextflow.config:26:27`: `SENTIEON_AUTH_MECH` is not defined (hint: use `env('...')` to access environment variable)
-
-  ```nextflow
-      SENTIEON_AUTH_MECH = "$SENTIEON_AUTH_MECH"
-                            ^^^^^^^^^^
-  ```
+- Summary: 1 warning
 
 ## :warning: Warnings
 

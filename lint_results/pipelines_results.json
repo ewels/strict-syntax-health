@@ -353,11 +353,11 @@
   "funcscan": {
     "full_name": "nf-core/funcscan",
     "html_url": "https://github.com/nf-core/funcscan",
-    "commit": "b0c0f23b88ac58ef9baae240c9ee91f9719cc15e",
-    "errors": 6,
-    "warnings": 115,
+    "commit": "a247f15a79d211dadf6cd1a50a6c919033bd4879",
+    "errors": 0,
+    "warnings": 73,
     "parse_error": false,
-    "prints_help": null
+    "prints_help": false
   },
   "genomeannotator": {
     "full_name": "nf-core/genomeannotator",
@@ -1064,11 +1064,11 @@
   "stableexpression": {
     "full_name": "nf-core/stableexpression",
     "html_url": "https://github.com/nf-core/stableexpression",
-    "commit": "964739725536e3555ca1782c93a2eee3f525bc9f",
-    "errors": 28,
-    "warnings": 36,
+    "commit": "5ed7dc20019a04827832c784049f0ef0b226cba7",
+    "errors": 0,
+    "warnings": 30,
     "parse_error": false,
-    "prints_help": null
+    "prints_help": false
   },
   "taxprofiler": {
     "full_name": "nf-core/taxprofiler",

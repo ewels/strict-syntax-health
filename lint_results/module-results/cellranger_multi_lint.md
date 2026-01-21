@@ -1,6 +1,6 @@
 # Nextflow lint results
 
-- Generated: 2026-01-16T02:02:17.541549+00:00
+- Generated: 2026-01-21T13:35:22.727475+00:00
 - Nextflow version: 25.12.0-edge
 - Summary: 4 errors, 39 warnings
 
@@ -81,7 +81,7 @@
 - Warning: `modules/nf-core/cellranger/multi/main.nf:79:5`: Variable was declared but not used
 
   ```nextflow
-      frna_probeset = include_frna && gex_frna_probeset_name != '' ? "probe-set,./$gex_frna_probeset_name" : ''
+      frna_probeset = gex_frna_probeset_name != '' ? "probe-set,./$gex_frna_probeset_name" : ''
       ^^^^^^^^^^
   ```
 

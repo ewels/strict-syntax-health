@@ -20,5 +20,16 @@
     "warnings_zero": 35,
     "warnings_low": 66,
     "warnings_high": 1
+  },
+  {
+    "date": "2026-01-21",
+    "total": 102,
+    "parse_errors": 0,
+    "errors_zero": 98,
+    "errors_low": 4,
+    "errors_high": 0,
+    "warnings_zero": 59,
+    "warnings_low": 42,
+    "warnings_high": 1
   }
 ]

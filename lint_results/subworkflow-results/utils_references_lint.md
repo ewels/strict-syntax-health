@@ -1,9 +1,14 @@
 # Nextflow lint results
 
-- Generated: 2026-01-14T14:42:08.265608+00:00
+- Generated: 2026-01-21T13:35:35.520085+00:00
 - Nextflow version: 25.12.0-edge
 - Summary: 1 warning
 
 ## :warning: Warnings
 
 - Warning: `subworkflows/nf-core/utils_references/main.nf:18:18`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+
+  ```nextflow
+      references = Channel.fromList(samplesheetToList(yaml_reference, "${projectDir}/subworkflows/nf-core/utils_references/schema_references.json"))
+                   ^^^^^^^^^^
+  ```

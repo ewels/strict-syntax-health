@@ -1,0 +1,13 @@
+$ NXF_SYNTAX_PARSER=v2 nextflow run . --help
+
+
+ N E X T F L O W   ~  version 25.12.0-edge
+
+Downloading plugin nf-schema@2.5.1
+Launching `./main.nf` [insane_minsky] DSL2 - revision: 67661b9bcf
+
+WARN: Unrecognized config option 'validation.defaultIgnoreParams'
+WARN: Unrecognized config option 'validation.monochromeLogs'
+ERROR ~ Unable to create help message: Specified param 'true' does not exist in JSON schema.
+
+ -- Check script 'subworkflows/nf-core/utils_nfschema_plugin/main.nf' at line: 41 or see '.nextflow.log' file for more details

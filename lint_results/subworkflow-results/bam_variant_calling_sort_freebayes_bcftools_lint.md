@@ -1,9 +1,5 @@
 # Nextflow lint results
 
-- Generated: 2026-01-14T14:42:08.256381+00:00
+- Generated: 2026-01-21T13:35:35.507482+00:00
 - Nextflow version: 25.12.0-edge
-- Summary: 1 warning
-
-## :warning: Warnings
-
-- Warning: `subworkflows/nf-core/bam_variant_calling_sort_freebayes_bcftools/main.nf:15:16`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Summary: No issues found
