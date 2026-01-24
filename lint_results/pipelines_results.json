@@ -11,9 +11,9 @@
   "airrflow": {
     "full_name": "nf-core/airrflow",
     "html_url": "https://github.com/nf-core/airrflow",
-    "commit": "876750855ce041b68e2727b561f4aecc98157ff5",
+    "commit": "5c59e0576dd3044dea9bd745c68f1835cb5fbc78",
     "errors": 150,
-    "warnings": 141,
+    "warnings": 135,
     "parse_error": false,
     "prints_help": null
   },
@@ -29,7 +29,7 @@
   "ampliseq": {
     "full_name": "nf-core/ampliseq",
     "html_url": "https://github.com/nf-core/ampliseq",
-    "commit": "70693a931c7f7e2c58fa7edd095c4240dd624da9",
+    "commit": "9efd22f9175d9140abf65e245f6aed0fe6c1d2c7",
     "errors": 0,
     "warnings": 66,
     "parse_error": false,
@@ -47,9 +47,9 @@
   "bacass": {
     "full_name": "nf-core/bacass",
     "html_url": "https://github.com/nf-core/bacass",
-    "commit": "d46987db728104ca9d2b7f985319671ba7943fc7",
-    "errors": 27,
-    "warnings": 131,
+    "commit": "b36f07cef58ee3ec46793f22b7a597ea1a0319ab",
+    "errors": 21,
+    "warnings": 126,
     "parse_error": false,
     "prints_help": null
   },
@@ -395,6 +395,15 @@
     "parse_error": false,
     "prints_help": null
   },
+  "genomicrelatedness": {
+    "full_name": "nf-core/genomicrelatedness",
+    "html_url": "https://github.com/nf-core/genomicrelatedness",
+    "commit": "1d9689859adf36fc7ade260d097972824d5b45e9",
+    "errors": 0,
+    "warnings": 17,
+    "parse_error": false,
+    "prints_help": false
+  },
   "gwas": {
     "full_name": "nf-core/gwas",
     "html_url": "https://github.com/nf-core/gwas",
@@ -488,9 +497,9 @@
   "lsmquant": {
     "full_name": "nf-core/lsmquant",
     "html_url": "https://github.com/nf-core/lsmquant",
-    "commit": "09be465155f76ab01d7d2b6ed4d1f7b965e1c0e7",
+    "commit": "651bbd70f3ef6892e16b0e67816b7520dc8771c8",
     "errors": 6,
-    "warnings": 55,
+    "warnings": 57,
     "parse_error": false,
     "prints_help": null
   },
@@ -506,7 +515,7 @@
   "magmap": {
     "full_name": "nf-core/magmap",
     "html_url": "https://github.com/nf-core/magmap",
-    "commit": "e045d60b44d72077604d3d74dd284eb4a81010cd",
+    "commit": "685d4f71d44939e560d4da09ddb1b341c2d24c6e",
     "errors": 26,
     "warnings": 70,
     "parse_error": false,
@@ -524,9 +533,9 @@
   "mcmicro": {
     "full_name": "nf-core/mcmicro",
     "html_url": "https://github.com/nf-core/mcmicro",
-    "commit": "995a0839543d9cdd4f64b15813484b8922a0d498",
+    "commit": "d27bf2c2fba85cf61922c632190819843398b2a9",
     "errors": 21,
-    "warnings": 48,
+    "warnings": 42,
     "parse_error": false,
     "prints_help": null
   },
@@ -551,7 +560,7 @@
   "metapep": {
     "full_name": "nf-core/metapep",
     "html_url": "https://github.com/nf-core/metapep",
-    "commit": "482afacde4f2bbf149d38375f19027a97bd5a510",
+    "commit": "aa0218b6803b5a2fdae8911488198f5387f4b380",
     "errors": 11,
     "warnings": 34,
     "parse_error": false,
@@ -596,9 +605,9 @@
   "mhcquant": {
     "full_name": "nf-core/mhcquant",
     "html_url": "https://github.com/nf-core/mhcquant",
-    "commit": "af99b43ade98e46b0b34d7bf888f50cc03f8b91e",
+    "commit": "5fcace66d746ee688e99ab9acf86a61dd3da9eec",
     "errors": 9,
-    "warnings": 60,
+    "warnings": 62,
     "parse_error": false,
     "prints_help": null
   },
@@ -785,16 +794,16 @@
   "proteinfamilies": {
     "full_name": "nf-core/proteinfamilies",
     "html_url": "https://github.com/nf-core/proteinfamilies",
-    "commit": "266c4d6a1605ae305c10b2e1049ad9386085952b",
+    "commit": "ecdfd67f10f03c62475fb3f411a6c9b1332d15fc",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
-    "prints_help": false
+    "prints_help": true
   },
   "proteinfold": {
     "full_name": "nf-core/proteinfold",
     "html_url": "https://github.com/nf-core/proteinfold",
-    "commit": "47a503f23af3cde1917672f717f8713a1037f98c",
+    "commit": "d0de5359b90575098d440f41fd177e8758b8432d",
     "errors": 0,
     "warnings": 25,
     "parse_error": false,
@@ -1037,11 +1046,11 @@
   "spatialvi": {
     "full_name": "nf-core/spatialvi",
     "html_url": "https://github.com/nf-core/spatialvi",
-    "commit": "014d962031307eeb47739fe2b1f4d0079bec20db",
-    "errors": 14,
-    "warnings": 20,
+    "commit": "d2cf162b86dd2fee7cc99db01f0338ef10a44943",
+    "errors": 0,
+    "warnings": 0,
     "parse_error": false,
-    "prints_help": null
+    "prints_help": false
   },
   "spatialxe": {
     "full_name": "nf-core/spatialxe",
@@ -1154,7 +1163,7 @@
   "viralmetagenome": {
     "full_name": "nf-core/viralmetagenome",
     "html_url": "https://github.com/nf-core/viralmetagenome",
-    "commit": "806e59f429ab9672825dcf9e155a1cba1908374e",
+    "commit": "cdaa9dfcf159250ca1c8b06ed091d2c337a897a6",
     "errors": 18,
     "warnings": 207,
     "parse_error": false,

@@ -3,7 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 25.12.0-edge
 
-Launching `./main.nf` [agitated_volta] DSL2 - revision: d8ada5d654
+Launching `./main.nf` [desperate_sinoussi]revision: d8ada5d654
 
 ERROR ~ Unable to create help message: Specified param 'true' does not exist in JSON schema.
 

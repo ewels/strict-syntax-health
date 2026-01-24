@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-01-17T00:17:10.991908994Z
+- Generated: 2026-01-24T00:17:09.746955721Z
 - Nextflow version: 25.12.0-edge
-- Summary: 150 errors, 141 warnings
+- Summary: 150 errors, 135 warnings
 
 ## :x: Errors
 
@@ -1063,48 +1063,6 @@
   ```nextflow
       def revpr = reverse_primers ? '--revpr' : ''
           ^^^^^
-  ```
-
-- Warning: `modules/nf-core/amulety/antiberta2/main.nf:41:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/amulety/antiberty/main.nf:40:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/amulety/balmpaired/main.nf:40:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/amulety/esm2/main.nf:40:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/amulety/translate/main.nf:22:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/amulety/translate/main.nf:38:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
   ```
 
 - Warning: `modules/nf-core/cat/fastq/main.nf:21:9`: Variable was declared but not used

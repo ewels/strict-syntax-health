@@ -1,5 +1,5 @@
 {
-  "_repo_commit": "d9c84ed4564744313bb586928885ebf05f40ad98",
+  "_repo_commit": "a331ecfd1aa48b2b2298aab23bb4516c800e410b",
   "abricate_run": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/abricate/run",
     "errors": 0,
@@ -3504,6 +3504,12 @@
     "warnings": 0,
     "parse_error": false
   },
+  "hisat3n_align": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/hisat3n/align",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
   "hisat3n_build": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/hisat3n/build",
     "errors": 0,
@@ -4646,6 +4652,12 @@
   },
   "mitohifi_mitohifi": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/mitohifi/mitohifi",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "mitorsaw_haplotype": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/mitorsaw/haplotype",
     "errors": 0,
     "warnings": 0,
     "parse_error": false
@@ -7172,7 +7184,7 @@
   },
   "spaceranger_count": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/spaceranger/count",
-    "errors": 7,
+    "errors": 0,
     "warnings": 0,
     "parse_error": false
   },
@@ -7886,6 +7898,12 @@
   },
   "vembrane_filter": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/vembrane/filter",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "vembrane_sort": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/vembrane/sort",
     "errors": 0,
     "warnings": 0,
     "parse_error": false

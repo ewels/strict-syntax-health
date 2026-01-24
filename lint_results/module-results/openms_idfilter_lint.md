@@ -1,19 +1,19 @@
 # Nextflow lint results
 
-- Generated: 2026-01-23T00:22:22.003502+00:00
+- Generated: 2026-01-24T00:20:24.632311+00:00
 - Nextflow version: 25.12.0-edge
 - Summary: 2 warnings
 
 ## :warning: Warnings
 
-- Warning: `modules/nf-core/openms/idfilter/main.nf:43:9`: Variable was declared but not used
+- Warning: `modules/nf-core/openms/idfilter/main.nf:38:9`: Variable was declared but not used
 
   ```nextflow
       def args = task.ext.args ?: ''
           ^^^^^^^^^^
   ```
 
-- Warning: `modules/nf-core/openms/idfilter/main.nf:49:9`: Variable was declared but not used
+- Warning: `modules/nf-core/openms/idfilter/main.nf:44:9`: Variable was declared but not used
 
   ```nextflow
       def filter = filter_file ? "${filter_citerion} ${filter_file}" : ""

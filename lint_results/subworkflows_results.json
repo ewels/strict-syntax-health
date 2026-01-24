@@ -1,5 +1,5 @@
 {
-  "_repo_commit": "d9c84ed4564744313bb586928885ebf05f40ad98",
+  "_repo_commit": "a331ecfd1aa48b2b2298aab23bb4516c800e410b",
   "abundance_differential_filter": {
     "html_url": "https://github.com/nf-core/modules/tree/master/subworkflows/nf-core/abundance_differential_filter",
     "errors": 0,
@@ -266,7 +266,7 @@
   },
   "fasta_index_dna": {
     "html_url": "https://github.com/nf-core/modules/tree/master/subworkflows/nf-core/fasta_index_dna",
-    "errors": 1,
+    "errors": 0,
     "warnings": 0,
     "parse_error": false
   },
@@ -291,7 +291,7 @@
   "fastq_align_bamcmp_bwa": {
     "html_url": "https://github.com/nf-core/modules/tree/master/subworkflows/nf-core/fastq_align_bamcmp_bwa",
     "errors": 0,
-    "warnings": 1,
+    "warnings": 0,
     "parse_error": false
   },
   "fastq_align_bowtie2": {

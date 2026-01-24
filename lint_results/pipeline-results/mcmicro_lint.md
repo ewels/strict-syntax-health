@@ -1,12 +1,12 @@
 # Nextflow lint results
 
-- Generated: 2026-01-16T10:23:14.635912035Z
+- Generated: 2026-01-24T00:18:28.452077320Z
 - Nextflow version: 25.12.0-edge
-- Summary: 21 errors, 48 warnings
+- Summary: 21 errors, 42 warnings
 
 ## :x: Errors
 
-- Error: `conf/modules.config:70:41`: Unexpected input: '\n'
+- Error: `conf/modules.config:71:41`: Unexpected input: '\n'
 
   ```nextflow
                       case 'versions.yml':
@@ -330,46 +330,11 @@
       ^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_mcmicro_pipeline/main.nf:45:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/utils_nfcore_mcmicro_pipeline/main.nf:70:144`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-      after_text = """${workflow.manifest.doi ? "\n* The pipeline\n" : ""}${workflow.manifest.doi.tokenize(",").collect { "    https://doi.org/${it.trim().replace('https://doi.org/','')}"}.join("\n")}${workflow.manifest.doi ? "\n" : ""}
-                                                                                                                                                 ^^
-  ```
-
-- Warning: `subworkflows/local/utils_nfcore_mcmicro_pipeline/main.nf:107:26`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          ch_samplesheet = Channel.fromList(samplesheetToList(params.input_cycle, "${projectDir}/assets/schema_input_cycle.json"))
-                           ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/utils_nfcore_mcmicro_pipeline/main.nf:110:26`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          ch_samplesheet = Channel.fromList(samplesheetToList(params.input_sample, "${projectDir}/assets/schema_input_sample.json"))
-                           ^^^^^^^
-  ```
-
 - Warning: `subworkflows/local/utils_nfcore_mcmicro_pipeline/main.nf:111:40`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
               .flatMap { expandSampleRow(it) }
                                          ^^
-  ```
-
-- Warning: `subworkflows/local/utils_nfcore_mcmicro_pipeline/main.nf:115:22`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_markersheet = Channel.fromList(samplesheetToList(params.marker_sheet, "${projectDir}/assets/schema_marker.json"))
-                       ^^^^^^^
   ```
 
 - Warning: `subworkflows/local/utils_nfcore_mcmicro_pipeline/main.nf:117:20`: Implicit closure parameter is deprecated, declare an explicit parameter instead
@@ -475,13 +440,6 @@
   ```nextflow
               files << file(it)
                             ^^
-  ```
-
-- Warning: `subworkflows/nf-core/utils_nfcore_pipeline/main.nf:101:98`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      return ch_versions.unique().map { version -> processVersionsFromYAML(version) }.unique().mix(Channel.of(workflowVersionToYAML()))
-                                                                                                   ^^^^^^^
   ```
 
 - Warning: `tests/lib/utils.nf:18:36`: Implicit closure parameter is deprecated, declare an explicit parameter instead

@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-01-16T10:24:08.076402670Z
+- Generated: 2026-01-24T00:18:41.368919489Z
 - Nextflow version: 25.12.0-edge
-- Summary: 9 errors, 60 warnings
+- Summary: 9 errors, 62 warnings
 
 ## :x: Errors
 
@@ -13,7 +13,7 @@
                               ^
   ```
 
-- Error: `conf/modules.config:271:17`: Unexpected input: ':'
+- Error: `conf/modules.config:277:17`: Unexpected input: ':'
 
   ```nextflow
           withName: 'NFCORE_MHCQUANT:MHCQUANT:QUANT:OPENMS_IDSCORESWITCHER' {
@@ -221,7 +221,7 @@
 - Warning: `subworkflows/local/map_alignment/main.nf:28:32`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
-                      .flatMap { group_meta, trafoxmls -> trafoxmls.collect { trafoxml -> [[spectra: trafoxml.baseName], trafoxml] } })
+                      .flatMap { group_meta, trafoxmls -> [trafoxmls].flatten().collect { trafoxml -> [[spectra: trafoxml.baseName], trafoxml] } })
                                  ^^^^^^^^^^
   ```
 
@@ -232,25 +232,39 @@
                      ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/map_alignment/main.nf:39:28`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/map_alignment/main.nf:39:24`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
-                  .flatMap { group_meta, idxmls -> idxmls.collect { idxml -> [[spectra: idxml.baseName.replace("_fdr_filtered","")], idxml] } }
-                             ^^^^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/map_alignment/main.nf:41:36`: Parameter was not used -- prefix with `_` to suppress warning
-
-  ```nextflow
-                          .flatMap { group_meta, metas -> metas }
-                                     ^^^^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/map_alignment/main.nf:43:24`: Parameter was not used -- prefix with `_` to suppress warning
-
-  ```nextflow
-                  .map { group_meta, idxml, meta -> [meta, idxml] }
+              .flatMap { group_meta, idxmls -> [idxmls].flatten().collect { idxml -> [[spectra: idxml.baseName.replace("_fdr_filtered","")], idxml] } }
                          ^^^^^^^^^^
+  ```
+
+- Warning: `subworkflows/local/map_alignment/main.nf:41:32`: Parameter was not used -- prefix with `_` to suppress warning
+
+  ```nextflow
+                      .flatMap { group_meta, metas -> metas }
+                                 ^^^^^^^^^^
+  ```
+
+- Warning: `subworkflows/local/map_alignment/main.nf:43:20`: Parameter was not used -- prefix with `_` to suppress warning
+
+  ```nextflow
+              .map { group_meta, idxml, meta -> [meta, idxml] }
+                     ^^^^^^^^^^
+  ```
+
+- Warning: `subworkflows/local/process_feature/main.nf:26:29`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+
+  ```nextflow
+                      single: it[1].size() == 1
+                              ^^
+  ```
+
+- Warning: `subworkflows/local/process_feature/main.nf:27:31`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+
+  ```nextflow
+                      multiple: it[1].size() > 1
+                                ^^
   ```
 
 - Warning: `subworkflows/local/quant/main.nf:18:5`: Variable was declared but not used
@@ -260,25 +274,25 @@
       ^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/quant/main.nf:33:28`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/quant/main.nf:34:24`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
-                  .flatMap { group_meta, idxmls -> idxmls.collect { idxml -> [[spectra: idxml.baseName], idxml] } }
-                             ^^^^^^^^^^
+              .flatMap { group_meta, idxmls -> [idxmls].flatten().collect { idxml -> [[spectra: idxml.baseName], idxml] } }
+                         ^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/quant/main.nf:37:36`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/quant/main.nf:37:32`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
-                          .flatMap { group_meta, metas -> metas }
-                                     ^^^^^^^^^^
+                      .flatMap { group_meta, metas -> metas }
+                                 ^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/quant/main.nf:39:24`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/quant/main.nf:39:20`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
-                  .map { spectra, idxmls, meta -> [meta, idxmls] }
-                         ^^^^^^^
+              .map { spectra, idxmls, meta -> [meta, idxmls] }
+                     ^^^^^^^
   ```
 
 - Warning: `subworkflows/local/quant/main.nf:56:20`: Parameter was not used -- prefix with `_` to suppress warning

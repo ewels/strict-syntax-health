@@ -1,12 +1,12 @@
 # Nextflow lint results
 
-- Generated: 2026-01-23T00:22:22.003894+00:00
+- Generated: 2026-01-24T00:20:24.632521+00:00
 - Nextflow version: 25.12.0-edge
 - Summary: 1 warning
 
 ## :warning: Warnings
 
-- Warning: `modules/nf-core/openms/idmerger/main.nf:38:9`: Variable was declared but not used
+- Warning: `modules/nf-core/openms/idmerger/main.nf:33:9`: Variable was declared but not used
 
   ```nextflow
       def args = task.ext.args ?: ''

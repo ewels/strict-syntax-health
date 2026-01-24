@@ -3,10 +3,94 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 25.12.0-edge
 
-Launching `./main.nf` [loving_carson] DSL2 - revision: e8cd8dfe37
+Downloading plugin nf-schema@2.6.1
+Launching `./main.nf` [nauseous_brattain]revision: e8cd8dfe37
 
-WARN: Unrecognized config option 'validation.defaultIgnoreParams'
-WARN: Unrecognized config option 'validation.monochromeLogs'
-ERROR ~ Unable to create help message: Specified param 'true' does not exist in JSON schema.
 
- -- Check script 'subworkflows/nf-core/utils_nfschema_plugin/main.nf' at line: 41 or see '.nextflow.log' file for more details
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/proteinfamilies 2.3.0dev
+------------------------------------------------------
+Typical pipeline command:
+
+  nextflow run nf-core/proteinfamilies -profile <docker/singularity/.../institute> --input samplesheet.csv --outdir <OUTDIR>
+
+help message of that parameter will be printed.  
+or `--helpFull`.  
+
+Input/output options
+  --input                                        [string] Path to comma-separated file '.csv' containing information about the samples in the experiment. 
+ 
+  --outdir                                       [string] The output directory where the results will be saved. You have to use absolute paths to storage on 
+Cloud infrastructure.  
+  --email                                        [string] Email address for completion summary. Example: name.surname@example.com 
+  --multiqc_title                                [string] MultiQC report title. Printed as page header, used for filename if not otherwise specified. 
+
+Generic options
+  --multiqc_methods_description                  [string]          Custom MultiQC yaml file containing HTML including a methods description. 
+  --help                                         [boolean, string] Display the help message. 
+  --help_full                                    [boolean]         Display the full detailed help message. 
+  --show_hidden                                  [boolean]         Display hidden parameters in the help message (only works when --help or --help_full are provided). 
+ 
+
+Quality check parameters
+  --skip_preprocessing                           [boolean] Skip all default QC steps for sequences (gap trimming, length filtering, validation, duplicate 
+removal).  
+  --min_seq_length                               [integer] The minimum allowed sequence length [default: 30] 
+  --max_seq_length                               [integer] The maximum allowed sequence length [default: 5000] 
+  --remove_duplicates_on_sequence                [boolean] Remove duplicate input amino acid sequences, based on the sequence. 
+
+Clustering parameters
+  --save_mmseqs_db                               [boolean] Save the db output folder of mmseqs createdb 
+  --clustering_tool                              [string]  Choose clustering algorithm. Either simple 'cluster' for medium size inputs, or 'linclust' for less 
+sensitive clustering of larger datasets.  (accepted: linclust, cluster) [default: cluster]  
+  --cluster_seq_identity                         [number]  mmseqs parameter for minimum sequence identity [default: 0.3] 
+  --cluster_coverage                             [number]  mmseqs parameter for minimum sequence coverage ratio [default: 0.5] 
+  --cluster_cov_mode                             [integer] mmseqs parameter for coverage mode: 0 for both, 1 for target and 2 for query sequence [default: 
+0]  
+  --save_mmseqs_clustering                       [boolean] Save the clustering output folder of mmseqs cluster or linclust 
+  --cluster_size_threshold                       [integer] Minimum clustering chunk size threshold to create seed Multiple Sequence Alignments upon. 
+[default: 25]  
+  --save_mmseqs_chunked_fasta                    [boolean] Save membership-filtered initial mmseqs clusters in fasta format 
+
+Alignment parameters
+  --alignment_tool                               [string]  Choose alignment tool. FAMSA is recommended as best time-memory-accuracy combination option.  
+(accepted: famsa, mafft)  
+  --clipkit_out_format                           [string]  Choose the output format of the clipped alignment. [default: clipkit] 
+  --trim_ends_only                               [boolean] Choose if ClipKIT should only clip gaps at the ends of the MSAs. [default: true] 
+  --gap_threshold                                [number]  Multiple Sequence Alignment (MSA) positions with gappiness greater than this threshold will be 
+trimmed [default: 0.5]  
+  --hmmsearch_evalue_cutoff                      [number]  hmmsearch e-value cutoff threshold for reported results [default: 0.001] 
+  --save_hmmsearch_results                       [boolean] Save the output of hmmsearch (.domtbl.gz and .tbl.gz) 
+  --hmmsearch_query_length_threshold             [number]  hmmsearch minimum length percentage filter of hit env vs query length [default: 0.9] 
+  --save_hmmsearch_filtered_fasta                [boolean] Save family fasta files after recruiting sequences with hmmsearch 
+
+Redundancy removal parameters
+  --hmmsearch_family_redundancy_length_threshold [number]  hmmsearch minimum length percentage filter of hit env vs query length, for redundant family removal 
+[default: 1.0]  
+  --hmmsearch_family_similarity_length_threshold [number]  hmmsearch minimum length percentage of hit env vs query length, to flag and report similar families 
+(and to optionally merge) [default: 0.9]  
+  --save_non_redundant_fams_fasta                [boolean] Save only the fasta files of non-redundant families (might still contain redundant sequences) 
+ 
+  --cluster_seq_identity_for_redundancy          [number]  mmseqs parameter for minimum sequence identity [default: 0.9] 
+  --cluster_coverage_for_redundancy              [number]  mmseqs parameter for minimum sequence coverage ratio [default: 0.9] 
+  --cluster_cov_mode_for_redundancy              [integer] mmseqs parameter for coverage mode: 0 for both, 1 for target and 2 for query sequence [default: 
+0]  
+  --save_non_redundant_seqs_fasta                [boolean] Save the final family fasta files with sequence redundancy removed 
+ !! Hiding 29 param(s), use the `--showHidden` parameter to show them !!
+------------------------------------------------------
+
+* The pipeline
+    https://doi.org/10.1101/2025.08.12.670010
+    https://doi.org/10.5281/zenodo.14881993
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/proteinfamilies/blob/main/CITATIONS.md
+
