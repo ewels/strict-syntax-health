@@ -3,10 +3,114 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 25.12.0-edge
 
-Launching `./main.nf` [desperate_coulomb] DSL2 - revision: 919a29f303
+Downloading plugin nf-schema@2.5.1
+Launching `./main.nf` [condescending_picasso]revision: 919a29f303
 
 WARN: Unrecognized config option 'validation.defaultIgnoreParams'
 WARN: Unrecognized config option 'validation.monochromeLogs'
-ERROR ~ Unable to create help message: Specified param 'true' does not exist in JSON schema.
 
- -- Check script 'subworkflows/nf-core/utils_nfschema_plugin/main.nf' at line: 41 or see '.nextflow.log' file for more details
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/createtaxdb 2.1.0dev
+------------------------------------------------------
+Typical pipeline command:
+
+  nextflow run nf-core/createtaxdb -profile <docker/singularity/.../institute> --input samplesheet.csv --outdir <OUTDIR>
+
+help message of that parameter will be printed.  
+or `--helpFull`.  
+
+Input/output options
+  --input                            [string]  Path to comma-separated file containing information about the samples in the experiment. 
+  --outdir                           [string]  The output directory where the results will be saved. You have to use absolute paths to storage on 
+Cloud infrastructure.  
+  --email                            [string]  Email address for completion summary. 
+  --multiqc_title                    [string]  MultiQC report title. Printed as page header, used for filename if not otherwise specified. 
+  --dbname                           [string]  Specify name that resulting databases will be prefixed with. 
+  --accession2taxid                  [string]  NCBI-style four-column accession to taxonomy ID map file 
+  --prot2taxid                       [string]  Two column protein sequence accession ID to taxonomy map file. 
+  --nucl2taxid                       [string]  Two column nucleotide sequence accession ID to taxonomy map file. 
+  --nodesdmp                         [string]  Path to NCBI-style taxonomy node dmp file. 
+  --namesdmp                         [string]  Path to NCBI-style taxonomy names dmp file. 
+  --genomesizes                      [string]  Path to NCBI or GTDB genome sizes file 
+  --malt_mapdb                       [string]  Path to MEGAN6/MALT mapping db file 
+  --malt_mapdb_format                [string]  Specify the type of MALT mapdb provided, based on the corresponding MALT flag.  (accepted: mdb, 
+a2t, s2t, a2ec, s2ec, t4ec, a2eggnog, s2eggnog, t4eggnog, a2gtdb, s2gtdb, t4gtdb, ...)  
+  --save_concatenated_fastas         [boolean] Save concatenated input FASTAs 
+
+Database Building Options
+  --build_bracken                    [boolean] Turn on extending of Kraken2 database to include Bracken files. Requires nucleotide FASTA File 
+input.  
+  --bracken_build_options            [string]  Specify parameters being given to bracken build. Parameters must be supplied in quotes: 
+`--<tool>_build_options "--your_param"`.  
+  --build_centrifuge                 [boolean] Turn on building of Centrifuge database. Requires nucleotide FASTA file input. 
+  --centrifuge_build_options         [string]  Specify parameters being given to centrifuge-build. Parameters must be supplied in quotes: 
+`--<tool>_build_options "--your_param"`.  
+  --build_diamond                    [boolean] Turn on building of DIAMOND database. Requires amino-acid FASTA file input. 
+  --diamond_build_options            [string]  Specify parameters being given to diamond makedb. Parameters must be supplied in quotes: 
+`--<tool>_build_options "--your_param"`.  
+  --build_ganon                      [boolean] Turn on building of ganon database. Requires nucleotide FASTA file input. 
+  --ganon_build_options              [string]  Specify parameters being given to ganon buildcustom. Parameters must be supplied in quotes: 
+`--<tool>_build_options "--your_param"`.  
+  --build_kaiju                      [boolean] Turn on building of Kaiju database. Requires amino-acid FASTA file input. 
+  --kaiju_build_options              [string]  Specify parameters being given to kaiju-mkbwt. Parameters must be supplied in quotes: 
+`--<tool>_build_options "--your_param"`.  
+  --kaiju_keepintermediate           [boolean] Save intermediate files otherwise not required for downstream classification. 
+  --build_kmcp                       [boolean] Turn on building of KMCP database. Requires nucleotide FASTA file input. 
+  --kmcp_compute_options             [string]  Specify parameters being given to kmcp compute. Parameters must be supplied in quotes: 
+`--<tool>_build_options "--your_param"`.  
+  --kmcp_index_options               [string]  Specify parameters being given to kmcp index. Parameters must be supplied in quotes: 
+`--<tool>_build_options "--your_param"`.  
+  --build_kraken2                    [boolean] Turn on building of Kraken2 database. Requires nucleotide FASTA file input. 
+  --kraken2_build_options            [string]  Specify parameters being given to kraken2 build. Parameters must be supplied in quotes: 
+`--<tool>_build_options "--your_param"`.  
+  --kraken2_keepintermediate         [boolean] Retain intermediate Kraken2 build files for inspection. 
+  --build_krakenuniq                 [boolean] Turn on building of KrakenUniq database. Requires nucleotide FASTA file input. 
+  --krakenuniq_build_options         [string]  Specify parameters being given to krakenuniq build. Parameters must be supplied in quotes: 
+`--<tool>_build_options "--your_param"`.  
+  --krakenuniq_keepintermediate      [boolean] Save intermediate files otherwise not required for downstream classification. 
+  --build_malt                       [boolean] Turn on building of MALT database. Requires nucleotide FASTA file input. 
+  --malt_build_options               [string]  Specify parameters given to malt-build. Must include --sequenceType DNA or --sequenceType Protein. 
+Parameters must be supplied in quotes: `--malt_build_options "--sequenceType DNA --your_param". 
+[default: --sequenceType DNA]  
+  --build_sourmash_dna               [boolean] Whether to build a sourmash reference from the provided nucleotide sequences. 
+  --sourmash_build_dna_options       [string]  Specify parameters given to sourmash sketch dna. Must start with sourmash sketch dna's 
+'--param-string'. [default: --param-string \'scaled=1000,k=31,noabund\]  
+  --build_sourmash_protein           [boolean] Whether to build a sourmash reference from the provided amino acid sequences. 
+  --sourmash_build_protein_options   [string]  Specify parameters given to sourmash sketch protein. Must start with sourmash sketch protein's 
+'--param-string'. [default: --param-string \'scaled=200,k=10,noabund\]  
+  --sourmash_batch_size              [integer] Sourmash can perform the main build step in parallel batches. Set the size of the batches. 
+[default: 100]  
+  --build_sylph                      [boolean] Turn on building of sylph database. Requires nucleotide FASTA file input. 
+  --sylph_build_options              [string]  Specify parameters being given to sylph sketch. 
+  --build_metacache                  [boolean] Turn on building of MetaCache database. Requires nucleotide FASTA file input. 
+  --metacache_build_options          [string]  Specify parameters being given to metacache build. 
+
+Downstream pipeline samplesheet generation options
+  --generate_downstream_samplesheets [boolean] Turn on generation of samplesheets for downstream pipelines. 
+  --generate_pipeline_samplesheets   [string]  Specify a comma separated string in quotes to specify which pipeline to generate a samplesheet for. 
+ 
+
+Generic options
+  --unzip_batch_size                 [integer]         How many files to unzip in parallel in a single job. [default: 10000] 
+  --multiqc_methods_description      [string]          Custom MultiQC yaml file containing HTML including a methods description. 
+  --help                             [boolean, string] Display the help message. 
+  --help_full                        [boolean]         Display the full detailed help message. 
+  --show_hidden                      [boolean]         Display hidden parameters in the help message (only works when --help or --help_full are provided). 
+ 
+ !! Hiding 18 param(s), use the `--showHidden` parameter to show them !!
+------------------------------------------------------
+
+* The pipeline
+    https://doi.org/10.5281/zenodo.15696114
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/createtaxdb/blob/main/CITATIONS.md
+

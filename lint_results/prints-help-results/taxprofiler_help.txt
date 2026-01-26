@@ -3,10 +3,193 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 25.12.0-edge
 
-Launching `./main.nf` [elated_gates] DSL2 - revision: 88a6ba0e18
+Launching `./main.nf` [extravagant_cantor]revision: 88a6ba0e18
 
 WARN: Unrecognized config option 'validation.defaultIgnoreParams'
 WARN: Unrecognized config option 'validation.monochromeLogs'
-ERROR ~ Unable to create help message: Specified param 'true' does not exist in JSON schema.
 
- -- Check script 'subworkflows/nf-core/utils_nfschema_plugin/main.nf' at line: 41 or see '.nextflow.log' file for more details
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/taxprofiler 1.3.0dev
+------------------------------------------------------
+Typical pipeline command:
+
+  nextflow run nf-core/taxprofiler -profile <docker/singularity/.../institute> --input samplesheet.csv --outdir <OUTDIR>
+
+help message of that parameter will be printed.  
+or `--helpFull`.  
+
+Input/output options
+  --input                                                [string]  Path to comma-separated file containing information about the samples and libraries/runs. 
+  --databases                                            [string]  Path to comma-separated file containing information about databases and profiling parameters for 
+each taxonomic profiler  
+  --save_untarred_databases                              [boolean] Specify to save decompressed user-supplied TAR archives of databases 
+  --outdir                                               [string]  The output directory where the results will be saved. You have to use absolute paths to storage on 
+Cloud infrastructure.  
+  --email                                                [string]  Email address for completion summary. 
+  --multiqc_title                                        [string]  MultiQC report title. Printed as page header, used for filename if not otherwise specified. 
+
+Preprocessing general QC options
+  --skip_preprocessing_qc                                [boolean] Specify to skip sequencing quality control of raw sequencing reads 
+  --preprocessing_qc_tool                                [string]  Specify the tool used for quality control of raw sequencing reads  (accepted: fastqc, falco) 
+[default: fastqc]  
+  --save_preprocessed_reads                              [boolean] Save reads from samples that went through the adapter clipping, pair-merging, and length filtering 
+steps for both short and long reads  
+  --save_analysis_ready_fastqs                           [boolean] Save only the final reads from all read processing steps (that are sent to classification/profiling) 
+in results directory.  
+
+Preprocessing short-read QC options
+  --perform_shortread_qc                                 [boolean] Turns on short read quality control steps (adapter clipping, complexity filtering etc.) 
+  --shortread_qc_tool                                    [string]  Specify which tool to use for short-read QC  (accepted: fastp, adapterremoval) [default: fastp] 
+ 
+  --shortread_qc_skipadaptertrim                         [boolean] Skip adapter trimming 
+  --shortread_qc_adapter1                                [string]  Specify adapter 1 nucleotide sequence 
+  --shortread_qc_adapter2                                [string]  Specify adapter 2 nucleotide sequence 
+  --shortread_qc_adapterlist                             [string]  Specify a list of all possible adapters to trim. Overrides --shortread_qc_adapter1/2. Formats: .txt 
+(AdapterRemoval) or .fasta. (fastp).  
+  --shortread_qc_mergepairs                              [boolean] Turn on merging of read pairs for paired-end data 
+  --shortread_qc_includeunmerged                         [boolean] Include unmerged reads from paired-end merging in the downstream analysis 
+  --shortread_qc_minlength                               [integer] Specify the minimum length of reads to be retained [default: 15] 
+  --shortread_qc_dedup                                   [boolean] Perform deduplication of the input reads (fastp only) 
+  --perform_shortread_complexityfilter                   [boolean] Turns on nucleotide sequence complexity filtering 
+  --shortread_complexityfilter_tool                      [string]  Specify which tool to use for complexity filtering  (accepted: bbduk, prinseqplusplus, fastp) 
+[default: bbduk]  
+  --shortread_complexityfilter_entropy                   [number]  Specify the minimum sequence entropy level for complexity filtering [default: 0.3] 
+  --shortread_complexityfilter_bbduk_windowsize          [integer] Specify the window size for BBDuk complexity filtering [default: 50] 
+  --shortread_complexityfilter_bbduk_mask                [boolean] Turn on masking rather than discarding of low complexity reads for BBduk 
+  --shortread_complexityfilter_fastp_threshold           [integer] Specify the minimum complexity filter threshold of fastp [default: 30] 
+  --shortread_complexityfilter_prinseqplusplus_mode      [string]  Specify the complexity filter mode for PRINSEQ++  (accepted: entropy, dust) [default: entropy] 
+ 
+  --shortread_complexityfilter_prinseqplusplus_dustscore [number]  Specify the minimum dust score for PRINTSEQ++ complexity filtering [default: 0.5] 
+  --save_complexityfiltered_reads                        [boolean] Save reads from samples that went through the complexity filtering step 
+
+Preprocessing long-read QC options
+  --perform_longread_qc                                  [boolean] Turns on long read quality control steps (adapter clipping, length filtering etc.) 
+  --longread_adapterremoval_tool                         [string]  Specify which tool to use for adapter trimming.  (accepted: porechop, porechop_abi) [default: 
+porechop_abi]  
+  --longread_qc_skipadaptertrim                          [boolean] Skip long-read trimming 
+  --longread_filter_tool                                 [string]  Specify which tool to use for long reads filtering  (accepted: filtlong, nanoq) [default: nanoq] 
+ 
+  --longread_qc_skipqualityfilter                        [boolean] Skip long-read length and quality filtering 
+  --longread_qc_qualityfilter_minlength                  [integer] Specify the minimum length of reads to be retained [default: 1000] 
+  --longread_qc_qualityfilter_keeppercent                [integer] Specify the percent of high-quality bases to be retained [default: 90] 
+  --longread_qc_qualityfilter_targetbases                [integer] Filtlong only: specify the number of high-quality bases in the library to be retained [default: 
+500000000]  
+  --longread_qc_qualityfilter_minquality                 [integer] Nanoq only: specify the minimum average read quality filter (Q) [default: 7] 
+
+Redundancy Estimation
+  --perform_shortread_redundancyestimation               [boolean] Turn on short-read metagenome sequencing redundancy estimation with nonpareil. Warning: only use for 
+shallow short-read sequencing datasets.  
+  --shortread_redundancyestimation_mode                  [string]  Specify mode for identifying redundant reads  (accepted: kmer, alignment) [default: kmer] 
+
+Preprocessing host removal options
+  --perform_shortread_hostremoval                        [boolean] Turn on short-read host removal 
+  --perform_longread_hostremoval                         [boolean] Turn on long-read host removal 
+  --hostremoval_reference                                [string]  Specify path to single reference FASTA of host(s) genome(s) 
+  --shortread_hostremoval_index                          [string]  Specify path to the directory containing pre-made BowTie2 indexes of the host removal reference 
+ 
+  --longread_hostremoval_index                           [string]  Specify path to a pre-made Minimap2 index file (.mmi) of the host removal reference 
+  --save_hostremoval_index                               [boolean] Save mapping index of input reference when not already supplied by user 
+  --save_hostremoval_bam                                 [boolean] Saved mapped and unmapped reads in BAM format from host removal 
+  --save_hostremoval_unmapped                            [boolean] Save reads from samples that went through the host-removal step 
+
+Preprocessing run merging options
+  --perform_runmerging                                   [boolean] Turn on run merging 
+  --save_runmerged_reads                                 [boolean] Save reads from samples that went through the run-merging step 
+
+Profiling options
+  --run_centrifuge                                       [boolean] Turn on profiling with Centrifuge. Requires database to be present CSV file passed to --databases 
+ 
+  --centrifuge_save_reads                                [boolean] Turn on saving of Centrifuge-aligned reads 
+  --run_diamond                                          [boolean] Turn on profiling with DIAMOND. For unmerged paired-read libraries, only read1 will be used Requires 
+database to be present CSV file passed to --databases  
+  --diamond_output_format                                [string]  Specify output format from DIAMOND profiling.  (accepted: blast, xml, txt, daa, sam, tsv, paf) 
+[default: tsv]  
+  --diamond_save_reads                                   [boolean] Turn on saving of DIAMOND-aligned reads. Will override --diamond_output_format and no taxon tables 
+will be generated  
+  --run_kaiju                                            [boolean] Turn on profiling with Kaiju. Requires database to be present CSV file passed to --databases 
+ 
+  --kaiju_expand_viruses                                 [boolean] Turn on expanding of virus hits to individual viruses rather than aggregating at a taxonomic level. 
+ 
+  --kaiju_taxon_rank                                     [string]  Specify taxonomic rank to be displayed in Kaiju taxon table  (accepted: phylum, class, order, 
+family, genus, species) [default: species]  
+  --run_kraken2                                          [boolean] Turn on profiling with Kraken2. Requires database to be present CSV file passed to --databases 
+ 
+  --kraken2_save_reads                                   [boolean] Turn on saving of Kraken2-aligned reads 
+  --kraken2_save_readclassifications                     [boolean] Turn on saving of Kraken2 per-read taxonomic assignment file 
+  --kraken2_save_minimizers                              [boolean] Turn on saving minimizer information in the kraken2 report thus increasing to an eight column 
+layout.  
+  --run_krakenuniq                                       [boolean] Turn on profiling with KrakenUniq. Requires one or more KrakenUniq databases to be present in the 
+CSV file passed to --databases.  
+  --krakenuniq_save_reads                                [boolean] Turn on saving of KrakenUniq (un-)classified reads as FASTA. 
+  --krakenuniq_ram_chunk_size                            [string]  Specify a RAM chunk size for all KrakenUniq databases when loading into memory when you want to load 
+via chunks. Specify in `--databases` for per-database values.  
+  --krakenuniq_save_readclassifications                  [boolean] Turn on saving of KrakenUniq per-read taxonomic assignment file. 
+  --krakenuniq_batch_size                                [integer] Specify the number of samples for each KrakenUniq run. [default: 20] 
+  --run_bracken                                          [boolean] Turn on Bracken (and the required Kraken2 prerequisite step). 
+  --bracken_save_intermediatekraken2                     [boolean] Turn on the saving of the intermediate Kraken2 files used as input to Bracken itself into Kraken2 
+results folder  
+  --run_malt                                             [boolean] Turn on profiling with MALT. Requires database to be present CSV file passed to --databases 
+  --malt_mode                                            [string]  Specify which MALT alignment mode to use  (accepted: Unknown, BlastN, BlastP, BlastX, 
+Classifier) [default: BlastN]  
+  --malt_save_reads                                      [boolean] Turn on saving of MALT-aligned reads 
+  --malt_generate_megansummary                           [boolean] Turn on generation of MEGAN summary file from MALT results 
+  --run_metaphlan                                        [boolean] Turn on profiling with MetaPhlAn. Requires database to be present CSV file passed to --databases 
+ 
+  --metaphlan_save_samfiles                              [boolean] Turn on saving of MetaPhlAn reads aligned against marker genes in SAM format 
+  --run_motus                                            [boolean] Turn on profiling with mOTUs. Requires database to be present CSV file passed to --databases 
+ 
+  --motus_use_relative_abundance                         [boolean] Turn on printing relative abundance instead of counts. 
+  --motus_save_mgc_read_counts                           [boolean] Turn on saving the mgc reads count. 
+  --motus_remove_ncbi_ids                                [boolean] Turn on removing NCBI taxonomic IDs. 
+  --run_kmcp                                             [boolean] Turn on classification with KMCP. 
+  --kmcp_save_search                                     [boolean] Turn on saving the output of KMCP search 
+  --run_ganon                                            [boolean] Turn on profiling with ganon. Requires database to be present CSV file passed to --databases. 
+ 
+  --ganon_save_readclassifications                       [boolean] Turn on saving of ganon per-read taxonomic assignment file(s). 
+  --ganon_report_type                                    [string]  Specify the type of ganon report to save.  (accepted: abundance, reads, matches, dist, corr) 
+[default: reads]  
+  --ganon_report_rank                                    [string]  Specify the taxonomic report the ganon report file should display. [default: default] 
+  --ganon_report_toppercentile                           [integer] Specify a percentile within which hits will be reported in ganon report output.. [default: 0] 
+ 
+  --ganon_report_mincount                                [integer] Specify a minimum number of reads a hit must have to be retained in the ganon report. [default: 
+0]  
+  --ganon_report_maxcount                                [integer] Specify a maximum number of reads a hit must have to be retained in the ganon report. [default: 
+0]  
+
+Postprocessing and visualisation options
+  --run_profile_standardisation                          [boolean] Turn on standardisation of taxon tables across profilers 
+  --standardisation_motus_generatebiom                   [boolean] Turn on generation of BIOM output (currently only applies to mOTUs) 
+  --run_krona                                            [boolean] Turn on generation of Krona plots for supported profilers 
+  --krona_taxonomy_directory                             [string]  Specify path to krona taxonomy directories (required for MALT krona plots) 
+  --standardisation_taxpasta_format                      [string]  The desired output format.  (accepted: tsv, csv, arrow, parquet, biom) [default: tsv] 
+  --taxpasta_taxonomy_dir                                [string]  The path to a directory containing taxdump files. 
+  --taxpasta_add_name                                    [boolean] Add the taxon name to the output. Requires --taxpasta_taxonomy_dir. 
+  --taxpasta_add_rank                                    [boolean] Add the taxon rank to the output. Requires --taxpasta_taxonomy_dir. 
+  --taxpasta_add_lineage                                 [boolean] Add the taxon's entire name lineage to the output. Requires --taxpasta_taxonomy_dir. 
+  --taxpasta_add_idlineage                               [boolean] Add the taxon's entire ID lineage to the output. Requires --taxpasta_taxonomy_dir. 
+  --taxpasta_add_ranklineage                             [boolean] Add the taxon's entire rank lineage to the output. Requires --taxpasta_taxonomy_dir. 
+  --taxpasta_ignore_errors                               [boolean] Ignore individual profiles that cause errors. 
+
+Generic options
+  --multiqc_methods_description                          [string]          Custom MultiQC yaml file containing HTML including a methods description. 
+  --help                                                 [boolean, string] Display the help message. 
+  --help_full                                            [boolean]         Display the full detailed help message. 
+  --show_hidden                                          [boolean]         Display hidden parameters in the help message (only works when --help or --help_full are provided). 
+ 
+ !! Hiding 18 param(s), use the `--showHidden` parameter to show them !!
+------------------------------------------------------
+
+* The pipeline
+    https://doi.org/10.1101/2023.10.20.563221
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/taxprofiler/blob/master/CITATIONS.md
+

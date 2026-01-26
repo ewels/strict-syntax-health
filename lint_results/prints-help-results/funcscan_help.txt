@@ -3,11 +3,323 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 25.12.0-edge
 
-Downloading plugin nf-schema@2.5.1
-Launching `./main.nf` [insane_minsky] DSL2 - revision: 67661b9bcf
+Launching `./main.nf` [fabulous_meitner]revision: 67661b9bcf
 
 WARN: Unrecognized config option 'validation.defaultIgnoreParams'
 WARN: Unrecognized config option 'validation.monochromeLogs'
-ERROR ~ Unable to create help message: Specified param 'true' does not exist in JSON schema.
 
- -- Check script 'subworkflows/nf-core/utils_nfschema_plugin/main.nf' at line: 41 or see '.nextflow.log' file for more details
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/funcscan 3.1.0dev
+------------------------------------------------------
+Typical pipeline command:
+
+  nextflow run nf-core/funcscan -profile <docker/singularity/.../institute> --input samplesheet.csv --outdir <OUTDIR>
+
+help message of that parameter will be printed.  
+or `--helpFull`.  
+
+Input/output options
+  --input                                           [string] Path to comma-separated file containing sample names and paths to corresponding FASTA files, and 
+optional annotation files.  
+  --outdir                                          [string] The output directory where the results will be saved. You have to use absolute paths to storage on 
+Cloud infrastructure.  
+  --email                                           [string] Email address for completion summary. 
+  --multiqc_title                                   [string] MultiQC report title. Printed as page header, used for filename if not otherwise specified. 
+
+Screening type activation
+  --run_amp_screening                               [boolean] Activate antimicrobial peptide genes screening tools. 
+  --run_arg_screening                               [boolean] Activate antimicrobial resistance gene screening tools. 
+  --run_bgc_screening                               [boolean] Activate biosynthetic gene cluster screening tools. 
+
+Taxonomic classification: general options
+  --run_taxa_classification                         [boolean] Activates the taxonomic classification of input nucleotide sequences. 
+  --taxa_classification_tool                        [string]  Specifies the tool used for taxonomic classification.  (accepted: mmseqs2) [default: mmseqs2] 
+ 
+  --taxa_classification_mmseqs_compressed           [boolean] If MMseqs2 is chosen as taxonomic classification tool: Specifies if the output of all MMseqs2 
+subcommands shall be compressed.  
+
+Taxonomic classification: MMseqs2 databases
+  --taxa_classification_mmseqs_db                   [string]  Specify a path to MMseqs2-formatted database. 
+  --taxa_classification_mmseqs_db_id                [string]  Specify the label of the database to be used. [default: Kalamari] 
+  --taxa_classification_mmseqs_db_savetmp           [boolean] Specify whether the temporary files should be saved. 
+
+Taxonomic classification: MMseqs2 taxonomy
+  --taxa_classification_mmseqs_taxonomy_savetmp     [boolean] Specify whether to save the temporary files. 
+  --taxa_classification_mmseqs_taxonomy_searchtype  [integer] Specify the alignment type between database and query. [default: 2] 
+  --taxa_classification_mmseqs_taxonomy_lcaranks    [string]  Specify the taxonomic levels to display in the result table. [default: 
+kingdom,phylum,class,order,family,genus,species]  
+  --taxa_classification_mmseqs_taxonomy_taxlineage  [integer] Specify whether to include or remove the taxonomic lineage. [default: 1] 
+  --taxa_classification_mmseqs_taxonomy_sensitivity [number]  Specify the speed and sensitivity for taxonomy assignment. [default: 5] 
+  --taxa_classification_mmseqs_taxonomy_orffilters  [number]  Specify the ORF search sensitivity in the prefilter step. [default: 2] 
+  --taxa_classification_mmseqs_taxonomy_lcamode     [integer] Specify the mode to assign the taxonomy. [default: 3] 
+  --taxa_classification_mmseqs_taxonomy_votemode    [integer] Specify the weights of the taxonomic assignment. [default: 1] 
+
+Annotation: general options
+  --annotation_tool                                 [string]  Specify which annotation tool to use for some downstream tools.  (accepted: prodigal, pyrodigal, 
+prokka, bakta) [default: pyrodigal]  
+  --save_annotations                                [boolean] Specify whether to save gene annotations in the results directory. 
+
+Annotation: BAKTA
+  --annotation_bakta_db                             [string]  Specify a path to a local copy of a BAKTA database. 
+  --annotation_bakta_db_downloadtype                [string]  Download full or light version of the Bakta database if not supplying own database.  (accepted: 
+full, light) [default: full]  
+  --annotation_bakta_singlemode                     [boolean] Use the default genome-length optimised mode (rather than the metagenome mode). 
+  --annotation_bakta_mincontiglen                   [integer] Specify the minimum contig size. [default: 1] 
+  --annotation_bakta_translationtable               [integer] Specify the genetic code translation table. [default: 11] 
+  --annotation_bakta_gram                           [string]  Specify the type of bacteria to be annotated to detect signaling peptides.  (accepted: +, -, ?) 
+[default: ?]  
+  --annotation_bakta_complete                       [boolean] Specify that all contigs are complete replicons. 
+  --annotation_bakta_renamecontigheaders            [boolean] Changes the original contig headers. 
+  --annotation_bakta_compliant                      [boolean] Clean the result annotations to standardise them to Genbank/ENA conventions. 
+  --annotation_bakta_trna                           [boolean] Activate tRNA detection & annotation. 
+  --annotation_bakta_tmrna                          [boolean] Activate tmRNA detection & annotation. 
+  --annotation_bakta_rrna                           [boolean] Activate rRNA detection & annotation. 
+  --annotation_bakta_ncrna                          [boolean] Activate ncRNA detection & annotation. 
+  --annotation_bakta_ncrnaregion                    [boolean] Activate ncRNA region detection & annotation. 
+  --annotation_bakta_crispr                         [boolean] Activate CRISPR array detection & annotation. 
+  --annotation_bakta_skipcds                        [boolean] Skip CDS detection & annotation. 
+  --annotation_bakta_pseudo                         [boolean] Activate pseudogene detection & annotation. 
+  --annotation_bakta_skipsorf                       [boolean] Skip sORF detection & annotation. 
+  --annotation_bakta_gap                            [boolean] Activate gap detection & annotation. 
+  --annotation_bakta_ori                            [boolean] Activate oriC/oriT detection & annotation. 
+  --annotation_bakta_activate_plot                  [boolean] Activate generation of circular genome plots. 
+  --annotation_bakta_hmms                           [string]  Supply a path of an HMM file of trusted hidden markov models in HMMER format for CDS annotation 
+ 
+
+Annotation: Prokka
+  --annotation_prokka_singlemode                    [boolean] Use the default genome-length optimised mode (rather than the metagenome mode). 
+  --annotation_prokka_rawproduct                    [boolean] Suppress the default clean-up of the gene annotations. 
+  --annotation_prokka_kingdom                       [string]  Specify the kingdom that the input represents.  (accepted: Archaea, Bacteria, Mitochondria, 
+Viruses) [default: Bacteria]  
+  --annotation_prokka_gcode                         [integer] Specify the translation table used to annotate the sequences. [default: 11] 
+  --annotation_prokka_mincontiglen                  [integer] Minimum contig size required for annotation (bp). [default: 1] 
+  --annotation_prokka_evalue                        [number]  E-value cut-off. [default: 0.000001] 
+  --annotation_prokka_coverage                      [integer] Set the assigned minimum coverage. [default: 80] 
+  --annotation_prokka_cdsrnaolap                    [boolean] Allow transfer RNA (trRNA) to overlap coding sequences (CDS). 
+  --annotation_prokka_rnammer                       [boolean] Use RNAmmer for rRNA prediction. 
+  --annotation_prokka_compliant                     [boolean] Force contig name to Genbank/ENA/DDJB naming rules. [default: true] 
+  --annotation_prokka_addgenes                      [boolean] Add the gene features for each CDS hit. 
+  --annotation_prokka_retaincontigheaders           [boolean] Retains contig names. 
+
+Annotation: Prodigal
+  --annotation_prodigal_singlemode                  [boolean] Specify whether to use Prodigal's single-genome mode for long sequences. 
+  --annotation_prodigal_closed                      [boolean] Does not allow partial genes on contig edges. 
+  --annotation_prodigal_transtable                  [integer] Specifies the translation table used for gene annotation. [default: 11] 
+  --annotation_prodigal_forcenonsd                  [boolean] Forces Prodigal to scan for motifs. 
+
+Annotation: Pyrodigal
+  --annotation_pyrodigal_singlemode                 [boolean] Specify whether to use Pyrodigal's single-genome mode for long sequences. 
+  --annotation_pyrodigal_closed                     [boolean] Does not allow partial genes on contig edges. 
+  --annotation_pyrodigal_transtable                 [integer] Specifies the translation table used for gene annotation. [default: 11] 
+  --annotation_pyrodigal_forcenonsd                 [boolean] Forces Pyrodigal to scan for motifs. 
+  --annotation_pyrodigal_usespecialstopcharacter    [boolean] This forces Pyrodigal to append asterisks (`*`) as stop codon indicators. Do not use when running 
+AMP workflow.  
+
+Protein Annotation: INTERPROSCAN
+  --run_protein_annotation                          [boolean] Activates the functional annotation of annotated coding regions to provide more information about 
+the codon regions classified.  
+  --protein_annotation_tool                         [string]  Specifies the tool used for further protein annotation.  (accepted: InterProScan) [default: 
+InterProScan]  
+  --protein_annotation_interproscan_db_url          [string]  Change the database version used for annotation. [default: 
+https://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.72-103.0/interproscan-5.72-103.0-64-bit.tar.gz] 
+ 
+  --protein_annotation_interproscan_db              [string]  Path to pre-downloaded InterProScan database. 
+  --protein_annotation_interproscan_applications    [string]  Assigns the database(s) to be used to annotate the coding regions. [default: 
+PANTHER,ProSiteProfiles,ProSitePatterns,Pfam]  
+  --protein_annotation_interproscan_enableprecalc   [boolean] Pre-calculates residue mutual matches. 
+
+Database downloading options
+  --save_db                                         [boolean] Specify whether to save pipeline-downloaded databases in your results directory. 
+
+AMP: AMPlify
+  --amp_skip_amplify                                [boolean] Skip AMPlify during AMP screening. 
+
+AMP: ampir
+  --amp_skip_ampir                                  [boolean] Skip ampir during AMP screening. 
+  --amp_ampir_model                                 [string]  Specify which machine learning classification model to use.  (accepted: precursor, mature) 
+[default: precursor]  
+  --amp_ampir_minlength                             [integer] Specify minimum protein length for prediction calculation. [default: 10] 
+
+AMP: hmmsearch
+  --amp_run_hmmsearch                               [boolean] Run hmmsearch during AMP screening. 
+  --amp_hmmsearch_models                            [string]  Specify path to the AMP hmm model file(s) to search against. Must have quotes if wildcard used. 
+ 
+  --amp_hmmsearch_savealignments                    [boolean] Saves a multiple alignment of all significant hits to a file. 
+  --amp_hmmsearch_savetargets                       [boolean] Save a simple tabular file summarising the per-target output. 
+  --amp_hmmsearch_savedomains                       [boolean] Save a simple tabular file summarising the per-domain output. 
+
+AMP: Macrel
+  --amp_skip_macrel                                 [boolean] Skip Macrel during AMP screening. 
+
+AMP: ampcombi2 parsetables
+  --amp_ampcombi_db_id                              [string]  The name of the database used to classify the AMPs.  (accepted: DRAMP, APD, UniRef100) [default: 
+DRAMP]  
+  --amp_ampcombi_db                                 [string]  The path to the folder containing the reference database files. 
+  --amp_ampcombi_parsetables_cutoff                 [number]  Specifies the prediction tools' cut-offs. [default: 0.6] 
+  --amp_ampcombi_parsetables_aalength               [integer] Filter out all amino acid fragments shorter than this number. [default: 120] 
+  --amp_ampcombi_parsetables_dbevalue               [number]  Remove all DRAMP annotations that have an e-value greater than this value. [default: 5] 
+  --amp_ampcombi_parsetables_hmmevalue              [number]  Retain HMM hits that have an e-value lower than this. [default: 0.06] 
+  --amp_ampcombi_parsetables_windowstopcodon        [integer] Assign the number of codons used to look for stop codons, upstream and downstream of the AMP hit. 
+[default: 60]  
+  --amp_ampcombi_parsetables_windowtransport        [integer] Assign the number of CDSs upstream and downstream of the AMP to look for a transport protein. 
+[default: 11]  
+  --amp_ampcombi_parsetables_removehitswostopcodons [boolean] Remove hits that have no stop codon upstream and downstream of the AMP. 
+  --amp_ampcombi_parsetables_ampir                  [string]  Assigns the file extension used to identify AMPIR output. [default: .ampir.tsv] 
+  --amp_ampcombi_parsetables_amplify                [string]  Assigns the file extension used to identify AMPLIFY output. [default: .amplify.tsv] 
+  --amp_ampcombi_parsetables_macrel                 [string]  Assigns the file extension used to identify MACREL output. [default: .macrel.prediction] 
+  --amp_ampcombi_parsetables_hmmsearch              [string]  Assigns the file extension used to identify HMMER/HMMSEARCH output. [default: 
+.hmmer_hmmsearch.txt]  
+
+AMP: ampcombi2 cluster
+  --amp_ampcombi_cluster_covmode                    [number]  MMseqs2 coverage mode. [default: 0] 
+  --amp_ampcombi_cluster_sensitivity                [number]  Remove hits that have no stop codon upstream and downstream of the AMP. [default: 4] 
+  --amp_ampcombi_cluster_minmembers                 [integer] Remove clusters that don't have more AMP hits than this number. [default: 0] 
+  --amp_ampcombi_cluster_mode                       [number]  MMseqs2 clustering mode. [default: 1] 
+  --amp_ampcombi_cluster_coverage                   [number]  MMseqs2 alignment coverage. [default: 0.8] 
+  --amp_ampcombi_cluster_seqid                      [number]  MMseqs2 sequence identity. [default: 0.4] 
+  --amp_ampcombi_cluster_removesingletons           [boolean] Remove any hits that form a single member cluster. 
+
+ARG: AMRFinderPlus
+  --arg_skip_amrfinderplus                          [boolean] Skip AMRFinderPlus during the ARG screening. 
+  --arg_amrfinderplus_db                            [string]  Specify the path to a local version of the ARMFinderPlus database. 
+  --arg_amrfinderplus_identmin                      [number]  Minimum percent identity to reference sequence. [default: -1] 
+  --arg_amrfinderplus_coveragemin                   [number]  Minimum coverage of the reference protein. [default: 0.5] 
+  --arg_amrfinderplus_translationtable              [integer] Specify which NCBI genetic code to use for translated BLAST. [default: 11] 
+  --arg_amrfinderplus_plus                          [boolean] Add the plus genes to the report. 
+  --arg_amrfinderplus_name                          [boolean] Add identified column to AMRFinderPlus output. 
+
+ARG: DeepARG
+  --arg_skip_deeparg                                [boolean] Skip DeepARG during the ARG screening. 
+  --arg_deeparg_db                                  [string]  Specify the path to the DeepARG database. 
+  --arg_deeparg_db_version                          [integer] Specify the numeric version number of a user supplied DeepaRG database. [default: 2] 
+  --arg_deeparg_model                               [string]  Specify which model to use (short or long sequences).  (accepted: LS, SS) [default: LS] 
+  --arg_deeparg_minprob                             [number]  Specify minimum probability cutoff under which hits are discarded. [default: 0.8] 
+  --arg_deeparg_alignmentevalue                     [number]  Specify E-value cutoff under which hits are discarded. [default: 1E-10] 
+  --arg_deeparg_alignmentidentity                   [integer] Specify percent identity cutoff for sequence alignment under which hits are discarded. [default: 
+50]  
+  --arg_deeparg_alignmentoverlap                    [number]  Specify alignment read overlap. [default: 0.8] 
+  --arg_deeparg_numalignmentsperentry               [integer] Specify minimum number of alignments per entry for DIAMOND step of DeepARG. [default: 1000] 
+
+ARG: fARGene
+  --arg_skip_fargene                                [boolean] Skip fARGene during the ARG screening. 
+  --arg_fargene_hmmmodel                            [string]  Specify comma-separated list of which pre-defined HMM models to screen against [default: 
+class_a,class_b_1_2,class_b_3,class_c,class_d_1,class_d_2,qnr,tet_efflux,tet_rpg,tet_enzyme]  
+  --arg_fargene_savetmpfiles                        [boolean] Specify to save intermediate temporary files to results directory. 
+  --arg_fargene_score                               [number]  The threshold score for a sequence to be classified as a (almost) complete gene. 
+  --arg_fargene_minorflength                        [integer] The minimum length of a predicted ORF retrieved from annotating the nucleotide sequences. 
+[default: 90]  
+  --arg_fargene_orffinder                           [boolean] Defines which ORF finding algorithm to use. 
+  --arg_fargene_translationformat                   [string]  The translation table/format to use for sequence annotation. [default: pearson] 
+
+ARG: RGI
+  --arg_skip_rgi                                    [boolean] Skip RGI during the ARG screening. 
+  --arg_rgi_db                                      [string]  Path to user-defined local CARD database. 
+  --arg_rgi_savejson                                [boolean] Save RGI output .json file. 
+  --arg_rgi_savetmpfiles                            [boolean] Specify to save intermediate temporary files in the results directory. 
+  --arg_rgi_alignmenttool                           [string]  Specify the alignment tool to be used.  (accepted: BLAST, DIAMOND) [default: BLAST] 
+  --arg_rgi_includeloose                            [boolean] Include all of loose, strict and perfect hits (i.e. ≥ 95% identity) found by RGI. 
+  --arg_rgi_includenudge                            [boolean] Suppresses the default behaviour of RGI with `--arg_rgi_includeloose`. 
+  --arg_rgi_lowquality                              [boolean] Include screening of low quality contigs for partial genes. 
+  --arg_rgi_data                                    [string]  Specify a more specific data-type of input (e.g. plasmid, chromosome).  (accepted: NA, wgs, 
+plasmid, chromosome) [default: NA]  
+  --arg_rgi_split_prodigal_jobs                     [boolean] Run multiple prodigal jobs simultaneously for contigs in a fasta file. [default: true] 
+
+ARG: ABRicate
+  --arg_skip_abricate                               [boolean] Skip ABRicate during the ARG screening. 
+  --arg_abricate_db_id                              [string]  Specify the name of the ABRicate database to use. Names of non-default databases can be supplied if 
+`--arg_abricate_db` provided. [default: ncbi]  
+  --arg_abricate_db                                 [string]  Path to user-defined local ABRicate database directory for using custom databases. 
+  --arg_abricate_minid                              [integer] Minimum percent identity of alignment required for a hit to be considered. [default: 80] 
+  --arg_abricate_mincov                             [integer] Minimum percent coverage of alignment required for a hit to be considered. [default: 80] 
+
+ARG: hAMRonization
+  --arg_hamronization_summarizeformat               [string] Specifies summary output format.  (accepted: interactive, tsv, json) [default: tsv] 
+
+ARG: argNorm
+  --arg_skip_argnorm                                [boolean] Skip argNorm during ARG screening. 
+
+BGC: general options
+  --bgc_mincontiglength                             [integer] Specify the minimum length of contigs that go into BGC screening. [default: 3000] 
+  --bgc_savefilteredcontigs                         [boolean] Specify to save the length-filtered (unannotated) FASTAs used for BGC screening. 
+
+BGC: antiSMASH
+  --bgc_skip_antismash                              [boolean] Skip antiSMASH during the BGC screening. 
+  --bgc_antismash_db                                [string]  Path to user-defined local antiSMASH database. 
+  --bgc_antismash_contigminlength                   [integer] Minimum length a contig must have to be screened with antiSMASH. [default: 3000] 
+  --bgc_antismash_cbgeneral                         [boolean] Turn on clusterblast comparison against database of antiSMASH-predicted clusters. 
+  --bgc_antismash_cbknownclusters                   [boolean] Turn on clusterblast comparison against known gene clusters from the MIBiG database. 
+  --bgc_antismash_cbsubclusters                     [boolean] Turn on clusterblast comparison against known subclusters responsible for synthesising precursors. 
+ 
+  --bgc_antismash_ccmibig                           [boolean] Turn on ClusterCompare comparison against known gene clusters from the MIBiG database. 
+  --bgc_antismash_smcogtrees                        [boolean] Generate phylogenetic trees of secondary metabolite group orthologs. 
+  --bgc_antismash_hmmdetectionstrictness            [string]  Defines which level of strictness to use for HMM-based cluster detection.  (accepted: relaxed, 
+strict, loose) [default: relaxed]  
+  --bgc_antismash_pfam2go                           [boolean] Run Pfam to Gene Ontology mapping module. 
+  --bgc_antismash_rre                               [boolean] Run RREFinder precision mode on all RiPP gene clusters. 
+  --bgc_antismash_taxon                             [string]  Specify which taxonomic classification of input sequence to use.  (accepted: bacteria, fungi) 
+[default: bacteria]  
+  --bgc_antismash_tfbs                              [boolean] Run TFBS finder on all gene clusters. 
+  --bgc_antismash_clusterhmmer                      [boolean] Run antiSMASH with --clusterhmmer mode with Pfam profiles 
+  --bgc_antismash_fullhmmer                         [boolean] Run antiSMASH with --fullhmmer mode with Pfam profiles 
+  --bgc_antismash_tigrfam                           [boolean] Run antiSMASH with --tigrfam annotation activated 
+
+BGC: DeepBGC
+  --bgc_skip_deepbgc                                [boolean] Skip DeepBGC during the BGC screening. 
+  --bgc_deepbgc_db                                  [string]  Path to local DeepBGC database folder. 
+  --bgc_deepbgc_score                               [number]  Average protein-wise DeepBGC score threshold for extracting BGC regions from Pfam sequences. 
+[default: 0.5]  
+  --bgc_deepbgc_prodigalsinglemode                  [boolean] Run DeepBGC's internal Prodigal step in `single` mode to restrict detecting genes to long contigs 
+ 
+  --bgc_deepbgc_mergemaxproteingap                  [integer] Merge detected BGCs within given number of proteins. [default: 0] 
+  --bgc_deepbgc_mergemaxnuclgap                     [integer] Merge detected BGCs within given number of nucleotides. [default: 0] 
+  --bgc_deepbgc_minnucl                             [integer] Minimum BGC nucleotide length. [default: 1] 
+  --bgc_deepbgc_minproteins                         [integer] Minimum number of proteins in a BGC. [default: 1] 
+  --bgc_deepbgc_mindomains                          [integer] Minimum number of protein domains in a BGC. [default: 1] 
+  --bgc_deepbgc_minbiodomains                       [integer] Minimum number of known biosynthetic (as defined by antiSMASH) protein domains in a BGC. 
+[default: 0]  
+  --bgc_deepbgc_classifierscore                     [number]  DeepBGC classification score threshold for assigning classes to BGCs. [default: 0.5] 
+
+BGC: GECCO
+  --bgc_skip_gecco                                  [boolean] Skip GECCO during the BGC screening. 
+  --bgc_gecco_mask                                  [boolean] Enable unknown region masking to prevent genes from stretching across unknown nucleotides. 
+  --bgc_gecco_cds                                   [integer] The minimum number of coding sequences a valid cluster must contain. [default: 3] 
+  --bgc_gecco_pfilter                               [number]  The p-value cutoff for protein domains to be included. [default: 1E-9] 
+  --bgc_gecco_threshold                             [number]  The probability threshold for cluster detection. [default: 0.8] 
+  --bgc_gecco_edgedistance                          [integer] The minimum number of annotated genes that must separate a cluster from the edge. [default: 0] 
+ 
+  --bgc_gecco_runconvert                            [boolean] Enable GECCO file conversion to formats for downstream analysis. 
+  --bgc_gecco_convertmode                           [string]  Specify conversion mode for GECCO convert.  (accepted: clusters, gbk) [default: clusters] 
+  --bgc_gecco_convertformat                         [string]  Specify output format for GECCO convert.  (accepted: gff, bigslice, fna, faa) [default: gff] 
+ 
+
+BGC: hmmsearch
+  --bgc_run_hmmsearch                               [boolean] Run hmmsearch during BGC screening. 
+  --bgc_hmmsearch_models                            [string]  Specify path to the BGC hmm model file(s) to search against. Must have quotes if wildcard used. 
+ 
+  --bgc_hmmsearch_savealignments                    [boolean] Saves a multiple alignment of all significant hits to a file. 
+  --bgc_hmmsearch_savetargets                       [boolean] Save a simple tabular file summarising the per-target output. 
+  --bgc_hmmsearch_savedomains                       [boolean] Save a simple tabular file summarising the per-domain output. 
+
+Generic options
+  --multiqc_methods_description                     [string]          Custom MultiQC yaml file containing HTML including a methods description. 
+  --help                                            [boolean, string] Display the help message. 
+  --help_full                                       [boolean]         Display the full detailed help message. 
+  --show_hidden                                     [boolean]         Display hidden parameters in the help message (only works when --help or --help_full are provided). 
+ 
+ !! Hiding 18 param(s), use the `--showHidden` parameter to show them !!
+------------------------------------------------------
+
+* The pipeline
+    https://doi.org/10.5281/zenodo.7643099
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/funcscan/blob/master/CITATIONS.md
+

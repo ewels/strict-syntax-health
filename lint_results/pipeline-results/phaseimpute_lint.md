@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-01-16T10:25:52.052750613Z
+- Generated: 2026-01-26T00:18:30.621086289Z
 - Nextflow version: 25.12.0-edge
-- Summary: 1 error, 128 warnings
+- Summary: 2 errors, 76 warnings
 
 ## :x: Errors
 
@@ -13,28 +13,14 @@
           ^^^^^
   ```
 
+- Error: `workflows/chrcheck/main.nf:29:28`: `file` is not defined
+
+  ```nextflow
+              error "File: ${file[1]} is not a VCF, BCFT or BAM, CRAM file."
+                             ^^^^
+  ```
+
 ## :warning: Warnings
-
-- Warning: `main.nf:55:31`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_input_impute         = Channel.empty()
-                                ^^^^^^^
-  ```
-
-- Warning: `main.nf:56:31`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_input_simulate       = Channel.empty()
-                                ^^^^^^^
-  ```
-
-- Warning: `main.nf:57:31`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_input_validate       = Channel.empty()
-                                ^^^^^^^
-  ```
 
 - Warning: `main.nf:60:32`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
@@ -197,76 +183,6 @@
                                                          ^^
   ```
 
-- Warning: `subworkflows/local/bam_chr_rename_samtools/main.nf:10:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/bam_downsample_samtools/main.nf:13:24`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions      = Channel.empty()
-                         ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/bam_extract_region_samtools/main.nf:13:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/bam_impute_quilt/main.nf:14:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/bam_impute_quilt/main.nf:49:18`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          .combine(Channel.of([[], [], [], []]))
-                   ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/utils_nfcore_phaseimpute_pipeline/main.nf:175:26`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          ch_input_truth = Channel.of([[], [], []])
-                           ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/vcf_chr_rename_bcftools/main.nf:9:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/vcf_chunk_glimpse/main.nf:13:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/vcf_concordance_glimpse2/main.nf:18:24`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions      = Channel.empty()
-                         ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/vcf_concordance_glimpse2/main.nf:19:24`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_files = Channel.empty()
-                         ^^^^^^^
-  ```
-
 - Warning: `subworkflows/local/vcf_concordance_glimpse2/main.nf:28:33`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
@@ -281,158 +197,11 @@
                                                         ^^
   ```
 
-- Warning: `subworkflows/local/vcf_impute_glimpse1/main.nf:15:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/vcf_impute_glimpse1/main.nf:17:20`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      samples_file = Channel.of([[]]).collect()
-                     ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/vcf_impute_glimpse1/main.nf:18:20`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      gmap_file    = Channel.of([[]]).collect()
-                     ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/vcf_normalize_bcftools/main.nf:13:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/vcf_phase_shapeit5/main.nf:19:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
 - Warning: `subworkflows/local/vcf_phase_shapeit5/main.nf:75:30`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                       .collect{it.first()},
                                ^^
-  ```
-
-- Warning: `subworkflows/local/vcf_sites_extract_bcftools/main.nf:13:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/vcf_split_bcftools/main.nf:9:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_versions = Channel.empty()
-                    ^^^^^^^
-  ```
-
-- Warning: `workflows/chrcheck/function.nf:10:53`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-                  chr.readLines()*.split(' ').collect{it[0]},
-                                                      ^^
-  ```
-
-- Warning: `workflows/chrcheck/function.nf:37:47`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-              chr_target.each{ new_chr += "chr${it}" }
-                                                ^^
-  ```
-
-- Warning: `workflows/chrcheck/function.nf:38:37`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-              diff.each{ to_rename += it.replace('chr', '') }
-                                      ^^
-  ```
-
-- Warning: `workflows/chrcheck/function.nf:40:41`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-              chr_target.each{ new_chr += it.replace('chr', '') }
-                                          ^^
-  ```
-
-- Warning: `workflows/chrcheck/function.nf:41:43`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-              diff.each{ to_rename += "chr${it}" }
-                                            ^^
-  ```
-
-- Warning: `workflows/chrcheck/main.nf:19:23`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          ch_versions = Channel.empty()
-                        ^^^^^^^
-  ```
-
-- Warning: `workflows/chrcheck/main.nf:22:18`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-              bam: it[1] =~ 'bam|cram'
-                   ^^
-  ```
-
-- Warning: `workflows/chrcheck/main.nf:23:18`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-              vcf: it[1] =~ 'vcf|bcf'
-                   ^^
-  ```
-
-- Warning: `workflows/chrcheck/main.nf:24:20`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-              other: it[1].size() > 0
-                     ^^
-  ```
-
-- Warning: `workflows/chrcheck/main.nf:29:28`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-              error "File: ${it[1]} is not a VCF, BCFT or BAM, CRAM file."
-                             ^^
-  ```
-
-- Warning: `workflows/chrcheck/main.nf:33:24`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          ch_vcf_split = Channel.empty()
-                         ^^^^^^^
-  ```
-
-- Warning: `workflows/chrcheck/main.nf:39:24`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          ch_bam_split = Channel.empty()
-                         ^^^^^^^
-  ```
-
-- Warning: `workflows/chrcheck/main.nf:46:30`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-              ch_bam_renamed = Channel.empty()
-                               ^^^^^^^
-  ```
-
-- Warning: `workflows/chrcheck/main.nf:54:30`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-              ch_vcf_renamed = Channel.empty()
-                               ^^^^^^^
   ```
 
 - Warning: `workflows/chrcheck/main.nf:61:33`: Implicit closure parameter is deprecated, declare an explicit parameter instead
@@ -491,27 +260,6 @@
                                                               ^^
   ```
 
-- Warning: `workflows/chrcheck/main.nf:68:30`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-              ch_vcf_renamed = Channel.empty()
-                               ^^^^^^^
-  ```
-
-- Warning: `workflows/chrcheck/main.nf:69:30`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-              ch_bam_renamed = Channel.empty()
-                               ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:111:24`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_files = Channel.empty()
-                         ^^^^^^^
-  ```
-
 - Warning: `workflows/phaseimpute/main.nf:119:23`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
@@ -545,13 +293,6 @@
   ```nextflow
               ch_multiqc_files = ch_multiqc_files.mix(FILTER_CHR_DWN.out.output.map{ it[1] })
                                                                                      ^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:213:60`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-                  VCF_NORMALIZE_BCFTOOLS.out.vcf_tbi.combine(Channel.of([[]])),
-                                                             ^^^^^^^
   ```
 
 - Warning: `workflows/phaseimpute/main.nf:270:22`: Implicit closure parameter is deprecated, declare an explicit parameter instead
@@ -666,13 +407,6 @@
                                                                            ^^
   ```
 
-- Warning: `workflows/phaseimpute/main.nf:479:59`: Parameter was not used -- prefix with `_` to suppress warning
-
-  ```nextflow
-                  .map { meta_vcf, vcf, index, meta_region, region ->
-                                                            ^^^^^^
-  ```
-
 - Warning: `workflows/phaseimpute/main.nf:521:28`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
@@ -713,13 +447,6 @@
   ```nextflow
           ch_multiqc_files = ch_multiqc_files.mix(BCFTOOLS_STATS_PANEL.out.stats.map{ [it[1]] })
                                                                                        ^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:556:24`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-          ch_truth_vcf = Channel.empty()
-                         ^^^^^^^
   ```
 
 - Warning: `workflows/phaseimpute/main.nf:560:21`: Implicit closure parameter is deprecated, declare an explicit parameter instead
@@ -825,88 +552,4 @@
   ```nextflow
           ch_multiqc_files = ch_multiqc_files.mix(BCFTOOLS_STATS_TRUTH.out.stats.map{ [it[1]] })
                                                                                        ^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:626:26`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      def topic_versions = Channel.topic("versions")
-                           ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:655:45`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_config                     = Channel.fromPath("$projectDir/assets/multiqc_config.yml", checkIfExists: true)
-                                              ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:656:69`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_custom_config              = params.multiqc_config ? Channel.fromPath(params.multiqc_config, checkIfExists: true) : Channel.empty()
-                                                                      ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:656:132`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_custom_config              = params.multiqc_config ? Channel.fromPath(params.multiqc_config, checkIfExists: true) : Channel.empty()
-                                                                                                                                     ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:657:67`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_logo                       = params.multiqc_logo ? Channel.fromPath(params.multiqc_logo, checkIfExists: true) : Channel.empty()
-                                                                    ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:657:128`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_logo                       = params.multiqc_logo ? Channel.fromPath(params.multiqc_logo, checkIfExists: true) : Channel.empty()
-                                                                                                                                 ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:659:45`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_workflow_summary                   = Channel.value(paramsSummaryMultiqc(summary_params))
-                                              ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:662:45`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_methods_description                = Channel.value(methodsDescriptionText(ch_multiqc_custom_methods_description))
-                                              ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:665:76`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_replace_names              = params.multiqc_replace_names ? Channel.fromPath(params.multiqc_replace_names, checkIfExists: true) : Channel.empty()
-                                                                             ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:665:146`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_replace_names              = params.multiqc_replace_names ? Channel.fromPath(params.multiqc_replace_names, checkIfExists: true) : Channel.empty()
-                                                                                                                                                   ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:666:75`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_sample_names               = params.multiqc_sample_names ? Channel.fromPath(params.multiqc_sample_names, checkIfExists: true) : Channel.empty()
-                                                                            ^^^^^^^
-  ```
-
-- Warning: `workflows/phaseimpute/main.nf:666:144`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      ch_multiqc_sample_names               = params.multiqc_sample_names ? Channel.fromPath(params.multiqc_sample_names, checkIfExists: true) : Channel.empty()
-                                                                                                                                                 ^^^^^^^
   ```

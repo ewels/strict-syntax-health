@@ -155,11 +155,11 @@
   "createtaxdb": {
     "full_name": "nf-core/createtaxdb",
     "html_url": "https://github.com/nf-core/createtaxdb",
-    "commit": "ccf67a2b3cf8cf64630281df4cdb34f410bd9cc0",
+    "commit": "5d71a424e69d206b728d0a9a35e62fc8b2108f1a",
     "errors": 0,
     "warnings": 33,
     "parse_error": false,
-    "prints_help": false
+    "prints_help": true
   },
   "crisprseq": {
     "full_name": "nf-core/crisprseq",
@@ -353,11 +353,11 @@
   "funcscan": {
     "full_name": "nf-core/funcscan",
     "html_url": "https://github.com/nf-core/funcscan",
-    "commit": "a247f15a79d211dadf6cd1a50a6c919033bd4879",
+    "commit": "cb51e03087019e46e73958e028029317e72f223e",
     "errors": 0,
     "warnings": 73,
     "parse_error": false,
-    "prints_help": false
+    "prints_help": true
   },
   "genomeannotator": {
     "full_name": "nf-core/genomeannotator",
@@ -506,11 +506,11 @@
   "mag": {
     "full_name": "nf-core/mag",
     "html_url": "https://github.com/nf-core/mag",
-    "commit": "ee13a46ad15cf53da93cea66feadd8aa91c1feae",
+    "commit": "3cbc2a6b864648a7fc383d63202e58c9a98094d2",
     "errors": 0,
     "warnings": 35,
     "parse_error": false,
-    "prints_help": false
+    "prints_help": true
   },
   "magmap": {
     "full_name": "nf-core/magmap",
@@ -758,9 +758,9 @@
   "phaseimpute": {
     "full_name": "nf-core/phaseimpute",
     "html_url": "https://github.com/nf-core/phaseimpute",
-    "commit": "28bef6a49739f68b3079abfc689e32bffe5fbc1b",
-    "errors": 1,
-    "warnings": 128,
+    "commit": "86d4d6641715a5ea55a2b4274c300531b6a17d06",
+    "errors": 2,
+    "warnings": 76,
     "parse_error": false,
     "prints_help": null
   },
@@ -1055,7 +1055,7 @@
   "spatialxe": {
     "full_name": "nf-core/spatialxe",
     "html_url": "https://github.com/nf-core/spatialxe",
-    "commit": "b5d673fbed67cfc55247dcbc3ecf212162702352",
+    "commit": "a091bfc37eb6ec1f439a83a4fca64f4deb649b73",
     "errors": 0,
     "warnings": 98,
     "parse_error": false,
@@ -1082,11 +1082,11 @@
   "taxprofiler": {
     "full_name": "nf-core/taxprofiler",
     "html_url": "https://github.com/nf-core/taxprofiler",
-    "commit": "e36fa8aaa8405d27aa3881315b8eac91f05e8670",
+    "commit": "a7b9a116b270ea22ac2ae42ec1be684f3413de5f",
     "errors": 0,
     "warnings": 113,
     "parse_error": false,
-    "prints_help": false
+    "prints_help": true
   },
   "tbanalyzer": {
     "full_name": "nf-core/tbanalyzer",
