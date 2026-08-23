@@ -50,7 +50,7 @@
   "atacseq": {
     "full_name": "nf-core/atacseq",
     "html_url": "https://github.com/nf-core/atacseq",
-    "commit": "5a4c18b3dd9a9d9484aa28903e44a58882f34b71",
+    "commit": "4177ea95c56e15fdbdc52f6e210c3329ff69167b",
     "errors": 0,
     "warnings": 16,
     "parse_error": false,
