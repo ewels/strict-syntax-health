@@ -482,9 +482,9 @@
   "fastqrepair": {
     "full_name": "nf-core/fastqrepair",
     "html_url": "https://github.com/nf-core/fastqrepair",
-    "commit": "d2a8976f753e64b2d927911839ca99d3b05021df",
+    "commit": "7e5b7f82bb77c985543ef33eebd9e82cd56f846e",
     "errors": 0,
-    "warnings": 17,
+    "warnings": 9,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
@@ -626,7 +626,7 @@
   "hadge": {
     "full_name": "nf-core/hadge",
     "html_url": "https://github.com/nf-core/hadge",
-    "commit": "442174b85a2f358d988166a044871797ebdb0643",
+    "commit": "403600441e2f90105e62993ccbb2d2195330ce6c",
     "errors": 0,
     "warnings": 27,
     "parse_error": false,
