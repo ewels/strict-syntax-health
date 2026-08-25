@@ -1,9 +1,9 @@
 $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
 
- N E X T F L O W   ~  version 26.07.0-edge
+ N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [loquacious_volhard] revision: 71af2049ef
+Launching `./main.nf` [chaotic_carlsson] revision: 4c8b1c2912
 
 
 ------------------------------------------------------
@@ -81,7 +81,7 @@ host genome.
   --save_bbnorm_reads                    [boolean] Save normalized read files to output directory. 
 
 Quality control for long reads options
-  --skip_adapter_trimming                [boolean] Skip removing adapter sequences from long reads. 
+  --skip_longread_adapter_trimming       [boolean] Skip removing adapter sequences from long reads. 
   --skip_longread_filtering              [boolean] Skip filtering long reads. 
   --skip_longread_qc                     [boolean] Skip all default QC steps for long reads (adapter trimming, filtering, removal of lambda sequences). 
  
@@ -139,7 +139,7 @@ for you!
   --skip_spadeshybrid                    [boolean] Skip SPAdes hybrid assembly. 
   --skip_megahit                         [boolean] Skip MEGAHIT assembly. 
   --skip_ale                             [boolean] Skip ALE 
-  --skip_deepmased                       [boolean] Skip DeepMAsED assembly error detection (skips both features and predict) [default: true] 
+  --run_deepmased                        [boolean] Run DeepMAsED assembly error detection (runs both features and predict) 
   --deepmased_features_gzip              [boolean] Gzip DeepMAsED feature tables output. Useful for large assemblies to reduce disk usage. 
 [default: false]  
   --deepmased_predict_seed               [integer] Random seed for numpy in DeepMAsED predict. Set for reproducible results. [default: 12] 
@@ -255,7 +255,7 @@ Ancient DNA assembly
   --bcftools_view_high_variant_quality   [integer] minimum genotype quality for considering a variant high quality [default: 30] 
   --bcftools_view_medium_variant_quality [integer] minimum genotype quality for considering a variant medium quality [default: 20] 
   --bcftools_view_minimal_allelesupport  [integer] minimum number of bases supporting the alternative allele [default: 3] 
- !! Hiding 22 param(s), use the `--showHidden` parameter to show them !!
+ !! Hiding 23 param(s), use the `--showHidden` parameter to show them !!
 ------------------------------------------------------
 
 * The pipeline

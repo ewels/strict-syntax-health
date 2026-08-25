@@ -1,40 +1,140 @@
 # Nextflow lint results
 
-- Generated: 2026-08-12T00:23:58.891071703Z
-- Nextflow version: 26.07.0-edge
-- Summary: 20 warnings
+- Generated: 2026-08-25T00:12:06.648318678Z
+- Nextflow version: 26.08.0-edge
+- Summary: 14 errors, 20 warnings
+
+## :x: Errors
+
+- Error: `modules/local/splitfiles/main.nf:40:28`: Unexpected character: '$'
+
+  ```nextflow
+          suppa_split_file: "$(Rscript --version 2>&1 | sed -n '1p' | sed 's/.*version //; s/ (.*//')"
+                             ^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:11:1`: Module could not be parsed: '/home/runner/work/strict-syntax-health/strict-syntax-health/pipelines/rnasplice/modules/local/splitfiles/main.nf'
+
+  ```nextflow
+  include { SPLIT_FILES as SPLIT_FILES_TPM                   } from '../../../modules/local/splitfiles'
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:12:1`: Module could not be parsed: '/home/runner/work/strict-syntax-health/strict-syntax-health/pipelines/rnasplice/modules/local/splitfiles/main.nf'
+
+  ```nextflow
+  include { SPLIT_FILES as SPLIT_FILES_IOE                   } from '../../../modules/local/splitfiles'
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:13:1`: Module could not be parsed: '/home/runner/work/strict-syntax-health/strict-syntax-health/pipelines/rnasplice/modules/local/splitfiles/main.nf'
+
+  ```nextflow
+  include { SPLIT_FILES as SPLIT_FILES_IOI                   } from '../../../modules/local/splitfiles'
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:66:5`: `SPLIT_FILES_TPM` is not defined
+
+  ```nextflow
+      SPLIT_FILES_TPM (
+      ^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:73:21`: `SPLIT_FILES_TPM` is not defined
+
+  ```nextflow
+      ch_split_tpms = SPLIT_FILES_TPM.out.tpms
+                      ^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:115:9`: `SPLIT_FILES_IOE` is not defined
+
+  ```nextflow
+          SPLIT_FILES_IOE (
+          ^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:122:31`: `SPLIT_FILES_IOE` is not defined
+
+  ```nextflow
+          ch_split_events_psi = SPLIT_FILES_IOE.out.psis
+                                ^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:134:13`: `SPLIT_FILES_TPM` is not defined
+
+  ```nextflow
+              SPLIT_FILES_TPM.out.tpms
+              ^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:155:13`: `SPLIT_FILES_IOE` is not defined
+
+  ```nextflow
+              SPLIT_FILES_IOE.out.psis
+              ^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:298:9`: `SPLIT_FILES_IOI` is not defined
+
+  ```nextflow
+          SPLIT_FILES_IOI (
+          ^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:305:32`: `SPLIT_FILES_IOI` is not defined
+
+  ```nextflow
+          ch_split_isoform_psi = SPLIT_FILES_IOI.out.psis
+                                 ^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:317:13`: `SPLIT_FILES_TPM` is not defined
+
+  ```nextflow
+              SPLIT_FILES_TPM.out.tpms
+              ^^^^^^^^^^^^^^^
+  ```
+
+- Error: `subworkflows/local/suppa/main.nf:338:13`: `SPLIT_FILES_IOI` is not defined
+
+  ```nextflow
+              SPLIT_FILES_IOI.out.psis
+              ^^^^^^^^^^^^^^^
+  ```
 
 ## :warning: Warnings
 
-- Warning: `conf/modules.config:305:23`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `conf/modules.config:304:23`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               saveAs: { filename -> null }
                         ^^^^^^^^
   ```
 
-- Warning: `conf/modules.config:314:23`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `conf/modules.config:313:23`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               saveAs: { filename -> null }
                         ^^^^^^^^
   ```
 
-- Warning: `conf/modules.config:323:23`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `conf/modules.config:322:23`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               saveAs: { filename -> null }
                         ^^^^^^^^
   ```
 
-- Warning: `conf/modules.config:332:23`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `conf/modules.config:331:23`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               saveAs: { filename -> null }
                         ^^^^^^^^
   ```
 
-- Warning: `conf/modules.config:354:23`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `conf/modules.config:353:23`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               saveAs: { filename -> null }

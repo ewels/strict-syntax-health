@@ -1,9 +1,9 @@
 $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
 
- N E X T F L O W   ~  version 26.07.0-edge
+ N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [kickass_noether] revision: fcbc19ad2d
+Launching `./main.nf` [suspicious_faraday] revision: 3828577427
 
 WARN: Access to undefined parameter `fasta` -- Initialise it to a default value eg. `params.fasta = some_value`
 
@@ -23,23 +23,24 @@ help message of that parameter will be printed.
 or `--helpFull`.  
 
 Input/output options
-  --phyloplace_input            [string] Path to comma-separated file containing information about phylogenetic placements to perform. 
+  --phyloplace_input            [string]  Path to comma-separated file containing information about phylogenetic placements to perform. 
  
-  --phylosearch_input           [string] Path to comma-separated file containing information about phylogenetic searches to perform. 
-  --search_fasta                [string] Fasta file with sequences to be searched with HMM profiles. 
-  --id                          [string] Name of analysis [default: placement] 
-  --alignmethod                 [string] Method used to align query sequences with.  (accepted: hmmer, clustalo, mafft) [default: hmmer] 
+  --phylosearch_input           [string]  Path to comma-separated file containing information about phylogenetic searches to perform. 
+  --search_fasta                [string]  Fasta file with sequences to be searched with HMM profiles. 
+  --save_domtblout              [boolean] Save the per-domain hit table (`--domtblout`) from hmmsearch. 
+  --id                          [string]  Name of analysis [default: placement] 
+  --alignmethod                 [string]  Method used to align query sequences with.  (accepted: hmmer, clustalo, mafft) [default: hmmer] 
  
-  --queryseqfile                [string] Fasta file with query sequences 
-  --refseqfile                  [string] File with reference sequences. Any format supported by HMMER tools. 
-  --hmmfile                     [string] HMM file. If provided, will be used to align both the reference and query sequences. 
-  --refphylogeny                [string] Newick file with aligned reference sequences. 
-  --model                       [string] Evolutionary model to use for placement, e.g. 'LG'. 
-  --taxonomy                    [string] Tab-separated file with taxonomy assignments of reference sequences. 
-  --outdir                      [string] The output directory where the results will be saved. You have to use absolute paths to storage on 
+  --queryseqfile                [string]  Fasta file with query sequences 
+  --refseqfile                  [string]  File with reference sequences. Any format supported by HMMER tools. 
+  --hmmfile                     [string]  HMM file. If provided, will be used to align both the reference and query sequences. 
+  --refphylogeny                [string]  Newick file with aligned reference sequences. 
+  --model                       [string]  Evolutionary model to use for placement, e.g. 'LG'. 
+  --taxonomy                    [string]  Tab-separated file with taxonomy assignments of reference sequences. 
+  --outdir                      [string]  The output directory where the results will be saved. You have to use absolute paths to storage on 
 Cloud infrastructure.  
-  --email                       [string] Email address for completion summary. 
-  --multiqc_title               [string] MultiQC report title. Printed as page header, used for filename if not otherwise specified. 
+  --email                       [string]  Email address for completion summary. 
+  --multiqc_title               [string]  MultiQC report title. Printed as page header, used for filename if not otherwise specified. 
 
 Generic options
   --multiqc_methods_description [string]          Custom MultiQC yaml file containing HTML including a methods description. 
