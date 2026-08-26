@@ -1,19 +1,19 @@
 # Nextflow lint results
 
-- Generated: 2026-08-12T00:19:59.731054295Z
-- Nextflow version: 26.07.0-edge
-- Summary: 15 warnings
+- Generated: 2026-08-26T00:10:51.289242351Z
+- Nextflow version: 26.08.0-edge
+- Summary: 12 warnings
 
 ## :warning: Warnings
 
-- Warning: `modules/local/humann4/regroup/main.nf:44:9`: Variable was declared but not used
+- Warning: `modules/local/humann4/regroup/main.nf:45:9`: Variable was declared but not used
 
   ```nextflow
       def args = task.ext.args ?: ''
           ^^^^
   ```
 
-- Warning: `modules/local/humann4/renorm/main.nf:35:9`: Variable was declared but not used
+- Warning: `modules/local/humann4/renorm/main.nf:39:9`: Variable was declared but not used
 
   ```nextflow
       def args = task.ext.args ?: ''
@@ -27,28 +27,21 @@
           ^^^^
   ```
 
-- Warning: `subworkflows/local/dataprep/main.nf:45:16`: Parameter was not used -- prefix with `_` to suppress warning
-
-  ```nextflow
-          .map { group_key, meta_list, reads_list ->
-                 ^^^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/dbprep/main.nf:10:43`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/dbprep/main.nf:18:43`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
       ch_dbs_for_untar = databases.branch { db_meta, db_path ->
                                             ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/dbprep/main.nf:17:28`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/dbprep/main.nf:25:28`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .filter { db_meta, db_path ->
                              ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/profile/main.nf:221:28`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/profile/main.nf:207:28`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .filter { meta_db, file ->
@@ -76,35 +69,21 @@
       ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_funcprofiler_pipeline/main.nf:101:5`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      Channel
-      ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/utils_nfcore_funcprofiler_pipeline/main.nf:108:5`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
-
-  ```nextflow
-      Channel
-      ^^^^^^^
-  ```
-
-- Warning: `subworkflows/local/utils_nfcore_funcprofiler_pipeline/main.nf:131:5`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_funcprofiler_pipeline/main.nf:138:5`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
       hook_url //  string: hook URL for notifications
       ^^^^^^^^
   ```
 
-- Warning: `workflows/funcprofiler.nf:57:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `workflows/funcprofiler.nf:32:19`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       ch_versions = Channel.empty()
                     ^^^^^^^
   ```
 
-- Warning: `workflows/funcprofiler.nf:58:24`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `workflows/funcprofiler.nf:33:24`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       ch_multiqc_files = Channel.empty()

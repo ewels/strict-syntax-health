@@ -1,9 +1,9 @@
 $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
 
- N E X T F L O W   ~  version 26.07.0-edge
+ N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [stoic_saha] revision: 0e28111edc
+Launching `./main.nf` [awesome_engelbart] revision: ae0904f603
 
 WARN: Unrecognized config option 'validation.defaultIgnoreParams'
 WARN: Unrecognized config option 'validation.monochromeLogs'
@@ -34,19 +34,20 @@ Cloud infrastructure.
   --multiqc_title               [string]  MultiQC report title. Printed as page header, used for filename if not otherwise specified. 
 
 Profiling options
-  --run_fmhfunprofiler          [boolean] Turn on profiling with fmhfunprofiler; Requires database to be present CSV file passed to 
---databases  
-  --run_humann_v3               [boolean] Turn on profiling with HUMAnN3. Requires `humann_v3`-tagged database to be present CSV file passed 
-to --databases  
-  --run_humann_v4               [boolean] Turn on profiling with HUMAnN4. Requires `humann_v4`-tagged database to be present CSV file passed 
-to --databases  
-  --run_diamond                 [boolean] Turn on translated alignment with DIAMOND blastx. Requires a .dmnd database to be present in the CSV 
-file passed to --databases  
-  --run_rgi                     [boolean] Turn on profiling with RGI. Requires database to be present CSV file passed to --databases 
-  --run_mifaser                 [boolean] Turn on profiling with mi-faser. Requires database to be present CSV file passed to --databases 
- 
-  --run_eggnogmapper            [boolean] Turn on functional annotation with EggNOG-mapper. Requires `eggnogmapper`-tagged database entries in 
+  --run_fmhfunprofiler          [boolean] Turn on profiling with FMH FunProfiler. Requires a `fmhfunprofiler`-tagged database to be present in 
 the CSV file passed to --databases  
+  --run_humann_v3               [boolean] Turn on profiling with HUMAnN3. Requires a `humann_v3`-tagged database to be present in the CSV file 
+passed to --databases  
+  --run_humann_v4               [boolean] Turn on profiling with HUMAnN4. Requires a `humann_v4`-tagged database to be present in the CSV file 
+passed to --databases  
+  --run_diamond                 [boolean] Turn on translated alignment with DIAMOND blastx. Requires a `diamond`-tagged database to be present 
+in the CSV file passed to --databases  
+  --run_rgi                     [boolean] Turn on profiling with RGI. Requires a `rgi`-tagged database to be present in the CSV file passed to 
+--databases  
+  --run_mifaser                 [boolean] Turn on profiling with mi-faser. Requires a `mifaser`-tagged database to be present in the CSV file 
+passed to --databases  
+  --run_eggnogmapper            [boolean] Turn on functional annotation with eggNOG-mapper. Requires `eggnogmapper`-tagged database entries to 
+be present in the CSV file passed to --databases  
 
 Generic options
   --multiqc_methods_description [string]          Custom MultiQC yaml file containing HTML including a methods description. 
@@ -61,5 +62,5 @@ Generic options
     https://doi.org/10.1038/s41587-020-0439-x
 
 * Software dependencies
-    https://github.com/nf-core/funcprofiler/blob/master/CITATIONS.md
+    https://github.com/nf-core/funcprofiler/blob/main/CITATIONS.md
 

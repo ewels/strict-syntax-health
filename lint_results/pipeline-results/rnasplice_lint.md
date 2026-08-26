@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-08-25T00:12:06.648318678Z
+- Generated: 2026-08-26T00:13:08.187868123Z
 - Nextflow version: 26.08.0-edge
-- Summary: 14 errors, 20 warnings
+- Summary: 14 errors, 19 warnings
 
 ## :x: Errors
 
@@ -155,6 +155,20 @@
           ^^^^^^
   ```
 
+- Warning: `modules/local/tximeta/tximport/main.nf:50:9`: Variable was declared but not used
+
+  ```nextflow
+      def prefix            = task.ext.prefix ?: meta.id
+          ^^^^^^
+  ```
+
+- Warning: `modules/local/tximeta/tximport/main.nf:51:9`: Variable was declared but not used
+
+  ```nextflow
+      def ignore_tx_version = task.ext.args ?: 'false'
+          ^^^^^^^^^^^^^^^^^
+  ```
+
 - Warning: `modules/nf-core/misopy/index/main.nf:23:9`: Variable was declared but not used
 
   ```nextflow
@@ -174,27 +188,6 @@
   ```nextflow
       dexseq_clean_txt        = DEXSEQ_COUNT.out.dexseq_clean_txt.map{ it[1] }.collect()
                                                                        ^^
-  ```
-
-- Warning: `subworkflows/local/tx2gene_tximport/main.nf:29:14`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-          tar: it[0].tgz == true
-               ^^
-  ```
-
-- Warning: `subworkflows/local/tx2gene_tximport/main.nf:30:14`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-          dir: it[0].tgz == false
-               ^^
-  ```
-
-- Warning: `subworkflows/local/tx2gene_tximport/main.nf:44:39`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-      TXIMPORT ( salmon_results.collect{it[1]}, tx2gene )
-                                        ^^
   ```
 
 - Warning: `subworkflows/local/utils_nfcore_rnasplice_pipeline/main.nf:441:22`: Parameter was not used -- prefix with `_` to suppress warning
