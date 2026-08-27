@@ -3,8 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Downloading plugin nf-schema@2.7.2
-Launching `./main.nf` [thirsty_payne] revision: b4641016f5
+Launching `./main.nf` [magical_coulomb] revision: b4641016f5
 
 
 ------------------------------------------------------
@@ -48,6 +47,8 @@ poly-G tails.
 Filtering options
   --sequence_filter             [string]  Fasta file with sequences to filter away before running assembly etc.. 
   --save_bbduk_fastq            [boolean] Save the resulting fastq files from filtering 
+  --save_bbduk_removed_fastq    [boolean] Save the reads that were removed (matched the sequence_filter reference) during BBDuk filtering 
+ 
 
 Digital normalization options
   --bbnorm                      [boolean] Perform normalization to reduce sequencing depth. 

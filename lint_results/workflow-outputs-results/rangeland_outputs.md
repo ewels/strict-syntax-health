@@ -1,6 +1,6 @@
 # Workflow outputs migration: rangeland
 
-- Generated: 2026-06-16T20:35:52.142584+00:00
+- Generated: 2026-08-27T01:26:51.023229+00:00
 - Status: :x: **error** — no `output {}` block found; still relies on the legacy `publishDir` directive
 
 This report tracks migration from the legacy `publishDir` directive to the new [workflow outputs](https://docs.seqera.io/nextflow/tutorials/workflow-outputs) syntax.
@@ -14,4 +14,4 @@ https://docs.seqera.io/nextflow/tutorials/workflow-outputs
 
 Found 5 `publishDir` references across 1 file that should be migrated to the workflow `output {}` block:
 
-- [`conf/modules.config`](https://github.com/nf-core/rangeland/blob/941057f630e8c6555ebf79d164da7287eebcff46/conf/modules.config#L15) — 5 references
+- [`conf/modules.config`](https://github.com/nf-core/rangeland/blob/42a1f13877fd5e5856d82ddbd0a3d393a0e8dd73/conf/modules.config#L15) — 5 references

@@ -1,10 +1,10 @@
 $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
 
- N E X T F L O W   ~  version 26.07.0-edge
+ N E X T F L O W   ~  version 26.08.0-edge
 
 Downloading plugin nf-core-utils@0.4.0
-Launching `./main.nf` [ecstatic_meninsky] revision: a364fe9767
+Launching `./main.nf` [hopeful_ardinghelli] revision: a364fe9767
 
 
 ------------------------------------------------------
@@ -17,11 +17,11 @@ Launching `./main.nf` [ecstatic_meninsky] revision: a364fe9767
 ------------------------------------------------------
 
 Generic options
-  trace_report_suffix: 2026-08-16_00-10-45
+  trace_report_suffix: 2026-08-27_01-27-44
   help               : true
 
 Core Nextflow options
-  runName            : ecstatic_meninsky
+  runName            : hopeful_ardinghelli
   launchDir          : /home/runner/work/strict-syntax-health/strict-syntax-health/pipelines/references
   workDir            : /home/runner/work/strict-syntax-health/strict-syntax-health/pipelines/references/work
   projectDir         : /home/runner/work/strict-syntax-health/strict-syntax-health/pipelines/references

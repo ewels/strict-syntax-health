@@ -1,5 +1,5 @@
 {
-  "_repo_commit": "fcc9c9adc59e6b0bfb91fc4b8855de00c81a9bd5",
+  "_repo_commit": "74be114b46468b8387826e7ffe5bf7c25ba2fc09",
   "abundance_differential_filter": {
     "html_url": "https://github.com/nf-core/modules/tree/master/subworkflows/nf-core/abundance_differential_filter",
     "errors": 0,
@@ -280,6 +280,12 @@
     "html_url": "https://github.com/nf-core/modules/tree/master/subworkflows/nf-core/fasta_classify_catpack",
     "errors": 0,
     "warnings": 0,
+    "parse_error": false
+  },
+  "fasta_clean_faidx": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/subworkflows/nf-core/fasta_clean_faidx",
+    "errors": 0,
+    "warnings": 2,
     "parse_error": false
   },
   "fasta_clean_fcs": {

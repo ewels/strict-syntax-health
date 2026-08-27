@@ -1,9 +1,9 @@
 $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
 
- N E X T F L O W   ~  version 26.07.0-edge
+ N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [drunk_heisenberg] revision: d8e047c3e9
+Launching `./main.nf` [determined_pasteur] revision: d8e047c3e9
 
 
 ------------------------------------------------------

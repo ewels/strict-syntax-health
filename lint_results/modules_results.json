@@ -1,5 +1,5 @@
 {
-  "_repo_commit": "fcc9c9adc59e6b0bfb91fc4b8855de00c81a9bd5",
+  "_repo_commit": "74be114b46468b8387826e7ffe5bf7c25ba2fc09",
   "aardvark_compare": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/aardvark/compare",
     "errors": 0,
@@ -2564,6 +2564,12 @@
   },
   "custom_pcaclustering": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/custom/pcaclustering",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "custom_resolvetaxonomy": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/custom/resolvetaxonomy",
     "errors": 0,
     "warnings": 0,
     "parse_error": false
@@ -5474,6 +5480,48 @@
   },
   "humid": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/humid",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "hyphy_absrel": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/hyphy/absrel",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "hyphy_bgm": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/hyphy/bgm",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "hyphy_busted": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/hyphy/busted",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "hyphy_fel": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/hyphy/fel",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "hyphy_fubar": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/hyphy/fubar",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "hyphy_meme": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/hyphy/meme",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "hyphy_slac": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/hyphy/slac",
     "errors": 0,
     "warnings": 0,
     "parse_error": false
@@ -9530,6 +9578,18 @@
   },
   "samplesheetparser_info": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/samplesheetparser/info",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "samplesheetparser_merge": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/samplesheetparser/merge",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "samplesheetparser_split": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/samplesheetparser/split",
     "errors": 0,
     "warnings": 0,
     "parse_error": false

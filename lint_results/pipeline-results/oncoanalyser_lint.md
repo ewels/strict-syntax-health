@@ -1,54 +1,54 @@
 # Nextflow lint results
 
-- Generated: 2026-08-07T01:15:04.783322010Z
-- Nextflow version: 26.07.0-edge
-- Summary: 105 warnings
+- Generated: 2026-08-27T01:25:57.386288419Z
+- Nextflow version: 26.08.0-edge
+- Summary: 106 warnings
 
 ## :warning: Warnings
 
-- Warning: `subworkflows/local/amber_profiling/main.nf:47:36`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/amber_profiling/main.nf:49:36`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, tumor_aln, tumor_idx, normal_aln, normal_idx, donor_aln, donor_idx ->
                                      ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/amber_profiling/main.nf:47:59`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/amber_profiling/main.nf:49:59`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, tumor_aln, tumor_idx, normal_aln, normal_idx, donor_aln, donor_idx ->
                                                             ^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/amber_profiling/main.nf:47:71`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/amber_profiling/main.nf:49:71`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, tumor_aln, tumor_idx, normal_aln, normal_idx, donor_aln, donor_idx ->
                                                                         ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/amber_profiling/main.nf:47:82`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/amber_profiling/main.nf:49:82`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, tumor_aln, tumor_idx, normal_aln, normal_idx, donor_aln, donor_idx ->
                                                                                    ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/bamtools_metrics/main.nf:34:30`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bamtools_metrics/main.nf:35:30`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, aln, idx ->
                                ^^^
   ```
 
-- Warning: `subworkflows/local/bamtools_metrics/main.nf:51:30`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bamtools_metrics/main.nf:52:30`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, aln, idx ->
                                ^^^
   ```
 
-- Warning: `subworkflows/local/bamtools_metrics/main.nf:89:34`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/bamtools_metrics/main.nf:91:34`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta_bamtools, bamtools_dir ->
@@ -62,28 +62,28 @@
       ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/cider_calling/main.nf:33:30`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/cider_calling/main.nf:34:30`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, aln, idx ->
                                ^^^
   ```
 
-- Warning: `subworkflows/local/cider_calling/main.nf:49:30`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/cider_calling/main.nf:50:30`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, aln, idx ->
                                ^^^
   ```
 
-- Warning: `subworkflows/local/cobalt_profiling/main.nf:42:36`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/cobalt_profiling/main.nf:44:36`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, tumor_aln, tumor_idx, normal_aln, normal_idx ->
                                      ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/cobalt_profiling/main.nf:42:59`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/cobalt_profiling/main.nf:44:59`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, tumor_aln, tumor_idx, normal_aln, normal_idx ->
@@ -328,49 +328,49 @@
                    ^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/read_umi_processing/main.nf:102:35`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/read_umi_processing/main.nf:103:35`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               .branch { meta_fastq, fastq_fwd, fastq_rev ->
                                     ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/read_umi_processing/main.nf:102:46`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/read_umi_processing/main.nf:103:46`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               .branch { meta_fastq, fastq_fwd, fastq_rev ->
                                                ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/read_umi_processing/main.nf:142:35`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/read_umi_processing/main.nf:143:35`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               .branch { meta_fastq, fastq_fwd, fastq_rev ->
                                     ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/read_umi_processing/main.nf:142:46`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/read_umi_processing/main.nf:143:46`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               .branch { meta_fastq, fastq_fwd, fastq_rev ->
                                                ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/read_umi_processing/main.nf:186:31`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/read_umi_processing/main.nf:188:31`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta_fastq, fastq_info, fastq_fwd, fastq_rev ->
                                 ^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/read_umi_processing/main.nf:186:43`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/read_umi_processing/main.nf:188:43`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta_fastq, fastq_info, fastq_fwd, fastq_rev ->
                                             ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/read_umi_processing/main.nf:186:54`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/read_umi_processing/main.nf:188:54`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta_fastq, fastq_info, fastq_fwd, fastq_rev ->
@@ -461,35 +461,35 @@
                                                                                                      ^^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/sage_append/main.nf:135:37`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/sage_append/main.nf:138:37`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, purple_dir, tumor_dna_aln, tumor_dna_idx, redux_tsvs_tumor, tumor_rna_aln, tumor_rna_idx ->
                                       ^^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/sage_append/main.nf:135:52`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/sage_append/main.nf:138:52`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, purple_dir, tumor_dna_aln, tumor_dna_idx, redux_tsvs_tumor, tumor_rna_aln, tumor_rna_idx ->
                                                      ^^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/sage_append/main.nf:135:67`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/sage_append/main.nf:138:67`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, purple_dir, tumor_dna_aln, tumor_dna_idx, redux_tsvs_tumor, tumor_rna_aln, tumor_rna_idx ->
                                                                     ^^^^^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/sage_append/main.nf:135:85`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/sage_append/main.nf:138:85`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, purple_dir, tumor_dna_aln, tumor_dna_idx, redux_tsvs_tumor, tumor_rna_aln, tumor_rna_idx ->
                                                                                       ^^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/sage_append/main.nf:135:100`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/sage_append/main.nf:138:100`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, purple_dir, tumor_dna_aln, tumor_dna_idx, redux_tsvs_tumor, tumor_rna_aln, tumor_rna_idx ->
@@ -664,28 +664,28 @@
                                                                                               ^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/teal_characterisation/main.nf:47:36`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/teal_characterisation/main.nf:49:36`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, tumor_aln, tumor_idx, normal_aln, normal_idx ->
                                      ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/teal_characterisation/main.nf:47:59`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/teal_characterisation/main.nf:49:59`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, tumor_aln, tumor_idx, normal_aln, normal_idx ->
                                                             ^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/teal_characterisation/main.nf:127:41`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/teal_characterisation/main.nf:131:41`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, teal_bam_tumor, teal_bai_tumor, teal_bam_normal, teal_bai_normal, bamtools_dir_tumor, bamtools_dir_normal, cobalt_dir, purple_dir ->
                                           ^^^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/teal_characterisation/main.nf:127:74`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/teal_characterisation/main.nf:131:74`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .branch { meta, teal_bam_tumor, teal_bai_tumor, teal_bam_normal, teal_bai_normal, bamtools_dir_tumor, bamtools_dir_normal, cobalt_dir, purple_dir ->
@@ -739,4 +739,11 @@
   ```nextflow
           .branch { meta, primary_purple_dir, primary_amber_dir, primary_normal_aln, longitudinal_redux_dir, longitudinal_amber_dir, longitudinal_cobalt_dir, longitudinal_sage_append_dir ->
                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^
+  ```
+
+- Warning: `tests/nextflow.config:12:48`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+
+  ```nextflow
+      def present = vars.findAll { System.getenv(it) }
+                                                 ^^
   ```

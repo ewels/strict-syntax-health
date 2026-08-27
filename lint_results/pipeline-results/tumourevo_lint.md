@@ -1,12 +1,12 @@
 # Nextflow lint results
 
-- Generated: 2026-07-28T00:36:09.409887094Z
-- Nextflow version: 26.07.0-edge
+- Generated: 2026-08-27T01:28:50.497703449Z
+- Nextflow version: 26.08.0-edge
 - Summary: 48 warnings
 
 ## :warning: Warnings
 
-- Warning: `conf/modules.config:39:20`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `conf/modules.config:31:20`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
           .findAll { it }
@@ -167,7 +167,7 @@
                                                                        ^^^^
   ```
 
-- Warning: `subworkflows/local/qc/main.nf:15:23`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/qc/main.nf:16:23`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
           ch_versions = Channel.empty()
