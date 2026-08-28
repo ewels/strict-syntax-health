@@ -3,7 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [astonishing_noyce] revision: 375748d1f7
+Launching `./main.nf` [spontaneous_goodall] revision: d9e526d63c
 
 WARN: Unrecognized config option 'validation.defaultIgnoreParams'
 WARN: Unrecognized config option 'validation.monochromeLogs'
@@ -126,6 +126,7 @@ Requires exclude_alt to be set to true.
   --skip_split_multiallelics          [boolean] Skip the split multiallelics step in SNV calling. 
   --skip_subworkflows                 [string]  Disable specified subworkflows. 
   --skip_tools                        [string]  Disable specified tools. 
+  --somalier_sites_vcf                [string]  Path to the somalier sites VCF (bgzipped). 
 
 Alignment options
   --aligner                           [string]  Specifies the alignment algorithm to use - available options are 'bwamem2', 'bwa', 'bwameme' and 
@@ -134,6 +135,9 @@ Alignment options
  (accepted: bwa, bwamem2, sentieon) [default: bwamem2]  
   --qc_metrics_tool                   [string]  Specifies the tool to collect BAM QC metrics - available options are 'picard' and 'riker'.  
 (accepted: picard, riker) [default: picard]  
+  --duplicates_marker                 [string]  Specifies the tool to use for marking duplicates. The default is 'markduplicates', another option is 
+the faster alternative 'fastdup'.  (accepted: markduplicates, fastdup) [default: markduplicates] 
+ 
   --samtools_sort_threads             [integer] Number of threads allocated for sorting alignment files (used by bwameme and bwafastalign) 
 [default: 4]  
   --mbuffer_mem                       [integer] Memory allocated for mbuffer in megabytes (MB) (used by bwameme and bwafastalign) [default: 

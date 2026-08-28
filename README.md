@@ -11,12 +11,12 @@ The goal is for all nf-core pipelines to run without errors using strict syntax.
 > See the [nf-core blog post](https://nf-co.re/blog/2025/nextflow_syntax_nf-core_roadmap) for details on the migration timeline.
 > **Fixing all errors from `nextflow lint` will be a requirement by early spring 2026.**
 
-- **Last updated:** 2026-08-27 01:30:54 UTC
+- **Last updated:** 2026-08-28 02:52:27 UTC
 - **Nextflow version:** 26.08.0-edge
 
 ## Pipelines
 
-- **Total:** 0 parse errors, 1238 errors, 6163 warnings across 143 pipelines
+- **Total:** 0 parse errors, 1238 errors, 6164 warnings across 143 pipelines
 - **Zero errors:** 95 pipelines (66.4%)
 
 |                    Errors                    |                     Warnings                     |
@@ -119,7 +119,7 @@ The goal is for all nf-core pipelines to run without errors using strict syntax.
 | :white_check_mark: [funcprofiler](https://github.com/nf-core/funcprofiler)                     |     No      |      0 |       12 |     Yes     |       [View](lint_results/pipeline-results/funcprofiler_lint.md)        |      [View](lint_results/prints-help-results/funcprofiler_help.txt)      |
 | :x: [genephylomodeler](https://github.com/nf-core/genephylomodeler)                            |     No      |      0 |       12 |     No      |     [View](lint_results/pipeline-results/genephylomodeler_lint.md)      |    [View](lint_results/prints-help-results/genephylomodeler_help.txt)    |
 | :white_check_mark: [pairgenomealign](https://github.com/nf-core/pairgenomealign)               |     No      |      0 |       12 |     Yes     |      [View](lint_results/pipeline-results/pairgenomealign_lint.md)      |    [View](lint_results/prints-help-results/pairgenomealign_help.txt)     |
-| :white_check_mark: [raredisease](https://github.com/nf-core/raredisease)                       |     No      |      0 |       11 |     Yes     |        [View](lint_results/pipeline-results/raredisease_lint.md)        |      [View](lint_results/prints-help-results/raredisease_help.txt)       |
+| :white_check_mark: [raredisease](https://github.com/nf-core/raredisease)                       |     No      |      0 |       12 |     Yes     |        [View](lint_results/pipeline-results/raredisease_lint.md)        |      [View](lint_results/prints-help-results/raredisease_help.txt)       |
 | :white_check_mark: [sopa](https://github.com/nf-core/sopa)                                     |     No      |      0 |       11 |     Yes     |           [View](lint_results/pipeline-results/sopa_lint.md)            |          [View](lint_results/prints-help-results/sopa_help.txt)          |
 | :white_check_mark: [seqsubmit](https://github.com/nf-core/seqsubmit)                           |     No      |      0 |       10 |     Yes     |         [View](lint_results/pipeline-results/seqsubmit_lint.md)         |       [View](lint_results/prints-help-results/seqsubmit_help.txt)        |
 | :white_check_mark: [tfactivity](https://github.com/nf-core/tfactivity)                         |     No      |      0 |       10 |     Yes     |        [View](lint_results/pipeline-results/tfactivity_lint.md)         |       [View](lint_results/prints-help-results/tfactivity_help.txt)       |
@@ -293,7 +293,7 @@ The status emoji next to each pipeline shows its migration state: :white_check_m
 | :x: [pathogensurveillance](https://github.com/nf-core/pathogensurveillance)           |     No      |   Yes (52)   |   [View](lint_results/workflow-outputs-results/pathogensurveillance_outputs.md)    |
 | :x: [phageannotator](https://github.com/nf-core/phageannotator)                       |     No      |   Yes (39)   |      [View](lint_results/workflow-outputs-results/phageannotator_outputs.md)       |
 | :x: [phaseimpute](https://github.com/nf-core/phaseimpute)                             |     No      |   Yes (90)   |        [View](lint_results/workflow-outputs-results/phaseimpute_outputs.md)        |
-| :x: [phyloplace](https://github.com/nf-core/phyloplace)                               |     No      |   Yes (2)    |        [View](lint_results/workflow-outputs-results/phyloplace_outputs.md)         |
+| :x: [phyloplace](https://github.com/nf-core/phyloplace)                               |     No      |   Yes (3)    |        [View](lint_results/workflow-outputs-results/phyloplace_outputs.md)         |
 | :x: [pixelator](https://github.com/nf-core/pixelator)                                 |     No      |   Yes (12)   |         [View](lint_results/workflow-outputs-results/pixelator_outputs.md)         |
 | :x: [plasmodiumdrugres](https://github.com/nf-core/plasmodiumdrugres)                 |     No      |   Yes (3)    |     [View](lint_results/workflow-outputs-results/plasmodiumdrugres_outputs.md)     |
 | :x: [proteinannotator](https://github.com/nf-core/proteinannotator)                   |     No      |   Yes (24)   |     [View](lint_results/workflow-outputs-results/proteinannotator_outputs.md)      |
@@ -339,8 +339,8 @@ The status emoji next to each pipeline shows its migration state: :white_check_m
 
 ## Modules
 
-- **Total:** 0 parse errors, 0 errors, 25 warnings across 2045 modules
-- **Zero errors:** 2045 modules (100.0%)
+- **Total:** 0 parse errors, 0 errors, 25 warnings across 2046 modules
+- **Zero errors:** 2046 modules (100.0%)
 
 |                   Errors                   |                    Warnings                    |
 | :----------------------------------------: | :--------------------------------------------: |
@@ -352,7 +352,7 @@ The status emoji next to each pipeline shows its migration state: :white_check_m
 | Module | Parse Error | Errors | Warnings | Lint Output |
 | ------ | :---------: | -----: | -------: | :---------: |
 
-_Modules with zero errors are not shown above (2045 modules). They may still have warnings. See the [modules results directory](lint_results/module-results/) for all lint outputs._
+_Modules with zero errors are not shown above (2046 modules). They may still have warnings. See the [modules results directory](lint_results/module-results/) for all lint outputs._
 
 </details>
 

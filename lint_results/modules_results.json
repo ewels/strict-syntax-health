@@ -1,5 +1,5 @@
 {
-  "_repo_commit": "74be114b46468b8387826e7ffe5bf7c25ba2fc09",
+  "_repo_commit": "88679cf821cd4ba2ba86228179e05e5887cba252",
   "aardvark_compare": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/aardvark/compare",
     "errors": 0,
@@ -5510,6 +5510,12 @@
   },
   "hyphy_fubar": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/hyphy/fubar",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "hyphy_gard": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/hyphy/gard",
     "errors": 0,
     "warnings": 0,
     "parse_error": false

@@ -14,7 +14,7 @@
   "airrflow": {
     "full_name": "nf-core/airrflow",
     "html_url": "https://github.com/nf-core/airrflow",
-    "commit": "cb0531bfe01ef06f76f2953894dcf23a28bf2a29",
+    "commit": "be405e67497ecb2beaa4b4ebdb29c98860ff749c",
     "errors": 0,
     "warnings": 34,
     "parse_error": false,
@@ -482,7 +482,7 @@
   "fastqrepair": {
     "full_name": "nf-core/fastqrepair",
     "html_url": "https://github.com/nf-core/fastqrepair",
-    "commit": "8177eaa03c3592bb44d5ddd1e668e9d8d4ac300d",
+    "commit": "6174d497ca7936d694681eac5aabe57cffb58e6f",
     "errors": 0,
     "warnings": 9,
     "parse_error": false,
@@ -506,7 +506,7 @@
   "fetchngs": {
     "full_name": "nf-core/fetchngs",
     "html_url": "https://github.com/nf-core/fetchngs",
-    "commit": "a1238b35b0b30db97bc80427486b4f255a9b05db",
+    "commit": "b10bc5ed8e95aa2132d91932b21360c81237c8f5",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
@@ -578,7 +578,7 @@
   "genomeqc": {
     "full_name": "nf-core/genomeqc",
     "html_url": "https://github.com/nf-core/genomeqc",
-    "commit": "88f8f898b42934224edf89bc0ad72ed5a42af282",
+    "commit": "3956731777a4474eb8f0193456764e559739acd8",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
@@ -938,7 +938,7 @@
   "mspepid": {
     "full_name": "nf-core/mspepid",
     "html_url": "https://github.com/nf-core/mspepid",
-    "commit": "e98700cc57d9ea19c2a00df94081eda354845ccb",
+    "commit": "b73d0ad54774b143e2776bd06e3bb56052adca6f",
     "errors": 0,
     "warnings": 8,
     "parse_error": false,
@@ -1022,7 +1022,7 @@
   "oncoanalyser": {
     "full_name": "nf-core/oncoanalyser",
     "html_url": "https://github.com/nf-core/oncoanalyser",
-    "commit": "802069bac973093e719b424de63c082ce9f30530",
+    "commit": "62f40783504fb55174cf25a7ecde0ed1f3f0207c",
     "errors": 0,
     "warnings": 106,
     "parse_error": false,
@@ -1142,14 +1142,14 @@
   "phyloplace": {
     "full_name": "nf-core/phyloplace",
     "html_url": "https://github.com/nf-core/phyloplace",
-    "commit": "3e869ba39f153e732f4261bc8d0ad30445b78772",
+    "commit": "6bb080cdd04fe17c9800cf06b8de4ca926c77b4c",
     "errors": 0,
     "warnings": 1,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
     "publishdir": true,
-    "publishdir_count": 2
+    "publishdir_count": 3
   },
   "pixelator": {
     "full_name": "nf-core/pixelator",
@@ -1262,9 +1262,9 @@
   "raredisease": {
     "full_name": "nf-core/raredisease",
     "html_url": "https://github.com/nf-core/raredisease",
-    "commit": "08158a8d67cd5233f07767bd422a14da58dd0718",
+    "commit": "8a6b00c20db751f8d987add781c5cb37b2030a57",
     "errors": 0,
-    "warnings": 11,
+    "warnings": 12,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": true,
@@ -1370,7 +1370,7 @@
   "rnaseq": {
     "full_name": "nf-core/rnaseq",
     "html_url": "https://github.com/nf-core/rnaseq",
-    "commit": "e98c457dafccb0f0a5aa77973ce4e8acc3694b41",
+    "commit": "c52c4508393b641352ada1a0d6bee5ea02e17688",
     "errors": 0,
     "warnings": 3,
     "parse_error": false,
@@ -1382,7 +1382,7 @@
   "rnasplice": {
     "full_name": "nf-core/rnasplice",
     "html_url": "https://github.com/nf-core/rnasplice",
-    "commit": "4ed453bc8779b91b59416c2ec0bd17d07a132642",
+    "commit": "5b3997c3192ae44b187e6d1bed28ac2a01bfe24d",
     "errors": 14,
     "warnings": 19,
     "parse_error": false,
@@ -1694,7 +1694,7 @@
   "viralmetagenome": {
     "full_name": "nf-core/viralmetagenome",
     "html_url": "https://github.com/nf-core/viralmetagenome",
-    "commit": "e5806322e1c248b1e971b4cabccec705886770e4",
+    "commit": "cf73c6fe5ecd921bfb3fcd3578c7200bec279a6f",
     "errors": 0,
     "warnings": 4,
     "parse_error": false,
