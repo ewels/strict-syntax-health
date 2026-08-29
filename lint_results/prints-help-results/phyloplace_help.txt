@@ -3,9 +3,12 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [elegant_yalow] revision: 3828577427
+Downloading plugin nf-schema@2.8.0
+Launching `./main.nf` [astonishing_cajal] revision: ac3ce29a8e
 
+WARN: Incorrect value detected for `validation.monochromeLogs`, a boolean is expected. Defaulting to `false`
 WARN: Access to undefined parameter `fasta` -- Initialise it to a default value eg. `params.fasta = some_value`
+WARN: Incorrect value detected for `validation.monochromeLogs`, a boolean is expected. Defaulting to `false`
 
 ------------------------------------------------------
                                         ,--./,-.

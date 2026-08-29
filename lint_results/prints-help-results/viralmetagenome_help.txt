@@ -3,7 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [awesome_borg] revision: d8e047c3e9
+Launching `./main.nf` [insane_perlman] revision: 570b1887aa
 
 
 ------------------------------------------------------
@@ -88,6 +88,8 @@ isolate, rna, bio) [default: rnaviral]
   --skip_sspace_basic               [boolean] Skip the contig extension with sspace_basic [default: true] 
   --read_distance                   [integer] Specify the mean distance between the paired reads [default: 350] 
   --read_distance_sd                [number]  Specify the deviation of the mean distance that is allowed. [default: 0.75] 
+  --normalise_reads                 [boolean] Digitally normalise reads with BBNorm before de novo assembly 
+  --arguments_bbnorm                [string]  Extra arguments passed to BBNorm 
   --arguments_prinseq_contig        [string]  Arguments for Prinseq tool for contigs [default: -out_format 1 -lc_dust .20] 
 
 Polishing

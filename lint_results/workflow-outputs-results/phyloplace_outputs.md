@@ -1,6 +1,6 @@
 # Workflow outputs migration: phyloplace
 
-- Generated: 2026-08-28T02:49:05.443492+00:00
+- Generated: 2026-08-29T00:19:19.764944+00:00
 - Status: :x: **error** — no `output {}` block found; still relies on the legacy `publishDir` directive
 
 This report tracks migration from the legacy `publishDir` directive to the new [workflow outputs](https://docs.seqera.io/nextflow/tutorials/workflow-outputs) syntax.
@@ -14,4 +14,4 @@ https://docs.seqera.io/nextflow/tutorials/workflow-outputs
 
 Found 3 `publishDir` references across 1 file that should be migrated to the workflow `output {}` block:
 
-- [`conf/modules.config`](https://github.com/nf-core/phyloplace/blob/6bb080cdd04fe17c9800cf06b8de4ca926c77b4c/conf/modules.config#L15) — 3 references
+- [`conf/modules.config`](https://github.com/nf-core/phyloplace/blob/0bb4ae36c1bb2c90824d20ff8f6e9a60f8df6c43/conf/modules.config#L15) — 3 references

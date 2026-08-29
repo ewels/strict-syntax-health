@@ -3,7 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [magical_coulomb] revision: b4641016f5
+Launching `./main.nf` [elegant_lattes] revision: b4641016f5
 
 
 ------------------------------------------------------
@@ -77,6 +77,11 @@ all, random, toss) [default: best]
 Quantification options
   --featurecounts_fraction      [boolean] Count multi-mapped reads fractionally in featureCounts instead of at full weight per site 
 
+Consolidation options
+  --skip_protein_consolidation  [boolean] Skip cross-contig consolidation of ORFs whose proteins cluster together 
+  --cluster_min_seq_id          [number]  Minimum sequence identity for two proteins to be considered the same gene [default: 0.99] 
+  --cluster_coverage            [number]  Minimum fraction of both proteins that must be covered by the alignment [default: 0.8] 
+
 Orf Caller options
   --orf_caller                  [string] Comma-separated list of ORF callers to run. Possible alternatives: prodigal, prokka, transdecoder, 
 metaeuk. This needs to be set unless the `--user_orfs_*` params are set.  
@@ -110,6 +115,8 @@ taxonomy assignment.
 (Metagenome Assembled Genomes). default: mets  (accepted: mets, mags) [default: mets]  
   --eukulele_db                 [string]  EUKulele database.  (accepted: gtdb, phylodb, marmmetsp, mmetsp, eukprot) 
   --eukulele_dbpath             [string]  EUKulele database folder. [default: ./eukulele/] 
+  --save_eukulele_alignments    [boolean] Also publish EUKulele's raw Diamond alignment file, on top of the taxonomy estimation and counts. 
+ 
 
 Generic options
   --multiqc_methods_description [string]          Custom MultiQC yaml file containing HTML including a methods description. 
