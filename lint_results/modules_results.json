@@ -1,5 +1,5 @@
 {
-  "_repo_commit": "4fd055dffcc22151554b75c134feac4aa7491f17",
+  "_repo_commit": "89bd1a3bcc6969b93871a0b667f67d68caa0747f",
   "aardvark_compare": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/aardvark/compare",
     "errors": 0,
@@ -1400,6 +1400,12 @@
   },
   "bowtie2_build": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/bowtie2/build",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "bppsuite_bppml": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/bppsuite/bppml",
     "errors": 0,
     "warnings": 0,
     "parse_error": false

@@ -3,7 +3,8 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [infallible_kilby] revision: b96559179d
+Downloading plugin nf-schema@2.7.2
+Launching `./main.nf` [nostalgic_sammet] revision: b96559179d
 
 WARN: Access to undefined parameter `genome_version` -- Initialise it to a default value eg. `params.genome_version = some_value`
 ERROR ~ 

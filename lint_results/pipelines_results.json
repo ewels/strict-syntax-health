@@ -1022,7 +1022,7 @@
   "oncoanalyser": {
     "full_name": "nf-core/oncoanalyser",
     "html_url": "https://github.com/nf-core/oncoanalyser",
-    "commit": "62f40783504fb55174cf25a7ecde0ed1f3f0207c",
+    "commit": "0114fffe0108f830deeadcb19f41aa1ffe13f48c",
     "errors": 0,
     "warnings": 106,
     "parse_error": false,
@@ -1262,7 +1262,7 @@
   "raredisease": {
     "full_name": "nf-core/raredisease",
     "html_url": "https://github.com/nf-core/raredisease",
-    "commit": "7c0672095b8fac4077c78595f60992284238602e",
+    "commit": "c19373fad659d5160f2fa6209464cd431de2da6a",
     "errors": 0,
     "warnings": 12,
     "parse_error": false,
