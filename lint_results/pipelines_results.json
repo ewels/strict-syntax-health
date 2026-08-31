@@ -626,7 +626,7 @@
   "hadge": {
     "full_name": "nf-core/hadge",
     "html_url": "https://github.com/nf-core/hadge",
-    "commit": "f4387982b3a6a6bf173f3ca00fef600654ee7a11",
+    "commit": "dabb774b0d36270d8656986c22a86565662823fc",
     "errors": 0,
     "warnings": 27,
     "parse_error": false,
