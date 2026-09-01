@@ -62,7 +62,7 @@
   "bacass": {
     "full_name": "nf-core/bacass",
     "html_url": "https://github.com/nf-core/bacass",
-    "commit": "d7e0460ecf4fe7a34297d89ec31f4eaee98bf30e",
+    "commit": "1bb1007f4c84833464db885c35982f72ac2d0487",
     "errors": 0,
     "warnings": 16,
     "parse_error": false,
@@ -410,7 +410,7 @@
   "drugresponseeval": {
     "full_name": "nf-core/drugresponseeval",
     "html_url": "https://github.com/nf-core/drugresponseeval",
-    "commit": "a622b314b4649600a6064ea6b49382a63f803b26",
+    "commit": "638bd82aebca003a6dcc3d62700626ef82bd2cad",
     "errors": 0,
     "warnings": 26,
     "parse_error": false,
@@ -482,7 +482,7 @@
   "fastqrepair": {
     "full_name": "nf-core/fastqrepair",
     "html_url": "https://github.com/nf-core/fastqrepair",
-    "commit": "6174d497ca7936d694681eac5aabe57cffb58e6f",
+    "commit": "4a10d6c936f7c6baf415264ca47c4b6c491f0f72",
     "errors": 0,
     "warnings": 9,
     "parse_error": false,
@@ -626,7 +626,7 @@
   "hadge": {
     "full_name": "nf-core/hadge",
     "html_url": "https://github.com/nf-core/hadge",
-    "commit": "dabb774b0d36270d8656986c22a86565662823fc",
+    "commit": "7f8051815c5424043f504321ed1111d7a52e97b5",
     "errors": 0,
     "warnings": 27,
     "parse_error": false,

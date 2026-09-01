@@ -1,5 +1,5 @@
 {
-  "_repo_commit": "46e340e0a6395d0823d465591c08ac2fb07288eb",
+  "_repo_commit": "7e678ba56e91b8b61b01ad8e94a6987db443f7e4",
   "aardvark_compare": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/aardvark/compare",
     "errors": 0,
@@ -2184,6 +2184,12 @@
     "warnings": 0,
     "parse_error": false
   },
+  "compleasm_run": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/compleasm/run",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
   "concoct_concoct": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/concoct/concoct",
     "errors": 0,
@@ -2498,6 +2504,12 @@
   },
   "custom_clustervisualization": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/custom/clustervisualization",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "custom_collectfeaturecounts": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/custom/collectfeaturecounts",
     "errors": 0,
     "warnings": 0,
     "parse_error": false
@@ -3908,6 +3920,12 @@
   },
   "ganon_table": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/ganon/table",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "gappa_editmerge": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/gappa/editmerge",
     "errors": 0,
     "warnings": 0,
     "parse_error": false
