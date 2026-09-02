@@ -518,7 +518,7 @@
   "funcprofiler": {
     "full_name": "nf-core/funcprofiler",
     "html_url": "https://github.com/nf-core/funcprofiler",
-    "commit": "0873fd435157eade6dbc30ad32f734381ca82b2e",
+    "commit": "07bed543a3fdb7bd031d2040780f58e843eff08f",
     "errors": 0,
     "warnings": 12,
     "parse_error": false,
@@ -566,9 +566,9 @@
   "genomeassembler": {
     "full_name": "nf-core/genomeassembler",
     "html_url": "https://github.com/nf-core/genomeassembler",
-    "commit": "71f83531f39688c43bc287fbf7891e96e2aa8c0f",
+    "commit": "c78fa4506aff5ec3099514a6122a844c2c27190a",
     "errors": 0,
-    "warnings": 8,
+    "warnings": 7,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
@@ -602,7 +602,7 @@
   "genomicrelatedness": {
     "full_name": "nf-core/genomicrelatedness",
     "html_url": "https://github.com/nf-core/genomicrelatedness",
-    "commit": "07c8e5013bec8682ccf16c9b99c05057019c5b01",
+    "commit": "2484e643de827050d2b6a10b150223cf9ec5c9e6",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
@@ -626,7 +626,7 @@
   "hadge": {
     "full_name": "nf-core/hadge",
     "html_url": "https://github.com/nf-core/hadge",
-    "commit": "7f8051815c5424043f504321ed1111d7a52e97b5",
+    "commit": "c8133dc7574eb4995fe9501740a0170af8326737",
     "errors": 0,
     "warnings": 27,
     "parse_error": false,
@@ -674,7 +674,7 @@
   "hlatyping": {
     "full_name": "nf-core/hlatyping",
     "html_url": "https://github.com/nf-core/hlatyping",
-    "commit": "4bd547ff758474c443d7bb373ece6d4c073249bd",
+    "commit": "66f36048e7b4f0fe6f6423dbd24d0494a24ce824",
     "errors": 0,
     "warnings": 4,
     "parse_error": false,
@@ -842,7 +842,7 @@
   "metatdenovo": {
     "full_name": "nf-core/metatdenovo",
     "html_url": "https://github.com/nf-core/metatdenovo",
-    "commit": "4b8c5d89f474883db7bf6eba539a775d692b4f12",
+    "commit": "938f8f0f1aea2edf59660b0fd752c75d25649b6c",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
@@ -938,7 +938,7 @@
   "mspepid": {
     "full_name": "nf-core/mspepid",
     "html_url": "https://github.com/nf-core/mspepid",
-    "commit": "b73d0ad54774b143e2776bd06e3bb56052adca6f",
+    "commit": "e87c5ed6a5b2909b2ded50ac7c02e1b75ce4cede",
     "errors": 0,
     "warnings": 8,
     "parse_error": false,
@@ -1022,7 +1022,7 @@
   "oncoanalyser": {
     "full_name": "nf-core/oncoanalyser",
     "html_url": "https://github.com/nf-core/oncoanalyser",
-    "commit": "0114fffe0108f830deeadcb19f41aa1ffe13f48c",
+    "commit": "249c5b1dd64d274c2339eb15e0ad93cbfe0c6c85",
     "errors": 0,
     "warnings": 106,
     "parse_error": false,
@@ -1334,7 +1334,7 @@
   "riboseq": {
     "full_name": "nf-core/riboseq",
     "html_url": "https://github.com/nf-core/riboseq",
-    "commit": "b54f44db20105b5ddb148e118afda7fd359c7d0a",
+    "commit": "bca0ae8d9a4d073c02638d69c6cff0ec5ff6aee5",
     "errors": 0,
     "warnings": 149,
     "parse_error": false,
@@ -1550,14 +1550,14 @@
   "spatialvi": {
     "full_name": "nf-core/spatialvi",
     "html_url": "https://github.com/nf-core/spatialvi",
-    "commit": "ccdfb48659aa8298bb5ed8d7c986651a99e04e7c",
+    "commit": "1cb0ed337fad0feebad50d40c2a74e0d34697c3a",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
     "publishdir": true,
-    "publishdir_count": 7
+    "publishdir_count": 12
   },
   "spinningjenny": {
     "full_name": "nf-core/spinningjenny",
@@ -1694,14 +1694,14 @@
   "viralmetagenome": {
     "full_name": "nf-core/viralmetagenome",
     "html_url": "https://github.com/nf-core/viralmetagenome",
-    "commit": "67e6f211aff986ba9de7f83911ac405407e525ac",
+    "commit": "7f03c4c1a5ec71efaefeb965b4c838a24f5e0189",
     "errors": 0,
     "warnings": 4,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
     "publishdir": true,
-    "publishdir_count": 117
+    "publishdir_count": 119
   },
   "viralrecon": {
     "full_name": "nf-core/viralrecon",

@@ -1,6 +1,6 @@
 # Nextflow lint results
 
-- Generated: 2026-08-28T02:47:30.115412640Z
+- Generated: 2026-09-02T00:21:50.442474939Z
 - Nextflow version: 26.08.0-edge
 - Summary: 8 warnings
 
@@ -48,7 +48,7 @@
       ^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_mspepid_pipeline/main.nf:134:41`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/utils_nfcore_mspepid_pipeline/main.nf:135:41`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
           .map { validateInputSamplesheet(it) }

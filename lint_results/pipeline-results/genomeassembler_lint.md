@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-08-29T00:17:50.746783159Z
+- Generated: 2026-09-02T00:20:26.412564242Z
 - Nextflow version: 26.08.0-edge
-- Summary: 8 warnings
+- Summary: 7 warnings
 
 ## :warning: Warnings
 
@@ -53,11 +53,4 @@
   ```nextflow
       input             //  string: Path to input samplesheet
       ^^^^^
-  ```
-
-- Warning: `workflows/genomeassembler.nf:109:5`: Variable was declared but not used
-
-  ```nextflow
-      ch_main_scaffolded = ch_main_polished_branched
-      ^^^^^^^^^^^^^^^^^^
   ```

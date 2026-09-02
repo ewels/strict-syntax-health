@@ -3,7 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [insane_perlman] revision: 570b1887aa
+Launching `./main.nf` [hopeful_kirch] revision: 8a40b65f27
 
 
 ------------------------------------------------------
@@ -29,7 +29,7 @@ Cloud infrastructure.
   --email                           [string]  Email address for completion summary. 
   --multiqc_title                   [string]  MultiQC report title. Printed as page header, used for filename if not otherwise specified. 
   --transpose_overview_tables       [boolean] Transpose the samples overview table so samples become columns and result fields become rows. 
-[default: false]  
+ 
 
 Preprocessing options
   --skip_preprocessing              [boolean] Skip read preprocessing and use input reads for downstream analysis 
@@ -140,6 +140,8 @@ ivar]
 [default: ivar]  
   --min_mapped_reads                [integer] Define the minimum number of mapped reads in order to continue the variant and consensus calling 
 [default: 200]  
+  --keep_unmapped                   [boolean] Keep unmapped reads in the alignments used for contig coverage, polishing and consensus refinement 
+ 
   --min_consensus_depth             [integer] Define the minimum consensus depth [default: 5] 
   --allele_frequency                [number]  Minimum allele frequency threshold for calling consensus [default: 0.75] 
   --mapping_stats                   [boolean] Calculate summary statistics in final iteration [default: true] 
@@ -152,6 +154,7 @@ Consensus QC
   --skip_consensus_annotation       [boolean] Skip the annotation of the consensus constructs 
   --annotation_db                   [string]  Database used for annotation of the consensus constructs [default: 
 ftp://ftp.expasy.org/databases/viralzone/2020_4/virosaurus90_vertebrate-20200330.fas.gz]  
+  --annotation_metadata             [string]  Metadata table describing the sequences of the annotation database 
   --skip_prokka                     [boolean] Skip gene estimation & annotation with prokka 
   --prokka_db                       [string]  Define a prokka `--protein` database for protein annotation 
   --skip_quast                      [boolean] Skip the use of QUAST for quality check 
