@@ -1,6 +1,6 @@
 # Nextflow lint results
 
-- Generated: 2026-09-01T00:23:51.013649864Z
+- Generated: 2026-09-03T00:20:21.576310710Z
 - Nextflow version: 26.08.0-edge
 - Summary: 26 warnings
 
@@ -139,42 +139,42 @@
                                                   ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/run_cv/main.nf:54:43`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/run_cv/main.nf:52:43`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
                                   .filter { dataset_name, dataset_path ->
                                             ^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/run_cv/main.nf:57:40`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/run_cv/main.nf:55:40`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
                                   .map { dataset_name, dataset_path ->
                                          ^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/run_cv/main.nf:62:43`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/run_cv/main.nf:60:43`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
                                   .filter { dataset_name, dataset_path ->
                                             ^^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/run_cv/main.nf:131:16`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/run_cv/main.nf:128:16`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .map { model_class, model_name, hpam_combis -> [model_name, hpam_combis] }
                  ^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/run_cv/main.nf:139:16`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/run_cv/main.nf:136:16`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .map { model_class, model_name, test_mode, split -> [model_name, test_mode, split] }
                  ^^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_drugresponseeval_pipeline/main.nf:138:58`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/utils_nfcore_drugresponseeval_pipeline/main.nf:136:58`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
       ch_models = channel.from(models.split(',').collect { it.trim() })

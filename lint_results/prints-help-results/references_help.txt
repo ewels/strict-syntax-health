@@ -4,8 +4,9 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
  N E X T F L O W   ~  version 26.08.0-edge
 
 Downloading plugin nf-core-utils@0.4.0
-Launching `./main.nf` [hopeful_ardinghelli] revision: a364fe9767
+Launching `./main.nf` [spontaneous_goodall] revision: 2b38956958
 
+WARN: Static typing is a preview feature -- syntax and behavior may change in future releases
 
 ------------------------------------------------------
                                         ,--./,-.
@@ -17,11 +18,11 @@ Launching `./main.nf` [hopeful_ardinghelli] revision: a364fe9767
 ------------------------------------------------------
 
 Generic options
-  trace_report_suffix: 2026-08-27_01-27-44
+  trace_report_suffix: 2026-09-03_00-28-38
   help               : true
 
 Core Nextflow options
-  runName            : hopeful_ardinghelli
+  runName            : spontaneous_goodall
   launchDir          : /home/runner/work/strict-syntax-health/strict-syntax-health/pipelines/references
   workDir            : /home/runner/work/strict-syntax-health/strict-syntax-health/pipelines/references/work
   projectDir         : /home/runner/work/strict-syntax-health/strict-syntax-health/pipelines/references

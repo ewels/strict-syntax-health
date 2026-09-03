@@ -1,6 +1,6 @@
 # Workflow outputs migration: proteinannotator
 
-- Generated: 2026-07-30T00:30:16.480078+00:00
+- Generated: 2026-09-03T00:26:24.539089+00:00
 - Status: :x: **error** — no `output {}` block found; still relies on the legacy `publishDir` directive
 
 This report tracks migration from the legacy `publishDir` directive to the new [workflow outputs](https://docs.seqera.io/nextflow/tutorials/workflow-outputs) syntax.
@@ -14,4 +14,4 @@ https://docs.seqera.io/nextflow/tutorials/workflow-outputs
 
 Found 24 `publishDir` references across 1 file that should be migrated to the workflow `output {}` block:
 
-- [`conf/modules.config`](https://github.com/nf-core/proteinannotator/blob/77302ba710967a51bf39848c02d85de9036bc3a5/conf/modules.config#L15) — 24 references
+- [`conf/modules.config`](https://github.com/nf-core/proteinannotator/blob/0ed3a12d0e1d27342a09360153fc0373d1d77bde/conf/modules.config#L15) — 24 references
