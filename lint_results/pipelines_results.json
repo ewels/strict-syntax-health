@@ -278,9 +278,9 @@
   "datasync": {
     "full_name": "nf-core/datasync",
     "html_url": "https://github.com/nf-core/datasync",
-    "commit": "d2d46b6d918ac0ca78fd068f6dd42aff370e8cb6",
+    "commit": "23f779f878624d7927169dc17d614121fe2517e0",
     "errors": 0,
-    "warnings": 0,
+    "warnings": 4,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
@@ -386,7 +386,7 @@
   "diseasemodulediscovery": {
     "full_name": "nf-core/diseasemodulediscovery",
     "html_url": "https://github.com/nf-core/diseasemodulediscovery",
-    "commit": "6b729f4fe6ea395a2845a45e0ce007a73e3fc001",
+    "commit": "ec9bfb017fa0d5919cf84bf944ebc0a115c87e2e",
     "errors": 0,
     "warnings": 105,
     "parse_error": false,
@@ -518,7 +518,7 @@
   "funcprofiler": {
     "full_name": "nf-core/funcprofiler",
     "html_url": "https://github.com/nf-core/funcprofiler",
-    "commit": "07bed543a3fdb7bd031d2040780f58e843eff08f",
+    "commit": "472757a8fe8c82f36b3a88c7678fe31e8d7e22b5",
     "errors": 0,
     "warnings": 12,
     "parse_error": false,
@@ -770,7 +770,7 @@
   "magmap": {
     "full_name": "nf-core/magmap",
     "html_url": "https://github.com/nf-core/magmap",
-    "commit": "01ce1bbb006e6336839d6396d7590bc248dad467",
+    "commit": "7cb2e3e0e2439780d803cfd5747acae13449ef17",
     "errors": 0,
     "warnings": 13,
     "parse_error": false,
@@ -1022,7 +1022,7 @@
   "oncoanalyser": {
     "full_name": "nf-core/oncoanalyser",
     "html_url": "https://github.com/nf-core/oncoanalyser",
-    "commit": "7a17da03c6d2bbf05244dd5f8e6bf97a98568f72",
+    "commit": "3ce626709ab201841daa7d56cdbd2958e9adaffa",
     "errors": 0,
     "warnings": 106,
     "parse_error": false,
@@ -1106,7 +1106,7 @@
   "pathogensurveillance": {
     "full_name": "nf-core/pathogensurveillance",
     "html_url": "https://github.com/nf-core/pathogensurveillance",
-    "commit": "25558a5554bb1566e158fee9997e2d7aedf35fb3",
+    "commit": "412d2db8840b8853af5e5c6038b999a536fc7ef3",
     "errors": 0,
     "warnings": 436,
     "parse_error": false,
@@ -1226,7 +1226,7 @@
   "provenancereport": {
     "full_name": "nf-core/provenancereport",
     "html_url": "https://github.com/nf-core/provenancereport",
-    "commit": "a34b896c8dc38f4ca3e48f043370a42e200d03ce",
+    "commit": "f0c81e35772e160e2c762a86be7f4539e1e7c944",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
@@ -1262,7 +1262,7 @@
   "raredisease": {
     "full_name": "nf-core/raredisease",
     "html_url": "https://github.com/nf-core/raredisease",
-    "commit": "c19373fad659d5160f2fa6209464cd431de2da6a",
+    "commit": "ecab8e6280b63d59617f319fb2e419bbabde58b7",
     "errors": 0,
     "warnings": 12,
     "parse_error": false,
@@ -1586,14 +1586,14 @@
   "taxprofiler": {
     "full_name": "nf-core/taxprofiler",
     "html_url": "https://github.com/nf-core/taxprofiler",
-    "commit": "33f440417361661b2e9a5b8af3c3db7445725691",
+    "commit": "6793c85234519df9b9c7bd235d0f88a27fbb2817",
     "errors": 0,
-    "warnings": 100,
+    "warnings": 54,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
     "publishdir": true,
-    "publishdir_count": 91
+    "publishdir_count": 90
   },
   "tbanalyzer": {
     "full_name": "nf-core/tbanalyzer",
@@ -1646,7 +1646,7 @@
   "variantbenchmarking": {
     "full_name": "nf-core/variantbenchmarking",
     "html_url": "https://github.com/nf-core/variantbenchmarking",
-    "commit": "fbe71406cfa4bff9ae03de42480893372a1a8ffc",
+    "commit": "6277f24b90885efc16ca0c4b445e21f773af0bba",
     "errors": 0,
     "warnings": 6,
     "parse_error": false,

@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-08-08T00:19:02.659628549Z
-- Nextflow version: 26.07.0-edge
-- Summary: 100 warnings
+- Generated: 2026-09-04T00:22:44.165850494Z
+- Nextflow version: 26.08.0-edge
+- Summary: 54 warnings
 
 ## :warning: Warnings
 
@@ -104,104 +104,6 @@
                                                                                                     ^^
   ```
 
-- Warning: `modules/nf-core/bbmap/bbduk/main.nf:45:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/bracken/bracken/main.nf:42:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/bracken/combinebrackenoutputs/main.nf:39:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/cat/fastq/main.nf:22:60`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-      def readList = reads instanceof List ? reads.collect { it.toString() } : [reads.toString()]
-                                                             ^^
-  ```
-
-- Warning: `modules/nf-core/cat/fastq/main.nf:58:60`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-      def readList = reads instanceof List ? reads.collect { it.toString() } : [reads.toString()]
-                                                             ^^
-  ```
-
-- Warning: `modules/nf-core/ganon/classify/main.nf:48:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/ganon/classify/main.nf:50:9`: Variable was declared but not used
-
-  ```nextflow
-      def input = meta.single_end ? "--single-reads ${fastqs}" : "--paired-reads ${fastqs}"
-          ^^^^^
-  ```
-
-- Warning: `modules/nf-core/ganon/report/main.nf:41:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/ganon/table/main.nf:36:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/gunzip/main.nf:43:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/kaiju/kaiju/main.nf:43:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/kaiju/kaiju/main.nf:45:9`: Variable was declared but not used
-
-  ```nextflow
-      def input = meta.single_end ? "-i ${reads}" : "-i ${reads[0]} -j ${reads[1]}"
-          ^^^^^
-  ```
-
-- Warning: `modules/nf-core/kaiju/kaiju2krona/main.nf:41:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/kaiju/kaiju2table/main.nf:42:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
 - Warning: `modules/nf-core/kmcp/profile/main.nf:42:9`: Variable was declared but not used
 
   ```nextflow
@@ -223,209 +125,6 @@
           ^^^^
   ```
 
-- Warning: `modules/nf-core/kraken2/kraken2/main.nf:60:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/kraken2/kraken2/main.nf:62:9`: Variable was declared but not used
-
-  ```nextflow
-      def paired       = meta.single_end ? "" : "--paired"
-          ^^^^^^
-  ```
-
-- Warning: `modules/nf-core/kraken2/kraken2/main.nf:65:9`: Variable was declared but not used
-
-  ```nextflow
-      def readclassification_option = save_reads_assignment ? "--output ${prefix}.kraken2.classifiedreads.txt" : "--output /dev/null"
-          ^^^^^^^^^^^^^^^^^^^^^^^^^
-  ```
-
-- Warning: `modules/nf-core/kraken2/kraken2/main.nf:66:9`: Variable was declared but not used
-
-  ```nextflow
-      def compress_reads_command = save_output_fastqs ? "pigz -p $task.cpus *.fastq" : ""
-          ^^^^^^^^^^^^^^^^^^^^^^
-  ```
-
-- Warning: `modules/nf-core/krakentools/combinekreports/main.nf:36:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/krakentools/kreport2krona/main.nf:38:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/malt/run/main.nf:42:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/megan/rma2info/main.nf:40:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/megan/rma2info/main.nf:42:9`: Variable was declared but not used
-
-  ```nextflow
-      def summary = megan_summary ? "-es ${prefix}.megan" : ""
-          ^^^^^^^
-  ```
-
-- Warning: `modules/nf-core/melon/main.nf:45:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/metacache/query/main.nf:47:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/metacache/query/main.nf:49:9`: Variable was declared but not used
-
-  ```nextflow
-      def input_file = meta.single_end ? reads : "${reads[0]} ${reads[1]} -pairfiles"
-          ^^^^^^^^^^
-  ```
-
-- Warning: `modules/nf-core/metaphlan/mergemetaphlantables/main.nf:35:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/metaphlan/metaphlan/main.nf:58:9`: Variable was declared but not used
-
-  ```nextflow
-      def input_data = ("${input_type}".contains("fastq")) && !meta.single_end ? "${input[0]},${input[1]}" : "${input}"
-          ^^^^^^^^^^
-  ```
-
-- Warning: `modules/nf-core/metaphlan/metaphlan/main.nf:59:9`: Variable was declared but not used
-
-  ```nextflow
-      def bowtie2_out = "${input_type}" == "--input_type bowtie2out" || "${input_type}" == "--input_type sam" ? '' : "--bowtie2out ${prefix}.bowtie2out.txt"
-          ^^^^^^^^^^^
-  ```
-
-- Warning: `modules/nf-core/metaphlan/metaphlan/main.nf:60:9`: Variable was declared but not used
-
-  ```nextflow
-      def samfile_out = save_samfile ? "-s ${prefix}.sam" : ''
-          ^^^^^^^^^^^
-  ```
-
-- Warning: `modules/nf-core/minimap2/align/main.nf:67:9`: Variable was declared but not used
-
-  ```nextflow
-      def target = reference ?: (bam_input ? error("BAM input requires reference") : reads)
-          ^^^^^^
-  ```
-
-- Warning: `modules/nf-core/motus/merge/main.nf:47:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/motus/merge/main.nf:49:9`: Variable was declared but not used
-
-  ```nextflow
-      def cmd_input = input.size() > 1 ? "-i ${input.join(',')}" : input.isDirectory() ? "-d ${input}" : "-i ${input}"
-          ^^^^^^^^^
-  ```
-
-- Warning: `modules/nf-core/motus/merge/main.nf:50:9`: Variable was declared but not used
-
-  ```nextflow
-      def suffix = task.ext.args?.contains("-B") ? "biom" : "txt"
-          ^^^^^^
-  ```
-
-- Warning: `modules/nf-core/motus/preplong/main.nf:49:9`: Variable was declared but not used
-
-  ```nextflow
-      def refdb = db ? "-db ${db}" : ""
-          ^^^^^
-  ```
-
-- Warning: `modules/nf-core/motus/profile/main.nf:58:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/motus/profile/main.nf:60:9`: Variable was declared but not used
-
-  ```nextflow
-      def inputs = reads[0].getExtension() == 'bam' ?
-          ^^^^^^
-  ```
-
-- Warning: `modules/nf-core/motus/profile/main.nf:65:9`: Variable was declared but not used
-
-  ```nextflow
-      def refdb = db ? "-db ${db}" : ""
-          ^^^^^
-  ```
-
-- Warning: `modules/nf-core/nanoq/main.nf:38:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/nonpareil/curve/main.nf:42:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/nonpareil/nonpareil/main.nf:46:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/nonpareil/nonpareilcurvesr/main.nf:44:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/nonpareil/set/main.nf:42:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
 - Warning: `modules/nf-core/porechop/abi/main.nf:42:9`: Variable was declared but not used
 
   ```nextflow
@@ -440,27 +139,6 @@
           ^^^^^^^^^^^^^
   ```
 
-- Warning: `modules/nf-core/sylph/profile/main.nf:40:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/sylph/profile/main.nf:42:9`: Variable was declared but not used
-
-  ```nextflow
-      def input = meta.single_end ? "${reads}" : "-1 ${reads[0]} -2 ${reads[1]}"
-          ^^^^^
-  ```
-
-- Warning: `modules/nf-core/sylphtax/merge/main.nf:24:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
-          ^^^^
-  ```
-
 - Warning: `subworkflows/local/longread_hostremoval/main.nf:26:23`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
@@ -468,112 +146,112 @@
                         ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:250:21`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:248:21`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                   if (it[0].is_fasta) {
                       ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:251:145`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:249:145`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                       log.warn("[nf-core/taxprofiler] Centrifuge currently does not accept FASTA files as input. Skipping Centrifuge for sample ${it[0].id}.")
                                                                                                                                                   ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:253:18`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:251:18`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                   !it[0].is_fasta
                    ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:296:25`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:293:25`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                       if (it[0].is_fasta) {
                           ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:297:151`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:294:151`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                           log.warn("[nf-core/taxprofiler] Centrifuger currently does not accept FASTA files as input. Skipping Centrifuger for sample ${it[0].id}.")
                                                                                                                                                         ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:299:22`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:296:22`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                       !it[0].is_fasta
                        ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:387:21`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:381:21`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                   if (it[0].is_fasta) {
                       ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:388:135`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:382:135`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                       log.warn("[nf-core/taxprofiler] mOTUs currently does not accept FASTA files as input. Skipping mOTUs for sample ${it[0].id}.")
                                                                                                                                         ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:390:18`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:384:18`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                   !it[0].is_fasta
                    ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:393:27`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:387:27`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                   longread: it[0].instrument_platform == 'OXFORD_NANOPORE' || it[0].instrument_platform == 'PACBIO_SMRT'
                             ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:393:77`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:387:77`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                   longread: it[0].instrument_platform == 'OXFORD_NANOPORE' || it[0].instrument_platform == 'PACBIO_SMRT'
                                                                               ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:394:28`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:388:28`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                   shortread: it[0].instrument_platform != 'OXFORD_NANOPORE' && it[0].instrument_platform != 'PACBIO_SMRT'
                              ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:394:78`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:388:78`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                   shortread: it[0].instrument_platform != 'OXFORD_NANOPORE' && it[0].instrument_platform != 'PACBIO_SMRT'
                                                                                ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:584:21`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:574:21`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                   if (it[0].is_fasta) {
                       ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:585:135`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:575:135`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                       log.warn("[nf-core/taxprofiler] sylph currently does not accept FASTA files as input. Skipping sylph for sample ${it[0].id}.")
                                                                                                                                         ^^
   ```
 
-- Warning: `subworkflows/local/profiling/main.nf:587:18`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/profiling/main.nf:577:18`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                   !it[0].is_fasta
@@ -664,42 +342,42 @@
                 ^^
   ```
 
-- Warning: `subworkflows/local/visualization_krona/main.nf:74:22`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/visualization_krona/main.nf:72:22`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
           .map { [[id: it[0]['db_name'], tool: it[0]['tool']], it[1]] }
                        ^^
   ```
 
-- Warning: `subworkflows/local/visualization_krona/main.nf:74:46`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/visualization_krona/main.nf:72:46`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
           .map { [[id: it[0]['db_name'], tool: it[0]['tool']], it[1]] }
                                                ^^
   ```
 
-- Warning: `subworkflows/local/visualization_krona/main.nf:74:62`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/visualization_krona/main.nf:72:62`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
           .map { [[id: it[0]['db_name'], tool: it[0]['tool']], it[1]] }
                                                                ^^
   ```
 
-- Warning: `subworkflows/local/visualization_krona/main.nf:88:26`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/visualization_krona/main.nf:85:26`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
               .map { [[id: it[0]['db_name'], tool: it[0]['tool']], it[1]] }
                            ^^
   ```
 
-- Warning: `subworkflows/local/visualization_krona/main.nf:88:50`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/visualization_krona/main.nf:85:50`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
               .map { [[id: it[0]['db_name'], tool: it[0]['tool']], it[1]] }
                                                    ^^
   ```
 
-- Warning: `subworkflows/local/visualization_krona/main.nf:88:66`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/visualization_krona/main.nf:85:66`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
               .map { [[id: it[0]['db_name'], tool: it[0]['tool']], it[1]] }

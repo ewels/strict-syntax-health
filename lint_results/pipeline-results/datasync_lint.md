@@ -1,5 +1,35 @@
 # Nextflow lint results
 
-- Generated: 2026-08-21T00:11:51.685920620Z
+- Generated: 2026-09-04T00:18:08.392814991Z
 - Nextflow version: 26.08.0-edge
-- Summary: No issues found
+- Summary: 4 warnings
+
+## :warning: Warnings
+
+- Warning: `subworkflows/local/utils_nfcore_datasync_pipeline/main.nf:176:43`: Parameter was not used -- prefix with `_` to suppress warning
+
+  ```nextflow
+      def requires_download = samples.any { meta, input_path, output_path, md5, sha ->
+                                            ^^^^
+  ```
+
+- Warning: `subworkflows/local/utils_nfcore_datasync_pipeline/main.nf:176:61`: Parameter was not used -- prefix with `_` to suppress warning
+
+  ```nextflow
+      def requires_download = samples.any { meta, input_path, output_path, md5, sha ->
+                                                              ^^^^^^^^^^^
+  ```
+
+- Warning: `subworkflows/local/utils_nfcore_datasync_pipeline/main.nf:176:74`: Parameter was not used -- prefix with `_` to suppress warning
+
+  ```nextflow
+      def requires_download = samples.any { meta, input_path, output_path, md5, sha ->
+                                                                           ^^^
+  ```
+
+- Warning: `workflows/datasync.nf:119:23`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+
+  ```nextflow
+              .filter { it != null }
+                        ^^
+  ```

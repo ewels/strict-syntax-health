@@ -1,7 +1,7 @@
 # Nextflow lint results
 
-- Generated: 2026-08-18T00:12:34.504191089Z
-- Nextflow version: 26.07.0-edge
+- Generated: 2026-09-04T00:18:27.891923829Z
+- Nextflow version: 26.08.0-edge
 - Summary: 105 warnings
 
 ## :warning: Warnings
@@ -342,77 +342,77 @@
                ^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:111:16`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:112:16`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       ch_seeds = Channel.empty()          // channel: [ val(meta[id,seeds_id,network_id]), path(seeds) ]
                  ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:112:18`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:113:18`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       ch_network = Channel.empty()        // channel: [ val(meta[id,network_id]), path(network) ]
                    ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:113:29`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:114:29`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
       ch_perturbed_networks = Channel.empty() // channel: [ val(meta[id,network_id]), [path(perturbed_network)] ]
                               ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:131:20`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:132:20`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
           ch_input = Channel
                      ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:167:22`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:168:22`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
           ch_network = Channel.fromList(param_network.split(',').flatten())
                        ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:171:20`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:172:20`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
           ch_seeds = Channel
                      ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:181:17`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
+- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:182:17`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 
   ```nextflow
                   Channel
                   ^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:446:50`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:447:50`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
       def seeds_empty_count = seeds_empty.count  { key, value -> value == true }
                                                    ^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:447:52`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:448:52`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
       def module_empty_count = module_empty.count  { key, value -> value == true }
                                                      ^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:448:70`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:449:70`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
       def visualization_skipped_count = visualization_skipped.count  { key, value -> value == true }
                                                                        ^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:449:62`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_diseasemodulediscovery_pipeline/main.nf:450:62`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
       def drugstone_skipped_count = drugstone_skipped.count  { key, value -> value == true }

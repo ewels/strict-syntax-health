@@ -4,7 +4,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
  N E X T F L O W   ~  version 26.08.0-edge
 
 Downloading plugin nf-prov@1.7.0
-Launching `./main.nf` [dreamy_engelbart] revision: 0b357abf2c
+Launching `./main.nf` [awesome_cori] revision: 24be60e8c5
 
 WARN: Unrecognized config option 'validation.defaultIgnoreParams'
 WARN: Unrecognized config option 'validation.monochromeLogs'
@@ -25,22 +25,18 @@ help message of that parameter will be printed.
 or `--helpFull`.  
 
 Input/output options
-  --input            [string] Path to comma-separated file containing ids and file paths to include in the report. 
-  --outdir           [string] The output directory where the results will be saved. You have to use absolute paths to storage on 
+  --input       [string] Path to comma-separated file containing ids and file paths to include in the report. 
+  --outdir      [string] The output directory where the results will be saved. You have to use absolute paths to storage on 
 Cloud infrastructure.  
-  --notebook         [string] Path to a Quarto notebook used to render the provenance report. If unset, the bundled default 
+  --notebook    [string] Path to a Quarto notebook used to render the provenance report. If unset, the bundled default 
 notebook is used.  
-  --report_container [string] Container image used both to render the Quarto notebook and to collect its R and Python runtime 
-information. [default: 
-community.wave.seqera.io/library/jupyter_matplotlib_papermill_quarto_r-rmarkdown:6d15193ce3dfc665] 
- 
-  --document         [string] Path to a documentation file to track that the provenance report has been reviewed. 
-  --email            [string] Email address for completion summary. 
+  --document    [string] Path to a documentation file to track that the provenance report has been reviewed. 
+  --email       [string] Email address for completion summary. 
 
 Generic options
-  --help             [boolean, string] Display the help message. 
-  --help_full        [boolean]         Display the full detailed help message. 
-  --show_hidden      [boolean]         Display hidden parameters in the help message (only works when --help or --help_full are provided). 
+  --help        [boolean, string] Display the help message. 
+  --help_full   [boolean]         Display the full detailed help message. 
+  --show_hidden [boolean]         Display hidden parameters in the help message (only works when --help or --help_full are provided). 
  
  !! Hiding 14 param(s), use the `--showHidden` parameter to show them !!
 ------------------------------------------------------
