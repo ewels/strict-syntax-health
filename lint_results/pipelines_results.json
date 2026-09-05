@@ -518,7 +518,7 @@
   "funcprofiler": {
     "full_name": "nf-core/funcprofiler",
     "html_url": "https://github.com/nf-core/funcprofiler",
-    "commit": "472757a8fe8c82f36b3a88c7678fe31e8d7e22b5",
+    "commit": "a8101edc6deec2bf5eed2e27682f94512857844e",
     "errors": 0,
     "warnings": 12,
     "parse_error": false,
@@ -674,7 +674,7 @@
   "hlatyping": {
     "full_name": "nf-core/hlatyping",
     "html_url": "https://github.com/nf-core/hlatyping",
-    "commit": "66f36048e7b4f0fe6f6423dbd24d0494a24ce824",
+    "commit": "fff6d750aae2557d6bb647cf0ad3265c7e78db39",
     "errors": 0,
     "warnings": 4,
     "parse_error": false,
@@ -890,7 +890,7 @@
   "mhcquant": {
     "full_name": "nf-core/mhcquant",
     "html_url": "https://github.com/nf-core/mhcquant",
-    "commit": "7ee36d41947b0ca8cb6c5e7f448155251b1634fd",
+    "commit": "a66f441629f4b5b957f35b880a20cf011143e7de",
     "errors": 0,
     "warnings": 45,
     "parse_error": false,
@@ -1262,7 +1262,7 @@
   "raredisease": {
     "full_name": "nf-core/raredisease",
     "html_url": "https://github.com/nf-core/raredisease",
-    "commit": "ecab8e6280b63d59617f319fb2e419bbabde58b7",
+    "commit": "7687e02fd4c25fa9cb4f6a87c8a12c3eab94d698",
     "errors": 0,
     "warnings": 12,
     "parse_error": false,
@@ -1382,7 +1382,7 @@
   "rnasplice": {
     "full_name": "nf-core/rnasplice",
     "html_url": "https://github.com/nf-core/rnasplice",
-    "commit": "97333787bd1367e79ac88bb2ea9764da86d4b986",
+    "commit": "35cf20e42221089840271a508b8841b52c610ef3",
     "errors": 14,
     "warnings": 19,
     "parse_error": false,
@@ -1550,7 +1550,7 @@
   "spatialvi": {
     "full_name": "nf-core/spatialvi",
     "html_url": "https://github.com/nf-core/spatialvi",
-    "commit": "1cb0ed337fad0feebad50d40c2a74e0d34697c3a",
+    "commit": "630fb85d30a088363c60b4676e0fd60ae3283a82",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
@@ -1574,19 +1574,19 @@
   "stableexpression": {
     "full_name": "nf-core/stableexpression",
     "html_url": "https://github.com/nf-core/stableexpression",
-    "commit": "dfde809bd04f328e8421b044eec67a554cc9b220",
+    "commit": "10736a5a75afac14a6301163a3ef91510ff07eff",
     "errors": 0,
-    "warnings": 33,
+    "warnings": 32,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": true,
-    "publishdir": true,
-    "publishdir_count": 1
+    "publishdir": false,
+    "publishdir_count": 0
   },
   "taxprofiler": {
     "full_name": "nf-core/taxprofiler",
     "html_url": "https://github.com/nf-core/taxprofiler",
-    "commit": "6793c85234519df9b9c7bd235d0f88a27fbb2817",
+    "commit": "961bcfdc6f3083e93e73e22b4365872e4fb6c770",
     "errors": 0,
     "warnings": 54,
     "parse_error": false,
@@ -1634,7 +1634,7 @@
   "tumourevo": {
     "full_name": "nf-core/tumourevo",
     "html_url": "https://github.com/nf-core/tumourevo",
-    "commit": "72d33cc99b4dcd88aac49e1f4b69d0e233064aee",
+    "commit": "e4ece23e8a1ccfcd4f31520f180c2c2e3615f962",
     "errors": 0,
     "warnings": 48,
     "parse_error": false,
@@ -1694,14 +1694,14 @@
   "viralmetagenome": {
     "full_name": "nf-core/viralmetagenome",
     "html_url": "https://github.com/nf-core/viralmetagenome",
-    "commit": "68e358a37c4277125ca57002eb965ac1957d68f2",
+    "commit": "d46ec0b30e460abfdefbc78d732e354ca7bd2e02",
     "errors": 0,
-    "warnings": 4,
+    "warnings": 3,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
     "publishdir": true,
-    "publishdir_count": 119
+    "publishdir_count": 118
   },
   "viralrecon": {
     "full_name": "nf-core/viralrecon",

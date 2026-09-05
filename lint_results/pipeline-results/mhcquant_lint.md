@@ -1,7 +1,7 @@
 # Nextflow lint results
 
-- Generated: 2026-08-04T00:31:34.005442216Z
-- Nextflow version: 26.07.0-edge
+- Generated: 2026-09-05T00:19:30.068683738Z
+- Nextflow version: 26.08.0-edge
 - Summary: 45 warnings
 
 ## :warning: Warnings
@@ -188,56 +188,56 @@
       ^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:162:28`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:163:28`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .map { group_meta, metas, files, fastas -> [group_meta, files.size()] }
                              ^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:162:42`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:163:42`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .map { group_meta, metas, files, fastas -> [group_meta, files.size()] }
                                            ^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:164:16`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:165:16`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .map { group_meta, group_count, meta, file, fasta ->
                  ^^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:172:28`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:173:28`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .map { meta, file, fasta, presetsMap ->
                              ^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:185:19`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:186:19`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               .map{ meta, file, fasta -> fasta }
                     ^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:185:25`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:186:25`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               .map{ meta, file, fasta -> fasta }
                           ^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:197:51`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:198:51`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           ch_fasta = ch_samplesheet_raw.map { meta, file, fasta -> [groupKey([id: "${meta.sample}_${meta.condition}"], meta.group_count), fasta] }
                                                     ^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:199:20`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_mhcquant_pipeline/main.nf:200:20`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               .map { meta, fasta -> fasta }

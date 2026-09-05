@@ -3,7 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [infallible_almeida] revision: c2dfc94d7c
+Launching `./main.nf` [shrivelled_archimedes] revision: c2dfc94d7c
 
 
 ------------------------------------------------------
@@ -147,7 +147,7 @@ ivar]
   --min_consensus_depth             [integer] Define the minimum consensus depth [default: 5] 
   --allele_frequency                [number]  Minimum allele frequency threshold for calling consensus [default: 0.75] 
   --mapping_stats                   [boolean] Calculate summary statistics in final iteration [default: true] 
-  --arguments_snpsift_extractfields [string]  Arguments for SnpSift ExtractFields tool [default: -s "," -e ".] 
+  --arguments_snpsift_extractfields [string]  Arguments for SnpSift ExtractFields tool [default: -s "," -e "."] 
 
 Consensus QC
   --skip_consensus_qc               [boolean] Skip the quality measurements on consensus genomes 

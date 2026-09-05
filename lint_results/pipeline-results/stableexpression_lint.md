@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-08-10T00:16:43.711388359Z
-- Nextflow version: 26.07.0-edge
-- Summary: 33 warnings
+- Generated: 2026-09-05T00:21:08.466477174Z
+- Nextflow version: 26.08.0-edge
+- Summary: 32 warnings
 
 ## :warning: Warnings
 
@@ -195,39 +195,32 @@
       ^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_stableexpression_pipeline/main.nf:243:19`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_stableexpression_pipeline/main.nf:249:19`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               meta, file ->
                     ^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_stableexpression_pipeline/main.nf:260:16`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_stableexpression_pipeline/main.nf:266:16`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .map { meta, file ->
                  ^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_stableexpression_pipeline/main.nf:366:13`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/utils_nfcore_stableexpression_pipeline/main.nf:387:13`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
               it.get(1).size() == 2 // only groups with two files
               ^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_stableexpression_pipeline/main.nf:369:13`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_stableexpression_pipeline/main.nf:390:13`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               meta, files ->
               ^^^^
-  ```
-
-- Warning: `tests/prepare_pr/.config:9:22`: Parameter was not used -- prefix with `_` to suppress warning
-
-  ```nextflow
-              } catch (e) {
-                       ^
   ```
 
 - Warning: `workflows/stableexpression.nf:195:40`: Parameter was not used -- prefix with `_` to suppress warning

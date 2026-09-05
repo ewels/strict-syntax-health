@@ -1,17 +1,10 @@
 # Nextflow lint results
 
-- Generated: 2026-09-03T00:29:26.006473902Z
+- Generated: 2026-09-05T00:22:14.742254743Z
 - Nextflow version: 26.08.0-edge
-- Summary: 4 warnings
+- Summary: 3 warnings
 
 ## :warning: Warnings
-
-- Warning: `subworkflows/local/fasta_contig_preclust/main.nf:16:5`: Variable was declared but not used
-
-  ```nextflow
-      ch_versions = channel.empty()
-      ^^^^^^^^^^^
-  ```
 
 - Warning: `subworkflows/local/utils_nfcore_viralmetagenome_pipeline/tests/lazymap_test.nf:19:23`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead
 

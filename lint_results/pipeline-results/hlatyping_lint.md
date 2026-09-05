@@ -1,6 +1,6 @@
 # Nextflow lint results
 
-- Generated: 2026-09-02T00:21:13.593793977Z
+- Generated: 2026-09-05T00:19:07.435051037Z
 - Nextflow version: 26.08.0-edge
 - Summary: 4 warnings
 
@@ -13,7 +13,7 @@
       ^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_hlatyping_pipeline/main.nf:369:92`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/utils_nfcore_hlatyping_pipeline/main.nf:370:92`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
       def actual = file.withInputStream { org.apache.commons.codec.digest.DigestUtils.md5Hex(it) }

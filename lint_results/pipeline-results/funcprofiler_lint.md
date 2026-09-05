@@ -1,6 +1,6 @@
 # Nextflow lint results
 
-- Generated: 2026-09-04T00:19:04.361157491Z
+- Generated: 2026-09-05T00:18:45.339977139Z
 - Nextflow version: 26.08.0-edge
 - Summary: 12 warnings
 
@@ -69,7 +69,7 @@
       ^^^^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_funcprofiler_pipeline/main.nf:138:5`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_funcprofiler_pipeline/main.nf:139:5`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
       hook_url //  string: hook URL for notifications

@@ -1,5 +1,5 @@
 {
-  "_repo_commit": "ddcdfec176423174312be52c43e18aed0a336665",
+  "_repo_commit": "781f2625386fe0bf2f337c7b99f56e618c59fc99",
   "aardvark_compare": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/aardvark/compare",
     "errors": 0,
@@ -2858,6 +2858,12 @@
   },
   "delly_call": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/delly/call",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "delly_sr": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/delly/sr",
     "errors": 0,
     "warnings": 0,
     "parse_error": false
