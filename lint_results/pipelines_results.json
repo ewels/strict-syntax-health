@@ -1142,9 +1142,9 @@
   "phyloplace": {
     "full_name": "nf-core/phyloplace",
     "html_url": "https://github.com/nf-core/phyloplace",
-    "commit": "4ed74768e6a1f82a47972cf5e8aa42b1b1c9ff25",
+    "commit": "e3d6b946a82f8504d76109d4cef3b1199387a423",
     "errors": 0,
-    "warnings": 1,
+    "warnings": 0,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
@@ -1334,7 +1334,7 @@
   "riboseq": {
     "full_name": "nf-core/riboseq",
     "html_url": "https://github.com/nf-core/riboseq",
-    "commit": "bca0ae8d9a4d073c02638d69c6cff0ec5ff6aee5",
+    "commit": "c1e51c15af0fb4c674e06771904f95325ec5ec3e",
     "errors": 0,
     "warnings": 149,
     "parse_error": false,
