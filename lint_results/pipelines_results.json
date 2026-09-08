@@ -278,7 +278,7 @@
   "datasync": {
     "full_name": "nf-core/datasync",
     "html_url": "https://github.com/nf-core/datasync",
-    "commit": "23f779f878624d7927169dc17d614121fe2517e0",
+    "commit": "366487c0a007da0fd7f7b4bde65e899f60105c7e",
     "errors": 0,
     "warnings": 4,
     "parse_error": false,
@@ -566,11 +566,11 @@
   "genomeassembler": {
     "full_name": "nf-core/genomeassembler",
     "html_url": "https://github.com/nf-core/genomeassembler",
-    "commit": "4a9d8995a881df87c59bcdd6b8954d786a6b1167",
+    "commit": "a4400f25b7e9bd9b2fc47398f1cc32b9509e251c",
     "errors": 0,
-    "warnings": 7,
+    "warnings": 5,
     "parse_error": false,
-    "prints_help": false,
+    "prints_help": true,
     "workflow_output": false,
     "publishdir": true,
     "publishdir_count": 93
@@ -1142,7 +1142,7 @@
   "phyloplace": {
     "full_name": "nf-core/phyloplace",
     "html_url": "https://github.com/nf-core/phyloplace",
-    "commit": "e3d6b946a82f8504d76109d4cef3b1199387a423",
+    "commit": "e2b491af08d4e3f8cce3b181edd44d5f4049d44b",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
@@ -1262,7 +1262,7 @@
   "raredisease": {
     "full_name": "nf-core/raredisease",
     "html_url": "https://github.com/nf-core/raredisease",
-    "commit": "7687e02fd4c25fa9cb4f6a87c8a12c3eab94d698",
+    "commit": "51462f2060dc60e406b02166d667476f03ce8ef0",
     "errors": 0,
     "warnings": 12,
     "parse_error": false,
@@ -1382,9 +1382,9 @@
   "rnasplice": {
     "full_name": "nf-core/rnasplice",
     "html_url": "https://github.com/nf-core/rnasplice",
-    "commit": "35cf20e42221089840271a508b8841b52c610ef3",
+    "commit": "7af18dd8d7ebb19801a957b8a58b68137db4f814",
     "errors": 14,
-    "warnings": 19,
+    "warnings": 17,
     "parse_error": false,
     "prints_help": null,
     "workflow_output": false,
@@ -1394,14 +1394,14 @@
   "rnastructurome": {
     "full_name": "nf-core/rnastructurome",
     "html_url": "https://github.com/nf-core/rnastructurome",
-    "commit": "19c952892031ce026ccad54617dcca47bfea2c97",
+    "commit": "51e85c1194f56688db8fd4abf0b06d4e9e56f6c9",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
     "publishdir": true,
-    "publishdir_count": 53
+    "publishdir_count": 54
   },
   "rnavar": {
     "full_name": "nf-core/rnavar",
@@ -1526,7 +1526,7 @@
   "sopa": {
     "full_name": "nf-core/sopa",
     "html_url": "https://github.com/nf-core/sopa",
-    "commit": "0b959963a3984ff78725209113d9ecdb78cef0b6",
+    "commit": "9f5c7837c70915a84be8fb3385608a3556ddfc33",
     "errors": 0,
     "warnings": 11,
     "parse_error": false,

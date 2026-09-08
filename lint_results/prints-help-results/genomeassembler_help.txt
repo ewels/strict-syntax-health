@@ -1,3 +1,134 @@
 $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
-Error: Timeout after 120s
+
+ N E X T F L O W   ~  version 26.08.0-edge
+
+Launching `./main.nf` [friendly_jang] revision: 44e2f14764
+
+
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/genomeassembler 2.0.0
+------------------------------------------------------
+Typical pipeline command:
+
+  nextflow run nf-core/genomeassembler -profile <docker/singularity/.../institute> --input samplesheet.csv --outdir <OUTDIR>
+
+help message of that parameter will be printed.  
+or `--helpFull`.  
+
+Input/output options
+  --input                      [string] Path to comma-separated file containing information about the samples in the experiment. 
+  --outdir                     [string] The output directory where the results will be saved. You have to use absolute paths to storage on 
+Cloud infrastructure.  
+  --email                      [string] Email address for completion summary. 
+
+Generic options
+  --help_full                  [boolean] Display the full detailed help message. 
+  --show_hidden                [boolean] Display hidden parameters in the help message (only works when --help or --help_full are provided). 
+ 
+
+Reference Parameters
+  --ref_fasta                  [string] Path to reference genome seqeunce (fasta) 
+  --ref_gff                    [string] Path to reference genome annotations (gff) 
+
+Assembly options
+  --strategy                   [string] Assembly strategy to use. Valid choices are `'single'`, `'hybrid'` and `'scaffold'`. [default: 
+single]  
+  --assembler                  [string] Assembler to use. Valid choices depend on strategy; for single either `'flye'` or `'hifiasm'`, 
+hybrid can be done with `'hifiasm'` and for scaffolded assembly provide the names of the assemblers 
+separated with an underscore. The first assembler will be used for ONT reads, the second for HiFi 
+reads see below: `asembler_ont` and `assembler_hifi`.  (accepted: flye, hifiasm, flye_hifiasm, 
+hifiasm_hifiasm, flye_flye, hifiasm_flye) [default: hifiasm]  
+  --assembly_scaffolding_order [string] When `strategy` is 'scaffold', which assembly should be scaffolded onto which?  (accepted: 
+ont_on_hifi, hifi_on_ont) [default: ont_on_hifi]  
+  --genome_size                [string] Expected genome size, optional. 
+  --flye_mode                  [string] Flye assembly mode.  (accepted: --pacbio-raw, --pacbio-corr, --pacbio-hifi, --nano-raw, 
+--nano-corr, --nano-hq) [default: --nano-hq]  
+  --flye_args                  [string] Additional args for `flye`. 
+  --hifiasm_args               [string] Extra arguments passed to `hifiasm` 
+  --assembler_ont              [string] `assembler_ont` assembles ONT reads. This option is mainly useful when building more complex 
+samplesheets.  
+  --assembler_ont_args         [string] Arguments to be passed to `assembler_ont` (ONT) 
+  --assembler_hifi             [string] `assembler_hifi` assembles HiFi reads. This option is mainly useful when building more complex 
+samplesheets.  
+  --assembler_hifi_args        [string] Arguments to be passed to `assembler_hifi` (HiFi). 
+
+Long-read preprocessing
+  --ontreads                   [string]  Path to ONT reads. 
+  --ont_collect                [boolean] Collect ONT reads from several files. 
+  --ont_adapters               [string]  Adapters for ONT read-trimming. 
+  --ont_fastplong_args         [string]  Additional args to be passed to fastplong for ONT reads. 
+  --hifireads                  [string]  Path to HiFi reads. 
+  --hifi_adapters              [string]  Adapters for HiFi read-trimming. 
+  --hifi_fastplong_args        [string]  Additional args to be passed to fastplong for HiFi reads. 
+  --jellyfish                  [boolean] Run jellyfish and genomescope (recommended). 
+  --jellyfish_k                [integer] Value of k used during k-mer analysis with `jellyfish`. [default: 21] 
+  --jellyfish_size             [string]  Initial hash size used by `jellyfish count`. [default: 200M] 
+
+Polishing options
+  --polish                     [string]  String describing the polishing strategy. Takes priority over boolean selectors. If missing will be 
+created from boolean selectors.  (accepted: pilon, dorado, medaka, dorado+pilon, medaka+pilon) 
+ 
+  --polish_pilon               [boolean] Polish assembly with `pilon`. Requires short reads. 
+  --polish_dorado              [boolean] Polish assembly with `dorado` (ONT only). 
+  --polish_medaka              [boolean] Polish assembly with `medaka` (ONT only). 
+  --medaka_model               [string]  Model to use with `medaka`. 
+
+Scaffolding options
+  --scaffold_longstitch        [boolean] Scaffold with `longstitch`. 
+  --scaffold_links             [boolean] Scaffolding with `links`. 
+  --scaffold_ragtag            [boolean] Scaffold with `ragtag` (requires reference). 
+  --scaffold_hic               [boolean] Scaffold using HiC reads using `yahs` (requires reads). 
+  --hic_aligner                [string]  Aligner to use for HiC reads; default: `'bwa-mem2'`.  (accepted: bwa-mem2, minimap2) [default: 
+bwa-mem2]  
+
+QC options
+  --merqury                    [boolean] Run `merqury` if short reads are provided. [default: false] 
+  --qc_reads                   [string]  Long reads that should be used for QC when both ONT and HiFi reads are provided. Options are `'ont'` 
+or `'hifi'`.  (accepted: ont, hifi) [default: ont]  
+  --busco                      [boolean] Run `BUSCO`. 
+  --busco_db                   [string]  Path to `BUSCO` data-base (optional). 
+  --busco_lineage              [string]  `BUSCO` lineage to use. [default: auto_euk] 
+  --quast                      [boolean] Run `QUAST`. 
+  --ref_map_bam                [string]  A mapping (bam) of reads mapped to the reference can be provided for QC. If provided, alignment to 
+reference fasta will not run.  
+  --assembly                   [string]  Can be used to provide existing assembly will skip assembly and perform downstream steps including 
+QC.  
+  --assembly_map_bam           [string]  A mapping (bam) of reads mapped to the provided assembly can be specified for QC. If provided, 
+alignment to the provided assembly fasta will not run,  
+  --csi_index_size             [integer] Index size to use for csi index (default: 14), creating and index of size 2^csi_index_size. See 
+[samtools index documentation](https://www.htslib.org/doc/samtools-index.html) for details.  
+[default: 14]  
+
+Annotations options
+  --lift_annotations           [boolean] Lift-over annotations (requires `ref_gff`). [default: false] 
+
+Short read options
+  --use_short_reads            [boolean] Use short reads. 
+  --shortread_trim             [boolean] Trim short reads. 
+  --meryl_k                    [integer] kmer length for `meryl` / `merqury`. [default: 21] 
+  --shortread_F                [string]  Path to forward short reads. 
+  --shortread_R                [string]  Path to reverse short reads. 
+  --paired                     [boolean] Are shortreads paired. [default: false] 
+
+HiC short read options
+  --hic_trim                   [boolean] Trim HiC short reads. [default: false] 
+  --hic_F                      [string]  Path to forward HiC short reads. 
+  --hic_R                      [string]  Path to reverse HiC short reads. 
+ !! Hiding 14 param(s), use the `--showHidden` parameter to show them !!
+------------------------------------------------------
+
+* The pipeline
+    https://doi.org/10.5281/zenodo.14986998
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/genomeassembler/blob/master/CITATIONS.md
+

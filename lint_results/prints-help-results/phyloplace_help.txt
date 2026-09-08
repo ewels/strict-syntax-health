@@ -4,7 +4,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
  N E X T F L O W   ~  version 26.08.0-edge
 
 Downloading plugin nf-schema@2.8.0
-Launching `./main.nf` [scruffy_hawking] revision: ac3ce29a8e
+Launching `./main.nf` [tender_thompson] revision: 7c7199f2ef
 
 WARN: Incorrect value detected for `validation.monochromeLogs`, a boolean is expected. Defaulting to `false`
 WARN: Access to undefined parameter `fasta` -- Initialise it to a default value eg. `params.fasta = some_value`
@@ -51,7 +51,7 @@ Generic options
   --help_full                   [boolean]         Display the full detailed help message. 
   --show_hidden                 [boolean]         Display hidden parameters in the help message (only works when --help or --help_full are provided). 
  
- !! Hiding 17 param(s), use the `--showHidden` parameter to show them !!
+ !! Hiding 18 param(s), use the `--showHidden` parameter to show them !!
 ------------------------------------------------------
 
 * The nf-core framework

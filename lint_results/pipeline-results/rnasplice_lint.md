@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-09-05T00:20:41.183393588Z
+- Generated: 2026-09-08T00:21:44.302810169Z
 - Nextflow version: 26.08.0-edge
-- Summary: 14 errors, 19 warnings
+- Summary: 14 errors, 17 warnings
 
 ## :x: Errors
 
@@ -106,35 +106,35 @@
 
 ## :warning: Warnings
 
-- Warning: `conf/modules.config:304:23`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `conf/modules.config:321:23`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               saveAs: { filename -> null }
                         ^^^^^^^^
   ```
 
-- Warning: `conf/modules.config:313:23`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `conf/modules.config:330:23`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               saveAs: { filename -> null }
                         ^^^^^^^^
   ```
 
-- Warning: `conf/modules.config:322:23`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `conf/modules.config:339:23`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               saveAs: { filename -> null }
                         ^^^^^^^^
   ```
 
-- Warning: `conf/modules.config:331:23`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `conf/modules.config:348:23`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               saveAs: { filename -> null }
                         ^^^^^^^^
   ```
 
-- Warning: `conf/modules.config:353:23`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `conf/modules.config:370:23`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
               saveAs: { filename -> null }
@@ -174,20 +174,6 @@
   ```nextflow
       def prefix = task.ext.prefix ?: "${meta.id}"
           ^^^^^^
-  ```
-
-- Warning: `subworkflows/local/dexseq_deu/main.nf:55:48`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-          DEXSEQ_COUNT.out.dexseq_clean_txt.map{ it[1] }.collect(),
-                                                 ^^
-  ```
-
-- Warning: `subworkflows/local/dexseq_deu/main.nf:64:70`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-      dexseq_clean_txt        = DEXSEQ_COUNT.out.dexseq_clean_txt.map{ it[1] }.collect()
-                                                                       ^^
   ```
 
 - Warning: `subworkflows/local/utils_nfcore_rnasplice_pipeline/main.nf:441:22`: Parameter was not used -- prefix with `_` to suppress warning

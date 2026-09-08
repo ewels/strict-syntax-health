@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-09-03T00:21:04.561380135Z
+- Generated: 2026-09-08T00:20:10.801303101Z
 - Nextflow version: 26.08.0-edge
-- Summary: 7 warnings
+- Summary: 5 warnings
 
 ## :warning: Warnings
 
@@ -17,20 +17,6 @@
 
   ```nextflow
       def args   = task.ext.args ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/merqury/merqury/main.nf:59:9`: Variable was declared but not used
-
-  ```nextflow
-      def VERSION = 1.3 // WARN: Version information not provided by tool on CLI. Please update this string when bumping container versions.
-          ^^^^^^^
-  ```
-
-- Warning: `modules/nf-core/meryl/unionsum/main.nf:35:9`: Variable was declared but not used
-
-  ```nextflow
-      def args = task.ext.args ?: ''
           ^^^^
   ```
 

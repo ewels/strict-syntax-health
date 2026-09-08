@@ -1,5 +1,5 @@
 {
-  "_repo_commit": "781f2625386fe0bf2f337c7b99f56e618c59fc99",
+  "_repo_commit": "0853b48c6477aa76c2d77386169a0d510ac817d6",
   "aardvark_compare": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/aardvark/compare",
     "errors": 0,
@@ -3050,6 +3050,12 @@
   },
   "eagle2": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/eagle2",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "easypqp_convert": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/easypqp/convert",
     "errors": 0,
     "warnings": 0,
     "parse_error": false
