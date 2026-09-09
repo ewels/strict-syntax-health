@@ -3,7 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [jovial_ptolemy] revision: 8e72056edd
+Launching `./main.nf` [pensive_cajal] revision: 8e72056edd
 
 
 ------------------------------------------------------

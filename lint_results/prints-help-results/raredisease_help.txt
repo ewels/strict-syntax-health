@@ -3,8 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Downloading plugin nf-schema@2.5.1
-Launching `./main.nf` [tender_bell] revision: d9e526d63c
+Launching `./main.nf` [sick_leavitt] revision: a87bf185b0
 
 WARN: Unrecognized config option 'validation.defaultIgnoreParams'
 WARN: Unrecognized config option 'validation.monochromeLogs'
@@ -172,10 +171,6 @@ for annotating genomic SVs.
   --vep_cache_version                 [integer] Specify the version of the VEP cache provided to the `--vep_cache` option. [default: 116] 
 
 Mitosalt and saltshaker options
-  --hisat2                            [string]  Path to a pre-built HISAT2 genome index directory. If not provided, the index is built at runtime. 
- 
-  --hisat2_build_memory               [string]  Minimum memory required to build HISAT2 index with splice sites and exons. If available memory is 
-below this threshold, a simpler index is built without splice sites.  
   --mitosalt_breakspan                [integer] minimum number of bases a non-split read must span either side of a breakpoint to be considered in 
 the heteroplasmy count [default: 15]  
   --mitosalt_breakthreshold           [integer] the maximum deviation a given set of split read breakpoints can have to be considered within the 
@@ -193,7 +188,7 @@ pseudo-gapped alignments due to a circular genome [default: 5]
   --saltshaker_group_radius           [integer] spatial clustering radius for saltshaker grouping [default: 600] 
   --saltshaker_high_heteroplasmy      [integer] high heteroplasmy threshold for saltshaker classification [default: 10] 
   --mitosalt_heteroplasmy_limit       [number]  detected heteroplasmy threshold [default: 0.01] 
-  --mitosalt_depth                    [integer] depth to subsample fastq files to before running mitosalt [default: 10000000] 
+  --mitosalt_depth                    [integer] number of mitochondrial reads passed to mitosalt [default: 500000] 
   --mito_length                       [integer] length of mitochondrial genome [default: 16569] 
   --saltshaker_multiple_threshold     [integer] threshold for multiple saltshaker classification [default: 5] 
   --saltshaker_noise_threshold        [number]  heteroplasmy threshold for background noise [default: 0.3] 

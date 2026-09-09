@@ -3,7 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [confident_koch] revision: b4641016f5
+Launching `./main.nf` [agitated_curry] revision: e3f25d4155
 
 
 ------------------------------------------------------
@@ -81,13 +81,22 @@ Consolidation options
   --skip_protein_consolidation  [boolean] Skip cross-contig consolidation of ORFs whose proteins cluster together 
   --cluster_min_seq_id          [number]  Minimum sequence identity for two proteins to be considered the same gene [default: 0.99] 
   --cluster_coverage            [number]  Minimum fraction of both proteins that must be covered by the alignment [default: 0.8] 
+  --annotate_only_consolidated  [boolean] Only annotate the consolidated cluster representatives, not every individual ORF source as well 
+[default: true]  
 
 Orf Caller options
   --orf_caller                  [string] Comma-separated list of ORF callers to run. Possible alternatives: prodigal, prokka, transdecoder, 
-metaeuk. This needs to be set unless the `--user_orfs_*` params are set.  
-  --user_orfs_faa               [string] Path to a protein fasta file for user-provided ORFs. 
-  --user_orfs_gff               [string] Path to a gff file for user-provided ORFs. 
-  --user_orfs_name              [string] Name to give to user-provided ORFs. [default: user_orfs] 
+metaeuk. At least one of this, `--user_orfs`, or `--user_orfs_gff`/`--user_orfs_faa` must be set; 
+any combination may be set together.  
+  --user_orfs                   [string] Path to comma-separated file listing user-provided ORF calls to add alongside (or instead of) 
+`--orf_caller`.  
+  --user_orfs_faa               [string] Path to a protein fasta file for a single set of user-provided ORFs. Additive with `--orf_caller` 
+and `--user_orfs`; requires `--user_orfs_gff` too.  
+  --user_orfs_gff               [string] Path to a gff file for a single set of user-provided ORFs. Additive with `--orf_caller` and 
+`--user_orfs`; requires `--user_orfs_faa` too.  
+  --user_orfs_name              [string] Name to give the ORFs supplied via `--user_orfs_gff`/`--user_orfs_faa`. Cannot collide with an 
+active `--orf_caller` value, a `--user_orfs` row name, or the pipeline's own reserved names. 
+[default: user_orfs]  
   --prodigal_trainingfile       [string] Specify a training file for prodigal. By default prodigal will learn from the input sequences 
  
   --metaeuk_db                  [string] Path to a reference protein database for MetaEuk, either a protein fasta file or a directory 

@@ -4,7 +4,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
  N E X T F L O W   ~  version 26.08.0-edge
 
 Downloading plugin nf-schema@2.8.0
-Launching `./main.nf` [tender_thompson] revision: 7c7199f2ef
+Launching `./main.nf` [curious_hamilton] revision: cd05a09930
 
 WARN: Incorrect value detected for `validation.monochromeLogs`, a boolean is expected. Defaulting to `false`
 WARN: Access to undefined parameter `fasta` -- Initialise it to a default value eg. `params.fasta = some_value`
@@ -16,7 +16,7 @@ WARN: Incorrect value detected for `validation.monochromeLogs`, a boolean is exp
   |\ | |__  __ /  ` /  \ |__) |__         }  {
   | \| |       \__, \__/ |  \ |___     \`-._,-`-,
                                         `._,._,'
-  nf-core/phyloplace 2.2.0dev
+  nf-core/phyloplace 2.2.0
 ------------------------------------------------------
 Typical pipeline command:
 
@@ -32,8 +32,8 @@ Input/output options
   --search_fasta                [string]  Fasta file with sequences to be searched with HMM profiles. 
   --save_domtblout              [boolean] Save the per-domain hit table (`--domtblout`) from hmmsearch. 
   --id                          [string]  Name of analysis [default: placement] 
-  --alignmethod                 [string]  Method used to align query sequences with.  (accepted: hmmer, clustalo, mafft) [default: hmmer] 
- 
+  --alignmethod                 [string]  Method used to align query sequences with.  (accepted: hmmer, clustalo, mafft) [default: 
+clustalo]  
   --queryseqfile                [string]  Fasta file with query sequences 
   --refseqfile                  [string]  File with reference sequences. Any format supported by HMMER tools. 
   --hmmfile                     [string]  HMM file. If provided, will be used to align both the reference and query sequences. 

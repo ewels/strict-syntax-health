@@ -1,6 +1,6 @@
 # Nextflow lint results
 
-- Generated: 2026-09-08T00:21:44.302810169Z
+- Generated: 2026-09-09T00:22:14.576402066Z
 - Nextflow version: 26.08.0-edge
 - Summary: 14 errors, 17 warnings
 
@@ -176,49 +176,49 @@
           ^^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_rnasplice_pipeline/main.nf:441:22`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_rnasplice_pipeline/main.nf:493:22`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .map { meta, fastq -> meta.single_end }
                        ^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_rnasplice_pipeline/main.nf:445:17`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/utils_nfcore_rnasplice_pipeline/main.nf:497:17`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
               if (it.size() > 1) {
                   ^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_rnasplice_pipeline/main.nf:456:22`: Parameter was not used -- prefix with `_` to suppress warning
+- Warning: `subworkflows/local/utils_nfcore_rnasplice_pipeline/main.nf:508:22`: Parameter was not used -- prefix with `_` to suppress warning
 
   ```nextflow
           .map { meta, fastq -> meta.strandedness }
                        ^^^^^
   ```
 
-- Warning: `subworkflows/local/utils_nfcore_rnasplice_pipeline/main.nf:460:17`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/utils_nfcore_rnasplice_pipeline/main.nf:512:17`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
               if (it.size() > 1) {
                   ^^
   ```
 
-- Warning: `workflows/rnasplice.nf:137:20`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `workflows/rnasplice.nf:92:20`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
           .flatMap { it }
                      ^^
   ```
 
-- Warning: `workflows/rnasplice.nf:138:16`: Variable was declared but not used
+- Warning: `workflows/rnasplice.nf:93:16`: Variable was declared but not used
 
   ```nextflow
           .set { ch_contrasts }
                  ^^^^^^^^^^^^
   ```
 
-- Warning: `workflows/rnasplice.nf:229:9`: Variable was declared but not used
+- Warning: `workflows/rnasplice.nf:184:9`: Variable was declared but not used
 
   ```nextflow
           ch_transcriptome_bam_index = BAM_SORT_STATS_SAMTOOLS.out.index

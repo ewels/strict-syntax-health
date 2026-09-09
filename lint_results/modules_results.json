@@ -1,5 +1,5 @@
 {
-  "_repo_commit": "0853b48c6477aa76c2d77386169a0d510ac817d6",
+  "_repo_commit": "9f93628271da521143182197ebc41a3a134051cd",
   "aardvark_compare": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/aardvark/compare",
     "errors": 0,
@@ -3056,6 +3056,12 @@
   },
   "easypqp_convert": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/easypqp/convert",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
+  "easypqp_library": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/easypqp/library",
     "errors": 0,
     "warnings": 0,
     "parse_error": false

@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-09-05T00:21:49.575166949Z
+- Generated: 2026-09-09T00:22:59.374731292Z
 - Nextflow version: 26.08.0-edge
-- Summary: 48 warnings
+- Summary: 46 warnings
 
 ## :warning: Warnings
 
@@ -130,20 +130,6 @@
   ```nextflow
       def args = task.ext.args ?: ''
           ^^^^
-  ```
-
-- Warning: `modules/nf-core/sigprofiler/main.nf:26:9`: Variable was declared but not used
-
-  ```nextflow
-      def args   = task.ext.args   ?: ''
-          ^^^^
-  ```
-
-- Warning: `modules/nf-core/sigprofiler/main.nf:36:57`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-      def signatures = context_types.collect { context_map[it] }
-                                                          ^^
   ```
 
 - Warning: `subworkflows/local/annotation_cache_initialisation/main.nf:22:24`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead

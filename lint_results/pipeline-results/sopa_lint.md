@@ -1,6 +1,6 @@
 # Nextflow lint results
 
-- Generated: 2026-09-08T00:22:17.697870563Z
+- Generated: 2026-09-09T00:22:36.776090987Z
 - Nextflow version: 26.08.0-edge
 - Summary: 11 warnings
 
@@ -13,7 +13,7 @@
                                                             ^^
   ```
 
-- Warning: `modules/local/utils.nf:179:51`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `modules/local/utils.nf:189:51`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
           return channels.split(/[ ,|]+/).findAll { it }

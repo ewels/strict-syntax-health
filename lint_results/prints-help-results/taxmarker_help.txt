@@ -1,0 +1,70 @@
+$ NXF_SYNTAX_PARSER=v2 nextflow run . --help
+
+
+ N E X T F L O W   ~  version 26.08.0-edge
+
+Downloading plugin nf-schema@2.7.3
+Launching `./main.nf` [distracted_lamport] revision: cc028659c9
+
+
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/taxmarker 1.0.0dev
+------------------------------------------------------
+Typical pipeline command:
+
+  nextflow run nf-core/taxmarker -profile <docker/singularity/.../institute> --taxonomy taxonomy.tsv --sequences sequences.alnfna --outdir <OUTDIR>
+
+help message of that parameter will be printed.  
+or `--helpFull`.  
+
+Input/output options
+  --taxonomy                    [string]  Path to a taxonomy file. If omitted, taxonomy is derived from --sequences record headers instead. 
+ 
+  --sequences                   [string]  Path to a sequences file, aligned or not, in phylip (.phy), Clustal (.aln) or fasta format (.fa, 
+.fasta, .mfa, .alnfaa or .alnfna).  
+  --hmm                         [string]  Path to an HMM profile database, used to align --sequences via hmmalign if it turns out to be 
+unaligned. Only required when the input is unaligned.  
+  --hmm_name                    [string]  Name of the specific profile to use from --hmm, if that database holds more than one (e.g. Barrnap's 
+databases hold one profile per rRNA gene).  
+  --skip_raxtax                 [boolean] Skip the raxtax prefilter and run every sequence straight through the full EPA-ng-based placement 
+pipeline.  
+  --raxtax_filter_rank          [integer] Taxonomic rank at which raxtax's self-classification must agree with the declared taxonomy, counted 
+from the most specific rank (1) upward. A sequence disagreeing at this one rank is flagged as a 
+mislabel and skips EPA-ng placement. [default: 1]  
+  --skip_gapfilter              [boolean] For already-aligned input: skip filtering out sequences with too high a proportion of alignment 
+gaps, and run every sequence straight through the rest of the pipeline.  
+  --min_nongap                  [number]  For already-aligned input: minimum proportion of non-gap columns a sequence must have in the 
+alignment to be kept. Sequences below this are too short/incomplete to place reliably, and are 
+reported separately instead of being placed. [default: 0.3]  
+  --skip_profile_cover          [boolean] For hmmalign-derived input: skip filtering out sequences that cover too little of the HMM profile, 
+and run every sequence straight through the rest of the pipeline.  
+  --min_profile_cover           [number]  For hmmalign-derived input: minimum proportion of the HMM profile's match-state columns a sequence 
+must cover to be kept. Sequences below this are too short/incomplete to place reliably, and are 
+reported separately instead of being placed. [default: 0.8]  
+  --skip_sativa                 [boolean] Skip the phylogenetic placement subworkflow (reference tree, leave-one-out placement, scoring) 
+entirely.  
+  --outdir                      [string]  The output directory where the results will be saved. You have to use absolute paths to storage on 
+Cloud infrastructure.  
+  --email                       [string]  Email address for completion summary. 
+  --multiqc_title               [string]  MultiQC report title. Printed as page header, used for filename if not otherwise specified. 
+
+Generic options
+  --multiqc_methods_description [string]          Custom MultiQC yaml file containing HTML including a methods description. 
+  --help                        [boolean, string] Display the help message. 
+  --help_full                   [boolean]         Display the full detailed help message. 
+  --show_hidden                 [boolean]         Display hidden parameters in the help message (only works when --help or --help_full are provided). 
+ 
+ !! Hiding 17 param(s), use the `--showHidden` parameter to show them !!
+------------------------------------------------------
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/taxmarker/blob/master/CITATIONS.md
+

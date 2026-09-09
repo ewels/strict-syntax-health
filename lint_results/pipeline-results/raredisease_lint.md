@@ -1,6 +1,6 @@
 # Nextflow lint results
 
-- Generated: 2026-09-08T00:21:14.307129071Z
+- Generated: 2026-09-09T00:21:52.431654864Z
 - Nextflow version: 26.08.0-edge
 - Summary: 12 warnings
 
@@ -34,7 +34,7 @@
                                                                            ^^
   ```
 
-- Warning: `subworkflows/local/call_sv_MT/main.nf:137:28`: Implicit closure parameter is deprecated, declare an explicit parameter instead
+- Warning: `subworkflows/local/call_sv_MT/main.nf:115:28`: Implicit closure parameter is deprecated, declare an explicit parameter instead
 
   ```nextflow
                   .filter { !it.isEmpty() }

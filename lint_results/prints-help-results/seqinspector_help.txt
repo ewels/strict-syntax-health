@@ -5,7 +5,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
 Downloading plugin nf-core-utils@0.4.0
 Downloading plugin nf-schema@2.6.1
-Launching `./main.nf` [big_descartes] revision: 0bdadec2b6
+Launching `./main.nf` [pensive_legentil] revision: 93ba964750
 
 
 ------------------------------------------------------
@@ -66,6 +66,10 @@ ${projectDir}/assets/example_fastq_screen_references.csv]
   --fai                              [string] Fasta index for the reference fasta file provided. 
   --target_intervals                 [string] Path to target intervals file. 
   --bait_intervals                   [string] Path to bait intervals file. 
+  --rna_gene_model                   [string] Path to a GTF/GFF gene model for riker RNA metrics. RNA metrics are only produced when `riker_args` 
+includes `--tools rna`.  
+  --rna_ribosomal_intervals          [string] Path to explicit ribosomal (rRNA) intervals (BED or Picard IntervalList) for riker RNA metrics, 
+unioned with rRNA genes derived from the gene model by biotype.  
 
 Generic options
   --multiqc_methods_description      [string]          Custom MultiQC yaml file containing HTML including a methods description. 

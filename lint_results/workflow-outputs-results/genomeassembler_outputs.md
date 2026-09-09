@@ -1,6 +1,6 @@
 # Workflow outputs migration: genomeassembler
 
-- Generated: 2026-09-08T00:20:10.935046+00:00
+- Generated: 2026-09-09T00:20:29.984878+00:00
 - Status: :x: **error** — no `output {}` block found; still relies on the legacy `publishDir` directive
 
 This report tracks migration from the legacy `publishDir` directive to the new [workflow outputs](https://docs.seqera.io/nextflow/tutorials/workflow-outputs) syntax.
@@ -14,16 +14,16 @@ https://docs.seqera.io/nextflow/tutorials/workflow-outputs
 
 Found 93 `publishDir` references across 13 files that should be migrated to the workflow `output {}` block:
 
-- [`conf/modules/QC/alignments.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/QC/alignments.config#L5) — 16 references
-- [`conf/modules/scaffolding.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/scaffolding.config#L3) — 14 references
-- [`conf/modules/assembly.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/assembly.config#L19) — 10 references
-- [`conf/modules/polishing.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/polishing.config#L7) — 9 references
-- [`conf/modules/QC/busco.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/QC/busco.config#L4) — 7 references
-- [`conf/modules/QC/merqury.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/QC/merqury.config#L4) — 7 references
-- [`conf/modules/QC/quast.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/QC/quast.config#L13) — 7 references
-- [`conf/modules/liftoff.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/liftoff.config#L3) — 7 references
-- [`conf/modules/QC/jellyfish-genomescope.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/QC/jellyfish-genomescope.config#L3) — 6 references
-- [`conf/modules/read-prep.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/read-prep.config#L3) — 6 references
-- [`conf/modules/QC/meryl.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/QC/meryl.config#L3) — 2 references
-- [`conf/modules.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules.config#L15) — 1 reference
-- [`conf/modules/report.config`](https://github.com/nf-core/genomeassembler/blob/a4400f25b7e9bd9b2fc47398f1cc32b9509e251c/conf/modules/report.config#L3) — 1 reference
+- [`conf/modules/QC/alignments.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/QC/alignments.config#L5) — 16 references
+- [`conf/modules/scaffolding.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/scaffolding.config#L3) — 14 references
+- [`conf/modules/assembly.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/assembly.config#L19) — 10 references
+- [`conf/modules/polishing.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/polishing.config#L7) — 9 references
+- [`conf/modules/QC/busco.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/QC/busco.config#L4) — 7 references
+- [`conf/modules/QC/merqury.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/QC/merqury.config#L4) — 7 references
+- [`conf/modules/QC/quast.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/QC/quast.config#L13) — 7 references
+- [`conf/modules/liftoff.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/liftoff.config#L3) — 7 references
+- [`conf/modules/QC/jellyfish-genomescope.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/QC/jellyfish-genomescope.config#L3) — 6 references
+- [`conf/modules/read-prep.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/read-prep.config#L3) — 6 references
+- [`conf/modules/QC/meryl.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/QC/meryl.config#L3) — 2 references
+- [`conf/modules.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules.config#L15) — 1 reference
+- [`conf/modules/report.config`](https://github.com/nf-core/genomeassembler/blob/00d7a7f8c574cce3e34e40e677374caf340cd402/conf/modules/report.config#L3) — 1 reference

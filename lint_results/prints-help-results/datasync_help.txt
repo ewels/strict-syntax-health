@@ -4,7 +4,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
  N E X T F L O W   ~  version 26.08.0-edge
 
 Downloading plugin nf-schema@2.7.2
-Launching `./main.nf` [sleepy_escher] revision: 8eac2f157f
+Launching `./main.nf` [fabulous_mandelbrot] revision: 8eac2f157f
 
 
 ------------------------------------------------------

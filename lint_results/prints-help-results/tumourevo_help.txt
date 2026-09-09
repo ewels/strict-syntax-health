@@ -3,13 +3,11 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [magical_edison] revision: 1ac0915778
+Launching `./main.nf` [big_sax] revision: 1ac0915778
 
 WARN: Unrecognized config option 'validation.help.enabled'
 WARN: Unrecognized config option 'validation.defaultIgnoreParams'
 WARN: Unrecognized config option 'validation.monochromeLogs'
-[-        ] NFC…OUREVO:ENSEMBLVEP_DOWNLOAD -
-
 [-        ] NFC…OUREVO:ENSEMBLVEP_DOWNLOAD -
 [-        ] NFC…VO:TUMOUREVO:BCFTOOLS_VIEW -
 ERROR ~ A process input channel evaluates to null -- Invalid declaration `val genome`
