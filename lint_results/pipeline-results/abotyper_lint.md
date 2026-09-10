@@ -1,8 +1,8 @@
 # Nextflow lint results
 
-- Generated: 2026-09-09T00:19:30.602104286Z
+- Generated: 2026-09-10T00:17:47.947940585Z
 - Nextflow version: 26.08.0-edge
-- Summary: 14 warnings
+- Summary: 13 warnings
 
 ## :warning: Warnings
 
@@ -88,13 +88,6 @@
   ```nextflow
       logo // channel: png from params.logo (custom pathwest logo)
       ^^^^
-  ```
-
-- Warning: `workflows/abotyper.nf:47:68`: Implicit closure parameter is deprecated, declare an explicit parameter instead
-
-  ```nextflow
-      ch_multiqc_files = ch_multiqc_files.mix(FASTQC.out.zip.collect{it[1]})
-                                                                     ^^
   ```
 
 - Warning: `workflows/abotyper.nf:88:26`: The use of `Channel` to access channel factories is deprecated -- use `channel` instead

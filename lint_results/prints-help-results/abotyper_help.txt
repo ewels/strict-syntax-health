@@ -4,7 +4,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
  N E X T F L O W   ~  version 26.08.0-edge
 
 Downloading plugin nf-schema@2.5.1
-Launching `./main.nf` [silly_miescher] revision: b49526c122
+Launching `./main.nf` [focused_mirzakhani] revision: b49526c122
 
 WARN: Unrecognized config option 'validation.defaultIgnoreParams'
 WARN: Unrecognized config option 'validation.monochromeLogs'
@@ -33,10 +33,6 @@ Cloud infrastructure.
 
 Reference genome options
   --genome                      [string] Name of iGenomes reference. 
-  --fasta                       [string] Path to FASTA genome file. [default: 
-/data/ABO-analysis-31-Oct-2023/nf-core-abotyper/assets/refs/ABO_Database.fasta]  
-  --fai                         [string] Path to FASTA index file. [default: 
-/data/ABO-analysis-31-Oct-2023/nf-core-abotyper/assets/refs/ABO_Database.fasta.fai]  
 
 ABO-specific reference files
   --abo_reference_fasta         [string]  Path to the single combined ABO reference FASTA spanning the amplicon region(s) of interest. 

@@ -3,7 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [agitated_curry] revision: e3f25d4155
+Launching `./main.nf` [suspicious_kare] revision: e3f25d4155
 
 
 ------------------------------------------------------
@@ -99,8 +99,16 @@ active `--orf_caller` value, a `--user_orfs` row name, or the pipeline's own res
 [default: user_orfs]  
   --prodigal_trainingfile       [string] Specify a training file for prodigal. By default prodigal will learn from the input sequences 
  
-  --metaeuk_db                  [string] Path to a reference protein database for MetaEuk, either a protein fasta file or a directory 
-containing an mmseqs2-formatted database. Required when `--orf_caller metaeuk` is used.  
+  --metaeuk_db                  [string] Path to a pre-built reference protein database for MetaEuk, either a protein fasta file or a 
+directory containing an mmseqs2-formatted database. Optional -- when unset, `--metaeuk_db_name` is 
+downloaded and built automatically.  
+  --metaeuk_db_name             [string] Name of the amino-acid reference database to download and build for MetaEuk when `--metaeuk_db` 
+isn't set. Restricted to the amino-acid databases `metaeuk databases -h` lists (its 
+nucleotide/profile entries aren't valid MetaEuk homology references); see the table in usage.md for 
+which of these we've actually confirmed downloadable.  (accepted: UniRef100, UniRef90, UniRef50, 
+UniProtKB, UniProtKB/TrEMBL, UniProtKB/Swiss-Prot, NR, GTDB, PDB) [default: UniRef50]  
+  --metaeuk_db_dir              [string] Path to a directory to store the downloaded MetaEuk database in. Will be created if it doesn't 
+exist. Ignored when `--metaeuk_db` is set. [default: ./metaeuk_db/]  
 
 Functional annotation options
   --skip_eggnog                 [boolean] Skip EGGNOG functional annotation 

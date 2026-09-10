@@ -3,7 +3,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
  N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [boring_banach] revision: d5dcb6c5aa
+Launching `./main.nf` [nice_stone] revision: d5dcb6c5aa
 
 
 ------------------------------------------------------
@@ -58,7 +58,7 @@ Sample filtering options
   --max_null_ratio_valid_sample  [number] Maximum ratio of null values in a sample for it to be considered in the computation of the null 
 value malus [default: 0.75]  
 
-Statistics options
+Normalisation options
   --normalisation_method         [string] Count normalisation method  (accepted: tpm, cpm) [default: tpm] 
   --gff                          [string] Genome annotation file (GFF format) 
   --gff_url                      [string] URL to genome annotation file (GFF format) 

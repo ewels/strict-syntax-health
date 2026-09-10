@@ -2,9 +2,9 @@
   "abotyper": {
     "full_name": "nf-core/abotyper",
     "html_url": "https://github.com/nf-core/abotyper",
-    "commit": "e0aa5055e91567330ab0d74dd3f4350408826e5e",
+    "commit": "5537f91644503e7dcbed3d905f3e9affc74caeb4",
     "errors": 0,
-    "warnings": 14,
+    "warnings": 13,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
@@ -62,7 +62,7 @@
   "bacass": {
     "full_name": "nf-core/bacass",
     "html_url": "https://github.com/nf-core/bacass",
-    "commit": "1bb1007f4c84833464db885c35982f72ac2d0487",
+    "commit": "96f77088f8ee5948492cea19385067d04cd8f043",
     "errors": 0,
     "warnings": 16,
     "parse_error": false,
@@ -278,7 +278,7 @@
   "datasync": {
     "full_name": "nf-core/datasync",
     "html_url": "https://github.com/nf-core/datasync",
-    "commit": "0bdf8b9283f43350206e9df2385d3af1d0f62fd6",
+    "commit": "d25e58a0cca2dab4385ddf3ad38dedc71dc62056",
     "errors": 0,
     "warnings": 4,
     "parse_error": false,
@@ -566,14 +566,14 @@
   "genomeassembler": {
     "full_name": "nf-core/genomeassembler",
     "html_url": "https://github.com/nf-core/genomeassembler",
-    "commit": "00d7a7f8c574cce3e34e40e677374caf340cd402",
+    "commit": "c0f29fb0416a71d9aa0b5bf45b8be9fdf08b69e0",
     "errors": 0,
     "warnings": 5,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
     "publishdir": true,
-    "publishdir_count": 93
+    "publishdir_count": 97
   },
   "genomeqc": {
     "full_name": "nf-core/genomeqc",
@@ -758,7 +758,7 @@
   "mag": {
     "full_name": "nf-core/mag",
     "html_url": "https://github.com/nf-core/mag",
-    "commit": "07a8b41b8d2b3d62e5346d0547a27934365ad7f6",
+    "commit": "e841bf757978c017d6dca2cadc32ed9f3273ecb8",
     "errors": 0,
     "warnings": 20,
     "parse_error": false,
@@ -842,7 +842,7 @@
   "metatdenovo": {
     "full_name": "nf-core/metatdenovo",
     "html_url": "https://github.com/nf-core/metatdenovo",
-    "commit": "1cf20844ef618a21d1266774514a64d8568beba7",
+    "commit": "22e2d32763e78fecf8875765e6a301c7bf78c2de",
     "errors": 0,
     "warnings": 1,
     "parse_error": false,
@@ -890,7 +890,7 @@
   "mhcquant": {
     "full_name": "nf-core/mhcquant",
     "html_url": "https://github.com/nf-core/mhcquant",
-    "commit": "0ab9cf2db579825e756f6ea599f9bbd914795733",
+    "commit": "64c0a16ba3b6eccfa8a482ecafc2664d9f03f025",
     "errors": 0,
     "warnings": 45,
     "parse_error": false,
@@ -1262,7 +1262,7 @@
   "raredisease": {
     "full_name": "nf-core/raredisease",
     "html_url": "https://github.com/nf-core/raredisease",
-    "commit": "e803848a9335b868c795903d4f7f3303536062dd",
+    "commit": "41b58aa55c33554c3d3a37fb9f1798fcd142ba99",
     "errors": 0,
     "warnings": 12,
     "parse_error": false,
@@ -1382,9 +1382,9 @@
   "rnasplice": {
     "full_name": "nf-core/rnasplice",
     "html_url": "https://github.com/nf-core/rnasplice",
-    "commit": "dabaadc68178943e06d180ac894734738cd07492",
+    "commit": "7d0228fefdf5aaf3b894b5477b2f02f286c223a0",
     "errors": 14,
-    "warnings": 17,
+    "warnings": 13,
     "parse_error": false,
     "prints_help": null,
     "workflow_output": false,
@@ -1394,9 +1394,9 @@
   "rnastructurome": {
     "full_name": "nf-core/rnastructurome",
     "html_url": "https://github.com/nf-core/rnastructurome",
-    "commit": "51e85c1194f56688db8fd4abf0b06d4e9e56f6c9",
+    "commit": "2d179340d3f7f08b1c3a6828bddcc6a55089106f",
     "errors": 0,
-    "warnings": 0,
+    "warnings": 1,
     "parse_error": false,
     "prints_help": true,
     "workflow_output": false,
@@ -1574,7 +1574,7 @@
   "stableexpression": {
     "full_name": "nf-core/stableexpression",
     "html_url": "https://github.com/nf-core/stableexpression",
-    "commit": "10736a5a75afac14a6301163a3ef91510ff07eff",
+    "commit": "d3659ed5be7d05855f2ba06ef40d238261191db2",
     "errors": 0,
     "warnings": 32,
     "parse_error": false,
@@ -1586,7 +1586,7 @@
   "taxmarker": {
     "full_name": "nf-core/taxmarker",
     "html_url": "https://github.com/nf-core/taxmarker",
-    "commit": "e2074092a8e775f1e9a5d61efef7f9713efbc5f0",
+    "commit": "e0f38d5e886fbfc9cb779dc72ed3d2aa9bdc2ef6",
     "errors": 0,
     "warnings": 9,
     "parse_error": false,
