@@ -5,7 +5,7 @@ $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
 Downloading plugin nf-core-utils@0.5.0
 Downloading plugin nf-schema@2.7.3
-Launching `./main.nf` [adoring_morse] revision: 9fd1c357d4
+Launching `./main.nf` [ridiculous_albattani] revision: 9fd1c357d4
 
 
 ------------------------------------------------------
@@ -14,7 +14,7 @@ Launching `./main.nf` [adoring_morse] revision: 9fd1c357d4
   |\ | |__  __ /  ` /  \ |__) |__         }  {
   | \| |       \__, \__/ |  \ |___     \`-._,-`-,
                                         `._,._,'
-  nf-core/fetchngs 1.13.0dev
+  nf-core/fetchngs 1.13.0
 ------------------------------------------------------
 Typical pipeline command:
 
@@ -33,8 +33,8 @@ MultiQC. [default:
 experiment_accession,run_accession,sample_accession,experiment_alias,run_alias,sample_alias,experiment_title,sample_title,sample_description] 
  
   --nf_core_pipeline            [string]  Name of supported nf-core pipeline e.g. 'rnaseq'. A samplesheet for direct use with the pipeline 
-will be created with the appropriate columns.  (accepted: ampliseq, atacseq, mag, rnaseq, 
-taxprofiler, viralrecon)  
+will be created with the appropriate columns.  (accepted: ampliseq, atacseq, mag, metatdenovo, 
+rnaseq, sarek, taxprofiler, viralrecon)  
   --nf_core_rnaseq_strandedness [string]  Value for 'strandedness' entry added to samplesheet created when using '--nf_core_pipeline rnaseq'. 
 [default: auto]  
   --download_method             [string]  Method to download FastQ files. Available options are 'aspera', 'fastq-dl', 'ftp' or 'sratools'. 

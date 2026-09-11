@@ -506,7 +506,7 @@
   "fetchngs": {
     "full_name": "nf-core/fetchngs",
     "html_url": "https://github.com/nf-core/fetchngs",
-    "commit": "967f1cb446ad260e479513f0281b250ec1264c05",
+    "commit": "c205c52454489b57b96702bf1e57b07fca6060f5",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
@@ -566,7 +566,7 @@
   "genomeassembler": {
     "full_name": "nf-core/genomeassembler",
     "html_url": "https://github.com/nf-core/genomeassembler",
-    "commit": "c0f29fb0416a71d9aa0b5bf45b8be9fdf08b69e0",
+    "commit": "eee8ab71e5c8f355b99e76b5af85d9ec810dfae2",
     "errors": 0,
     "warnings": 5,
     "parse_error": false,
@@ -578,7 +578,7 @@
   "genomeqc": {
     "full_name": "nf-core/genomeqc",
     "html_url": "https://github.com/nf-core/genomeqc",
-    "commit": "36e41aed6e067c3e1523e16f428f0189813ba621",
+    "commit": "d183c261253f0eafe3ec8855861a42138cbdba99",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
@@ -1142,7 +1142,7 @@
   "phyloplace": {
     "full_name": "nf-core/phyloplace",
     "html_url": "https://github.com/nf-core/phyloplace",
-    "commit": "9be8eaaaccbe7019839a3791a105b94fbb9b7a48",
+    "commit": "7ab15515205c138e4fd1117e952cb100b7aa5267",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
@@ -1190,7 +1190,7 @@
   "proteinfamilies": {
     "full_name": "nf-core/proteinfamilies",
     "html_url": "https://github.com/nf-core/proteinfamilies",
-    "commit": "098b34be1215d3ee72ffe165bb300bb45de3803f",
+    "commit": "958c666f0199ab15ef93dc5fe6d15244fac84fbd",
     "errors": 0,
     "warnings": 0,
     "parse_error": false,
@@ -1262,7 +1262,7 @@
   "raredisease": {
     "full_name": "nf-core/raredisease",
     "html_url": "https://github.com/nf-core/raredisease",
-    "commit": "41b58aa55c33554c3d3a37fb9f1798fcd142ba99",
+    "commit": "469e32cd79e8280a0853455c9bcd89afccd56946",
     "errors": 0,
     "warnings": 12,
     "parse_error": false,
@@ -1382,11 +1382,11 @@
   "rnasplice": {
     "full_name": "nf-core/rnasplice",
     "html_url": "https://github.com/nf-core/rnasplice",
-    "commit": "7d0228fefdf5aaf3b894b5477b2f02f286c223a0",
-    "errors": 14,
+    "commit": "78c965887996758ea84b026c428edad2e65008f8",
+    "errors": 0,
     "warnings": 13,
     "parse_error": false,
-    "prints_help": null,
+    "prints_help": false,
     "workflow_output": false,
     "publishdir": true,
     "publishdir_count": 70

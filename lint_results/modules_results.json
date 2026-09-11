@@ -1,5 +1,5 @@
 {
-  "_repo_commit": "682f5e1b1b9f8f838a418322b98d12e6757717b2",
+  "_repo_commit": "b80f9f534316d36fec85fa36cf6b4c60ab8c5b96",
   "aardvark_compare": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/aardvark/compare",
     "errors": 0,
@@ -7296,6 +7296,12 @@
     "warnings": 0,
     "parse_error": false
   },
+  "mutserve_call": {
+    "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/mutserve/call",
+    "errors": 0,
+    "warnings": 0,
+    "parse_error": false
+  },
   "mygene": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/mygene",
     "errors": 0,
@@ -9837,7 +9843,7 @@
   "samtools_merge": {
     "html_url": "https://github.com/nf-core/modules/tree/master/modules/nf-core/samtools/merge",
     "errors": 0,
-    "warnings": 0,
+    "warnings": 1,
     "parse_error": false
   },
   "samtools_mpileup": {

@@ -1,9 +1,9 @@
 $ NXF_SYNTAX_PARSER=v2 nextflow run . --help
 
 
- N E X T F L O W   ~  version 26.07.0-edge
+ N E X T F L O W   ~  version 26.08.0-edge
 
-Launching `./main.nf` [elated_plateau] revision: 8dedb1d42a
+Launching `./main.nf` [berserk_gates] revision: 8dedb1d42a
 
 
 ------------------------------------------------------

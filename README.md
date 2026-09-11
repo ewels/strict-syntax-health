@@ -11,13 +11,13 @@ The goal is for all nf-core pipelines to run without errors using strict syntax.
 > See the [nf-core blog post](https://nf-co.re/blog/2025/nextflow_syntax_nf-core_roadmap) for details on the migration timeline.
 > **Fixing all errors from `nextflow lint` will be a requirement by early spring 2026.**
 
-- **Last updated:** 2026-09-10 00:23:38 UTC
+- **Last updated:** 2026-09-11 00:23:38 UTC
 - **Nextflow version:** 26.08.0-edge
 
 ## Pipelines
 
-- **Total:** 0 parse errors, 1238 errors, 6070 warnings across 144 pipelines
-- **Zero errors:** 96 pipelines (66.7%)
+- **Total:** 0 parse errors, 1224 errors, 6070 warnings across 144 pipelines
+- **Zero errors:** 97 pipelines (67.4%)
 
 |                    Errors                    |                     Warnings                     |
 | :------------------------------------------: | :----------------------------------------------: |
@@ -57,7 +57,6 @@ The goal is for all nf-core pipelines to run without errors using strict syntax.
 | :x: [mnaseseq](https://github.com/nf-core/mnaseseq)                                            |     No      |     15 |        0 |      -      |         [View](lint_results/pipeline-results/mnaseseq_lint.md)          |                                    -                                     |
 | :x: [proteogenomicsdb](https://github.com/nf-core/proteogenomicsdb)                            |     No      |     15 |        0 |      -      |     [View](lint_results/pipeline-results/proteogenomicsdb_lint.md)      |                                    -                                     |
 | :x: [pangenome](https://github.com/nf-core/pangenome)                                          |     No      |     14 |       67 |      -      |         [View](lint_results/pipeline-results/pangenome_lint.md)         |                                    -                                     |
-| :x: [rnasplice](https://github.com/nf-core/rnasplice)                                          |     No      |     14 |       13 |      -      |         [View](lint_results/pipeline-results/rnasplice_lint.md)         |                                    -                                     |
 | :x: [detaxizer](https://github.com/nf-core/detaxizer)                                          |     No      |     13 |       65 |      -      |         [View](lint_results/pipeline-results/detaxizer_lint.md)         |                                    -                                     |
 | :x: [crisprseq](https://github.com/nf-core/crisprseq)                                          |     No      |     13 |       50 |      -      |         [View](lint_results/pipeline-results/crisprseq_lint.md)         |                                    -                                     |
 | :x: [coproid](https://github.com/nf-core/coproid)                                              |     No      |     12 |       52 |      -      |          [View](lint_results/pipeline-results/coproid_lint.md)          |                                    -                                     |
@@ -116,6 +115,7 @@ The goal is for all nf-core pipelines to run without errors using strict syntax.
 | :white_check_mark: [pixelator](https://github.com/nf-core/pixelator)                           |     No      |      0 |       16 |     Yes     |         [View](lint_results/pipeline-results/pixelator_lint.md)         |       [View](lint_results/prints-help-results/pixelator_help.txt)        |
 | :white_check_mark: [abotyper](https://github.com/nf-core/abotyper)                             |     No      |      0 |       13 |     Yes     |         [View](lint_results/pipeline-results/abotyper_lint.md)          |        [View](lint_results/prints-help-results/abotyper_help.txt)        |
 | :white_check_mark: [magmap](https://github.com/nf-core/magmap)                                 |     No      |      0 |       13 |     Yes     |          [View](lint_results/pipeline-results/magmap_lint.md)           |         [View](lint_results/prints-help-results/magmap_help.txt)         |
+| :x: [rnasplice](https://github.com/nf-core/rnasplice)                                          |     No      |      0 |       13 |     No      |         [View](lint_results/pipeline-results/rnasplice_lint.md)         |       [View](lint_results/prints-help-results/rnasplice_help.txt)        |
 | :white_check_mark: [funcprofiler](https://github.com/nf-core/funcprofiler)                     |     No      |      0 |       12 |     Yes     |       [View](lint_results/pipeline-results/funcprofiler_lint.md)        |      [View](lint_results/prints-help-results/funcprofiler_help.txt)      |
 | :x: [genephylomodeler](https://github.com/nf-core/genephylomodeler)                            |     No      |      0 |       12 |     No      |     [View](lint_results/pipeline-results/genephylomodeler_lint.md)      |    [View](lint_results/prints-help-results/genephylomodeler_help.txt)    |
 | :white_check_mark: [pairgenomealign](https://github.com/nf-core/pairgenomealign)               |     No      |      0 |       12 |     Yes     |      [View](lint_results/pipeline-results/pairgenomealign_lint.md)      |    [View](lint_results/prints-help-results/pairgenomealign_help.txt)     |
@@ -341,8 +341,8 @@ The status emoji next to each pipeline shows its migration state: :white_check_m
 
 ## Modules
 
-- **Total:** 0 parse errors, 0 errors, 25 warnings across 2058 modules
-- **Zero errors:** 2058 modules (100.0%)
+- **Total:** 0 parse errors, 0 errors, 26 warnings across 2059 modules
+- **Zero errors:** 2059 modules (100.0%)
 
 |                   Errors                   |                    Warnings                    |
 | :----------------------------------------: | :--------------------------------------------: |
@@ -354,7 +354,7 @@ The status emoji next to each pipeline shows its migration state: :white_check_m
 | Module | Parse Error | Errors | Warnings | Lint Output |
 | ------ | :---------: | -----: | -------: | :---------: |
 
-_Modules with zero errors are not shown above (2058 modules). They may still have warnings. See the [modules results directory](lint_results/module-results/) for all lint outputs._
+_Modules with zero errors are not shown above (2059 modules). They may still have warnings. See the [modules results directory](lint_results/module-results/) for all lint outputs._
 
 </details>
 
